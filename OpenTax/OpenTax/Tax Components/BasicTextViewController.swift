@@ -11,7 +11,7 @@ import Closures
 
 
 
-class BasicTextViewController : BaseComponentViewController {
+class BasicTextViewController : BaseComponentViewController, UIScrollViewDelegate, UICollectionViewDelegate {
     
     
     var placeholder:String
@@ -32,7 +32,8 @@ class BasicTextViewController : BaseComponentViewController {
         super.viewDidLoad()
         setupUI()
         createDataHandler()
-        fillData()    
+        fillData()
+        self.collectionView.delegate = self
     }
         
     func fillData() {
@@ -44,5 +45,9 @@ class BasicTextViewController : BaseComponentViewController {
             ComponentData(text: self.placeholder, image: nil),
         ],toSection: TextfieldCell.identifier)
         data.apply(snap)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.view.endEditing(true)
     }
 }

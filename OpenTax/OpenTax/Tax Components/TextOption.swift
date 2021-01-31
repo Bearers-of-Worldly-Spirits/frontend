@@ -68,15 +68,17 @@ final class TextOption : UICollectionViewCell, ComponentBased {
         spacer = UIView()
         contentView.addSubview(spacer)
                 
+        let height:CGFloat = 25
+        
         label.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(20)
+            make.top.equalToSuperview().offset(height)
             make.centerX.equalToSuperview()
             make.width.lessThanOrEqualTo(200)
             make.height.lessThanOrEqualToSuperview()
         }
         
         spacer.snp.makeConstraints { (make) in
-            make.top.equalTo(self.label.snp.bottom).offset(20)
+            make.top.equalTo(self.label.snp.bottom).offset(height)
             make.left.right.bottom.equalToSuperview()
         }
         

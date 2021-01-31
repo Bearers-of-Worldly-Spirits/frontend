@@ -52,6 +52,7 @@ class BaseComponentViewController : UIViewController {
         collectionView.register(SubtitleCell.self, forCellWithReuseIdentifier: SubtitleCell.identifier)
         collectionView.register(TextOption.self, forCellWithReuseIdentifier: TextOption.identifier)
         collectionView.register(TextfieldCell.self, forCellWithReuseIdentifier: TextfieldCell.identifier)
+        collectionView.delaysContentTouches = false
         view.addSubview(collectionView)
         
         collectionView.snp.makeConstraints { (make) in

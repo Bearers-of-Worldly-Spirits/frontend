@@ -7,7 +7,6 @@
 
 import UIKit
 import SnapKit
-import Closures
 
 
 final class TextfieldCell : UICollectionViewCell, ComponentBased {

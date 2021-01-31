@@ -52,14 +52,17 @@ class ChoiceViewController : BaseComponentViewController, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        print("hello!")
+        
         if let cell = collectionView.cellForItem(at: indexPath) as? TextOption {
             guard cell.clicked == false else {
                 cell.clicked = false
                 return
             }
-            for cell in collectionView.visibleCells {
-                if let cell = cell as? TextOption {
-                    cell.clicked = false
+            for i in collectionView.visibleCells {
+                if let j = i as? TextOption {
+                    j.clicked = false
                 }
             }
             cell.clicked = true

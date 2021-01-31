@@ -27,6 +27,19 @@ class FormLibraryViewController : UIViewController, UICollectionViewDelegate {
         createAutolayoutConstraints()
     }
     
+    var firstLoad:Bool = true
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if firstLoad {
+            firstLoad = false
+            let vc = BasicSignupViewController()
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
+    
     func setupHeader() {
         gradientHeader = GradientHeader()
         gradientHeader.colors = [
@@ -83,6 +96,7 @@ class FormLibraryViewController : UIViewController, UICollectionViewDelegate {
             ChoiceViewController(title: "Favourite color.", subtitle: "What is ye favourite color?", choices: ["Blue", "Red", "Brown"]),
             BasicTextViewController(title: "Who are you?", subtitle: "What's your first and last name.", placeholder: "First Last"),
             ChoiceViewController(title: "Last question.", subtitle: "Favourite fruit?", choices: ["Watermelon", "Apple", "Orange", "Guava", "Strawberry"]),
+            
         ], animated: false)
         
         self.present(queue, animated: true, completion: nil)

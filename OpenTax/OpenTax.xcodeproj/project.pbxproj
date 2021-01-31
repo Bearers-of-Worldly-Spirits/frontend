@@ -38,6 +38,7 @@
 		79EF2A3E25BFCBFE00090CCF /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF2A3D25BFCBFE00090CCF /* Appearance.swift */; };
 		79F3292825C6206C00E72113 /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3292725C6206C00E72113 /* QueueViewController.swift */; };
 		79F3293025C6244C00E72113 /* BarButtonItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3292F25C6244C00E72113 /* BarButtonItemFactory.swift */; };
+		79F3294325C6354E00E72113 /* BasicSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3294225C6354E00E72113 /* BasicSignupViewController.swift */; };
 		9183E3FB87ACCEBB2810F4F7 /* Pods_OpenTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBD2583D7A2DB90A6792ACA /* Pods_OpenTax.framework */; };
 		FF6A73F1E0AC1489EB59724C /* Pods_OpenTax_OpenTaxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337066916FB515074EBD997E /* Pods_OpenTax_OpenTaxUITests.framework */; };
 /* End PBXBuildFile section */
@@ -99,6 +100,7 @@
 		79EF2A3D25BFCBFE00090CCF /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		79F3292725C6206C00E72113 /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
 		79F3292F25C6244C00E72113 /* BarButtonItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonItemFactory.swift; sourceTree = "<group>"; };
+		79F3294225C6354E00E72113 /* BasicSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSignupViewController.swift; sourceTree = "<group>"; };
 		88F9565F61C68D9B72A3A5FD /* Pods-OpenTax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTax.release.xcconfig"; path = "Target Support Files/Pods-OpenTax/Pods-OpenTax.release.xcconfig"; sourceTree = "<group>"; };
 		8C96E520B61587DAA8031531 /* Pods-OpenTax-OpenTaxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTax-OpenTaxUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenTax-OpenTaxUITests/Pods-OpenTax-OpenTaxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BFBD2583D7A2DB90A6792ACA /* Pods_OpenTax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenTax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +195,7 @@
 				79E1BBCE25B4F3540034647C /* AppDelegate.swift */,
 				79E1BBD025B4F3540034647C /* SceneDelegate.swift */,
 				79EF2A3D25BFCBFE00090CCF /* Appearance.swift */,
+				79F3294725C6362A00E72113 /* Signup */,
 				79E03F8B25BE5B9500ADCA4E /* Tax Components */,
 				79EAD13325B500D8000C5B92 /* UI Components */,
 				79EAD11F25B4F86B000C5B92 /* Form Library */,
@@ -246,6 +249,14 @@
 				79EAD12D25B500C2000C5B92 /* Card.swift */,
 			);
 			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		79F3294725C6362A00E72113 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				79F3294225C6354E00E72113 /* BasicSignupViewController.swift */,
+			);
+			path = Signup;
 			sourceTree = "<group>";
 		};
 		9D6BD0D0AC85957046BB7CE3 /* Frameworks */ = {
@@ -511,6 +522,7 @@
 				79E03F8725BE5B8E00ADCA4E /* ChoiceViewController.swift in Sources */,
 				79E03F9025BE5E5200ADCA4E /* InfoHeader.swift in Sources */,
 				79BFFB0D25C247F0004BFEC5 /* ComponentData.swift in Sources */,
+				79F3294325C6354E00E72113 /* BasicSignupViewController.swift in Sources */,
 				790F505525B91A9B000EBEE4 /* ProfilePictureView.swift in Sources */,
 				79B6351E25C1142E009787B1 /* TitleCell.swift in Sources */,
 				790B89AB25B922A400E9485F /* FormLibraryHeader.swift in Sources */,
