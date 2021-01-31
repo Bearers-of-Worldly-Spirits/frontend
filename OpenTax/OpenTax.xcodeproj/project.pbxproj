@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7506621CEBEF885B24006833 /* Pods_OpenTaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59CEB20D1650A84A12F2CDC /* Pods_OpenTaxTests.framework */; };
+		790B89A025B91C0300E9485F /* Questions.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 790B899F25B91C0300E9485F /* Questions.rtf */; };
+		790B89AB25B922A400E9485F /* FormLibraryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B89AA25B922A400E9485F /* FormLibraryHeader.swift */; };
+		790F504225B912DB000EBEE4 /* ResizableGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F504125B912DB000EBEE4 /* ResizableGradientView.swift */; };
+		790F505025B91A82000EBEE4 /* GradientHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F504F25B91A82000EBEE4 /* GradientHeader.swift */; };
+		790F505525B91A9B000EBEE4 /* ProfilePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F505425B91A9B000EBEE4 /* ProfilePictureView.swift */; };
+		79B6351E25C1142E009787B1 /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B6351D25C1142E009787B1 /* TitleCell.swift */; };
+		79BFFB0825C244A2004BFEC5 /* SubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BFFB0725C244A2004BFEC5 /* SubtitleCell.swift */; };
+		79BFFB0D25C247F0004BFEC5 /* ComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BFFB0C25C247F0004BFEC5 /* ComponentData.swift */; };
+		79BFFB1225C2491B004BFEC5 /* TextOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BFFB1125C2491B004BFEC5 /* TextOption.swift */; };
+		79BFFB1A25C253C0004BFEC5 /* BasicTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BFFB1925C253C0004BFEC5 /* BasicTextViewController.swift */; };
+		79BFFB1F25C254FD004BFEC5 /* TextfieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BFFB1E25C254FD004BFEC5 /* TextfieldCell.swift */; };
+		79E03F8725BE5B8E00ADCA4E /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E03F8625BE5B8E00ADCA4E /* ChoiceViewController.swift */; };
+		79E03F9025BE5E5200ADCA4E /* InfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E03F8F25BE5E5200ADCA4E /* InfoHeader.swift */; };
+		79E03F9825BE62E300ADCA4E /* BaseComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E03F9725BE62E300ADCA4E /* BaseComponentViewController.swift */; };
+		79E1BBCF25B4F3540034647C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1BBCE25B4F3540034647C /* AppDelegate.swift */; };
+		79E1BBD125B4F3540034647C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1BBD025B4F3540034647C /* SceneDelegate.swift */; };
+		79E1BBD925B4F3540034647C /* OpenTax.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79E1BBD725B4F3540034647C /* OpenTax.xcdatamodeld */; };
+		79E1BBDB25B4F3550034647C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E1BBDA25B4F3550034647C /* Assets.xcassets */; };
+		79E1BBDE25B4F3550034647C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E1BBDC25B4F3550034647C /* LaunchScreen.storyboard */; };
+		79E1BBE925B4F3550034647C /* OpenTaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1BBE825B4F3550034647C /* OpenTaxTests.swift */; };
+		79E1BBF425B4F3550034647C /* OpenTaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1BBF325B4F3550034647C /* OpenTaxUITests.swift */; };
+		79EAD10E25B4F4CE000C5B92 /* FormLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAD10D25B4F4CE000C5B92 /* FormLibraryViewController.swift */; };
+		79EAD11325B4F628000C5B92 /* FormLibraryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAD11225B4F628000C5B92 /* FormLibraryCollectionView.swift */; };
+		79EAD12425B4F878000C5B92 /* FormLibraryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAD12325B4F878000C5B92 /* FormLibraryData.swift */; };
+		79EAD12925B4F906000C5B92 /* FormLibraryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAD12825B4F906000C5B92 /* FormLibraryCollectionViewCell.swift */; };
+		79EAD12E25B500C2000C5B92 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAD12D25B500C2000C5B92 /* Card.swift */; };
+		79EF2A3625BFC68D00090CCF /* SkipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF2A3525BFC68D00090CCF /* SkipButton.swift */; };
+		79EF2A3E25BFCBFE00090CCF /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF2A3D25BFCBFE00090CCF /* Appearance.swift */; };
+		79F3292825C6206C00E72113 /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3292725C6206C00E72113 /* QueueViewController.swift */; };
+		79F3293025C6244C00E72113 /* BarButtonItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3292F25C6244C00E72113 /* BarButtonItemFactory.swift */; };
+		9183E3FB87ACCEBB2810F4F7 /* Pods_OpenTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBD2583D7A2DB90A6792ACA /* Pods_OpenTax.framework */; };
+		FF6A73F1E0AC1489EB59724C /* Pods_OpenTax_OpenTaxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337066916FB515074EBD997E /* Pods_OpenTax_OpenTaxUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79E1BBE525B4F3550034647C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E1BBC325B4F3540034647C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E1BBCA25B4F3540034647C;
+			remoteInfo = OpenTax;
+		};
+		79E1BBF025B4F3550034647C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E1BBC325B4F3540034647C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E1BBCA25B4F3540034647C;
+			remoteInfo = OpenTax;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		337066916FB515074EBD997E /* Pods_OpenTax_OpenTaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenTax_OpenTaxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40311FE12C2AF50F7AD946D2 /* Pods-OpenTaxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTaxTests.release.xcconfig"; path = "Target Support Files/Pods-OpenTaxTests/Pods-OpenTaxTests.release.xcconfig"; sourceTree = "<group>"; };
+		682A8B8F2FF1E0AA0F189112 /* Pods-OpenTax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTax.debug.xcconfig"; path = "Target Support Files/Pods-OpenTax/Pods-OpenTax.debug.xcconfig"; sourceTree = "<group>"; };
+		790B899F25B91C0300E9485F /* Questions.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Questions.rtf; sourceTree = "<group>"; };
+		790B89AA25B922A400E9485F /* FormLibraryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLibraryHeader.swift; sourceTree = "<group>"; };
+		790F504125B912DB000EBEE4 /* ResizableGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableGradientView.swift; sourceTree = "<group>"; };
+		790F504F25B91A82000EBEE4 /* GradientHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientHeader.swift; sourceTree = "<group>"; };
+		790F505425B91A9B000EBEE4 /* ProfilePictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureView.swift; sourceTree = "<group>"; };
+		79B6351D25C1142E009787B1 /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
+		79BFFB0725C244A2004BFEC5 /* SubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleCell.swift; sourceTree = "<group>"; };
+		79BFFB0C25C247F0004BFEC5 /* ComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentData.swift; sourceTree = "<group>"; };
+		79BFFB1125C2491B004BFEC5 /* TextOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOption.swift; sourceTree = "<group>"; };
+		79BFFB1925C253C0004BFEC5 /* BasicTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTextViewController.swift; sourceTree = "<group>"; };
+		79BFFB1E25C254FD004BFEC5 /* TextfieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldCell.swift; sourceTree = "<group>"; };
+		79E03F8625BE5B8E00ADCA4E /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		79E03F8F25BE5E5200ADCA4E /* InfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHeader.swift; sourceTree = "<group>"; };
+		79E03F9725BE62E300ADCA4E /* BaseComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseComponentViewController.swift; sourceTree = "<group>"; };
+		79E1BBCB25B4F3540034647C /* OpenTax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTax.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E1BBCE25B4F3540034647C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79E1BBD025B4F3540034647C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		79E1BBD825B4F3540034647C /* OpenTax.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenTax.xcdatamodel; sourceTree = "<group>"; };
+		79E1BBDA25B4F3550034647C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79E1BBDD25B4F3550034647C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79E1BBDF25B4F3550034647C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E1BBE425B4F3550034647C /* OpenTaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E1BBE825B4F3550034647C /* OpenTaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTaxTests.swift; sourceTree = "<group>"; };
+		79E1BBEA25B4F3550034647C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E1BBEF25B4F3550034647C /* OpenTaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E1BBF325B4F3550034647C /* OpenTaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTaxUITests.swift; sourceTree = "<group>"; };
+		79E1BBF525B4F3550034647C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79EAD10D25B4F4CE000C5B92 /* FormLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLibraryViewController.swift; sourceTree = "<group>"; };
+		79EAD11225B4F628000C5B92 /* FormLibraryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLibraryCollectionView.swift; sourceTree = "<group>"; };
+		79EAD12325B4F878000C5B92 /* FormLibraryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLibraryData.swift; sourceTree = "<group>"; };
+		79EAD12825B4F906000C5B92 /* FormLibraryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLibraryCollectionViewCell.swift; sourceTree = "<group>"; };
+		79EAD12D25B500C2000C5B92 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		79EF2A3525BFC68D00090CCF /* SkipButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipButton.swift; sourceTree = "<group>"; };
+		79EF2A3D25BFCBFE00090CCF /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		79F3292725C6206C00E72113 /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
+		79F3292F25C6244C00E72113 /* BarButtonItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonItemFactory.swift; sourceTree = "<group>"; };
+		88F9565F61C68D9B72A3A5FD /* Pods-OpenTax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTax.release.xcconfig"; path = "Target Support Files/Pods-OpenTax/Pods-OpenTax.release.xcconfig"; sourceTree = "<group>"; };
+		8C96E520B61587DAA8031531 /* Pods-OpenTax-OpenTaxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTax-OpenTaxUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenTax-OpenTaxUITests/Pods-OpenTax-OpenTaxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BFBD2583D7A2DB90A6792ACA /* Pods_OpenTax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenTax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59CEB20D1650A84A12F2CDC /* Pods_OpenTaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenTaxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9322D99125E45212B55893C /* Pods-OpenTax-OpenTaxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTax-OpenTaxUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenTax-OpenTaxUITests/Pods-OpenTax-OpenTaxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF44E553E596A937443756B0 /* Pods-OpenTaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTaxTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenTaxTests/Pods-OpenTaxTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79E1BBC825B4F3540034647C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9183E3FB87ACCEBB2810F4F7 /* Pods_OpenTax.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1BBE125B4F3550034647C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7506621CEBEF885B24006833 /* Pods_OpenTaxTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1BBEC25B4F3550034647C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6A73F1E0AC1489EB59724C /* Pods_OpenTax_OpenTaxUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3663B9B819129539920B8B64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				682A8B8F2FF1E0AA0F189112 /* Pods-OpenTax.debug.xcconfig */,
+				88F9565F61C68D9B72A3A5FD /* Pods-OpenTax.release.xcconfig */,
+				8C96E520B61587DAA8031531 /* Pods-OpenTax-OpenTaxUITests.debug.xcconfig */,
+				D9322D99125E45212B55893C /* Pods-OpenTax-OpenTaxUITests.release.xcconfig */,
+				FF44E553E596A937443756B0 /* Pods-OpenTaxTests.debug.xcconfig */,
+				40311FE12C2AF50F7AD946D2 /* Pods-OpenTaxTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		79E03F8B25BE5B9500ADCA4E /* Tax Components */ = {
+			isa = PBXGroup;
+			children = (
+				79F3292725C6206C00E72113 /* QueueViewController.swift */,
+				79E03F8625BE5B8E00ADCA4E /* ChoiceViewController.swift */,
+				79BFFB1925C253C0004BFEC5 /* BasicTextViewController.swift */,
+				79E03F9725BE62E300ADCA4E /* BaseComponentViewController.swift */,
+				79BFFB0C25C247F0004BFEC5 /* ComponentData.swift */,
+				79BFFB1125C2491B004BFEC5 /* TextOption.swift */,
+				79BFFB1E25C254FD004BFEC5 /* TextfieldCell.swift */,
+				79B6351D25C1142E009787B1 /* TitleCell.swift */,
+				79BFFB0725C244A2004BFEC5 /* SubtitleCell.swift */,
+			);
+			path = "Tax Components";
+			sourceTree = "<group>";
+		};
+		79E1BBC225B4F3540034647C = {
+			isa = PBXGroup;
+			children = (
+				79E1BBCD25B4F3540034647C /* OpenTax */,
+				79E1BBE725B4F3550034647C /* OpenTaxTests */,
+				79E1BBF225B4F3550034647C /* OpenTaxUITests */,
+				79E1BBCC25B4F3540034647C /* Products */,
+				3663B9B819129539920B8B64 /* Pods */,
+				9D6BD0D0AC85957046BB7CE3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79E1BBCC25B4F3540034647C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79E1BBCB25B4F3540034647C /* OpenTax.app */,
+				79E1BBE425B4F3550034647C /* OpenTaxTests.xctest */,
+				79E1BBEF25B4F3550034647C /* OpenTaxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79E1BBCD25B4F3540034647C /* OpenTax */ = {
+			isa = PBXGroup;
+			children = (
+				790B899F25B91C0300E9485F /* Questions.rtf */,
+				79E1BBCE25B4F3540034647C /* AppDelegate.swift */,
+				79E1BBD025B4F3540034647C /* SceneDelegate.swift */,
+				79EF2A3D25BFCBFE00090CCF /* Appearance.swift */,
+				79E03F8B25BE5B9500ADCA4E /* Tax Components */,
+				79EAD13325B500D8000C5B92 /* UI Components */,
+				79EAD11F25B4F86B000C5B92 /* Form Library */,
+				79E1BBDA25B4F3550034647C /* Assets.xcassets */,
+				79E1BBDC25B4F3550034647C /* LaunchScreen.storyboard */,
+				79E1BBDF25B4F3550034647C /* Info.plist */,
+				79E1BBD725B4F3540034647C /* OpenTax.xcdatamodeld */,
+			);
+			path = OpenTax;
+			sourceTree = "<group>";
+		};
+		79E1BBE725B4F3550034647C /* OpenTaxTests */ = {
+			isa = PBXGroup;
+			children = (
+				79E1BBE825B4F3550034647C /* OpenTaxTests.swift */,
+				79E1BBEA25B4F3550034647C /* Info.plist */,
+			);
+			path = OpenTaxTests;
+			sourceTree = "<group>";
+		};
+		79E1BBF225B4F3550034647C /* OpenTaxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79E1BBF325B4F3550034647C /* OpenTaxUITests.swift */,
+				79E1BBF525B4F3550034647C /* Info.plist */,
+			);
+			path = OpenTaxUITests;
+			sourceTree = "<group>";
+		};
+		79EAD11F25B4F86B000C5B92 /* Form Library */ = {
+			isa = PBXGroup;
+			children = (
+				79EAD10D25B4F4CE000C5B92 /* FormLibraryViewController.swift */,
+				79EAD11225B4F628000C5B92 /* FormLibraryCollectionView.swift */,
+				79EAD12825B4F906000C5B92 /* FormLibraryCollectionViewCell.swift */,
+				79EAD12325B4F878000C5B92 /* FormLibraryData.swift */,
+				790F504F25B91A82000EBEE4 /* GradientHeader.swift */,
+				790B89AA25B922A400E9485F /* FormLibraryHeader.swift */,
+			);
+			path = "Form Library";
+			sourceTree = "<group>";
+		};
+		79EAD13325B500D8000C5B92 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				79F3292F25C6244C00E72113 /* BarButtonItemFactory.swift */,
+				79EF2A3525BFC68D00090CCF /* SkipButton.swift */,
+				79E03F8F25BE5E5200ADCA4E /* InfoHeader.swift */,
+				790F505425B91A9B000EBEE4 /* ProfilePictureView.swift */,
+				790F504125B912DB000EBEE4 /* ResizableGradientView.swift */,
+				79EAD12D25B500C2000C5B92 /* Card.swift */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		9D6BD0D0AC85957046BB7CE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFBD2583D7A2DB90A6792ACA /* Pods_OpenTax.framework */,
+				337066916FB515074EBD997E /* Pods_OpenTax_OpenTaxUITests.framework */,
+				C59CEB20D1650A84A12F2CDC /* Pods_OpenTaxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79E1BBCA25B4F3540034647C /* OpenTax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E1BBF825B4F3550034647C /* Build configuration list for PBXNativeTarget "OpenTax" */;
+			buildPhases = (
+				95A7BC322880100B773FB173 /* [CP] Check Pods Manifest.lock */,
+				79E1BBC725B4F3540034647C /* Sources */,
+				79E1BBC825B4F3540034647C /* Frameworks */,
+				79E1BBC925B4F3540034647C /* Resources */,
+				840B2418EC4DB943C03A0335 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenTax;
+			productName = OpenTax;
+			productReference = 79E1BBCB25B4F3540034647C /* OpenTax.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79E1BBE325B4F3550034647C /* OpenTaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E1BBFB25B4F3550034647C /* Build configuration list for PBXNativeTarget "OpenTaxTests" */;
+			buildPhases = (
+				C7438A50D0775D433CDEC236 /* [CP] Check Pods Manifest.lock */,
+				79E1BBE025B4F3550034647C /* Sources */,
+				79E1BBE125B4F3550034647C /* Frameworks */,
+				79E1BBE225B4F3550034647C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E1BBE625B4F3550034647C /* PBXTargetDependency */,
+			);
+			name = OpenTaxTests;
+			productName = OpenTaxTests;
+			productReference = 79E1BBE425B4F3550034647C /* OpenTaxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79E1BBEE25B4F3550034647C /* OpenTaxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E1BBFE25B4F3550034647C /* Build configuration list for PBXNativeTarget "OpenTaxUITests" */;
+			buildPhases = (
+				732FCE6005F6876F369A31AE /* [CP] Check Pods Manifest.lock */,
+				79E1BBEB25B4F3550034647C /* Sources */,
+				79E1BBEC25B4F3550034647C /* Frameworks */,
+				79E1BBED25B4F3550034647C /* Resources */,
+				CB84FAB2371827568E3A1158 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E1BBF125B4F3550034647C /* PBXTargetDependency */,
+			);
+			name = OpenTaxUITests;
+			productName = OpenTaxUITests;
+			productReference = 79E1BBEF25B4F3550034647C /* OpenTaxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79E1BBC325B4F3540034647C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					79E1BBCA25B4F3540034647C = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					79E1BBE325B4F3550034647C = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 79E1BBCA25B4F3540034647C;
+					};
+					79E1BBEE25B4F3550034647C = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 79E1BBCA25B4F3540034647C;
+					};
+				};
+			};
+			buildConfigurationList = 79E1BBC625B4F3540034647C /* Build configuration list for PBXProject "OpenTax" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79E1BBC225B4F3540034647C;
+			productRefGroup = 79E1BBCC25B4F3540034647C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79E1BBCA25B4F3540034647C /* OpenTax */,
+				79E1BBE325B4F3550034647C /* OpenTaxTests */,
+				79E1BBEE25B4F3550034647C /* OpenTaxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79E1BBC925B4F3540034647C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790B89A025B91C0300E9485F /* Questions.rtf in Resources */,
+				79E1BBDE25B4F3550034647C /* LaunchScreen.storyboard in Resources */,
+				79E1BBDB25B4F3550034647C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1BBE225B4F3550034647C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1BBED25B4F3550034647C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		732FCE6005F6876F369A31AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenTax-OpenTaxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		840B2418EC4DB943C03A0335 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenTax/Pods-OpenTax-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenTax/Pods-OpenTax-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenTax/Pods-OpenTax-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95A7BC322880100B773FB173 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenTax-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7438A50D0775D433CDEC236 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenTaxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB84FAB2371827568E3A1158 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenTax-OpenTaxUITests/Pods-OpenTax-OpenTaxUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenTax-OpenTaxUITests/Pods-OpenTax-OpenTaxUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenTax-OpenTaxUITests/Pods-OpenTax-OpenTaxUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79E1BBC725B4F3540034647C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1BBCF25B4F3540034647C /* AppDelegate.swift in Sources */,
+				79E1BBD125B4F3540034647C /* SceneDelegate.swift in Sources */,
+				79EAD11325B4F628000C5B92 /* FormLibraryCollectionView.swift in Sources */,
+				79EAD10E25B4F4CE000C5B92 /* FormLibraryViewController.swift in Sources */,
+				79BFFB1A25C253C0004BFEC5 /* BasicTextViewController.swift in Sources */,
+				79E03F9825BE62E300ADCA4E /* BaseComponentViewController.swift in Sources */,
+				79EF2A3E25BFCBFE00090CCF /* Appearance.swift in Sources */,
+				79E1BBD925B4F3540034647C /* OpenTax.xcdatamodeld in Sources */,
+				79F3292825C6206C00E72113 /* QueueViewController.swift in Sources */,
+				790F504225B912DB000EBEE4 /* ResizableGradientView.swift in Sources */,
+				79BFFB1F25C254FD004BFEC5 /* TextfieldCell.swift in Sources */,
+				79EAD12425B4F878000C5B92 /* FormLibraryData.swift in Sources */,
+				79E03F8725BE5B8E00ADCA4E /* ChoiceViewController.swift in Sources */,
+				79E03F9025BE5E5200ADCA4E /* InfoHeader.swift in Sources */,
+				79BFFB0D25C247F0004BFEC5 /* ComponentData.swift in Sources */,
+				790F505525B91A9B000EBEE4 /* ProfilePictureView.swift in Sources */,
+				79B6351E25C1142E009787B1 /* TitleCell.swift in Sources */,
+				790B89AB25B922A400E9485F /* FormLibraryHeader.swift in Sources */,
+				79EAD12925B4F906000C5B92 /* FormLibraryCollectionViewCell.swift in Sources */,
+				79F3293025C6244C00E72113 /* BarButtonItemFactory.swift in Sources */,
+				790F505025B91A82000EBEE4 /* GradientHeader.swift in Sources */,
+				79EF2A3625BFC68D00090CCF /* SkipButton.swift in Sources */,
+				79BFFB1225C2491B004BFEC5 /* TextOption.swift in Sources */,
+				79EAD12E25B500C2000C5B92 /* Card.swift in Sources */,
+				79BFFB0825C244A2004BFEC5 /* SubtitleCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1BBE025B4F3550034647C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1BBE925B4F3550034647C /* OpenTaxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1BBEB25B4F3550034647C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1BBF425B4F3550034647C /* OpenTaxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79E1BBE625B4F3550034647C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E1BBCA25B4F3540034647C /* OpenTax */;
+			targetProxy = 79E1BBE525B4F3550034647C /* PBXContainerItemProxy */;
+		};
+		79E1BBF125B4F3550034647C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E1BBCA25B4F3540034647C /* OpenTax */;
+			targetProxy = 79E1BBF025B4F3550034647C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79E1BBDC25B4F3550034647C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E1BBDD25B4F3550034647C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79E1BBF625B4F3550034647C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79E1BBF725B4F3550034647C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79E1BBF925B4F3550034647C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 682A8B8F2FF1E0AA0F189112 /* Pods-OpenTax.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P55BHT8RZT;
+				INFOPLIST_FILE = OpenTax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.OpenTax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79E1BBFA25B4F3550034647C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88F9565F61C68D9B72A3A5FD /* Pods-OpenTax.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P55BHT8RZT;
+				INFOPLIST_FILE = OpenTax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.OpenTax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79E1BBFC25B4F3550034647C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF44E553E596A937443756B0 /* Pods-OpenTaxTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P55BHT8RZT;
+				INFOPLIST_FILE = OpenTaxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.OpenTaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTax.app/OpenTax";
+			};
+			name = Debug;
+		};
+		79E1BBFD25B4F3550034647C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40311FE12C2AF50F7AD946D2 /* Pods-OpenTaxTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P55BHT8RZT;
+				INFOPLIST_FILE = OpenTaxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.OpenTaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTax.app/OpenTax";
+			};
+			name = Release;
+		};
+		79E1BBFF25B4F3550034647C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C96E520B61587DAA8031531 /* Pods-OpenTax-OpenTaxUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P55BHT8RZT;
+				INFOPLIST_FILE = OpenTaxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.OpenTaxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenTax;
+			};
+			name = Debug;
+		};
+		79E1BC0025B4F3550034647C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9322D99125E45212B55893C /* Pods-OpenTax-OpenTaxUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P55BHT8RZT;
+				INFOPLIST_FILE = OpenTaxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.OpenTaxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenTax;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79E1BBC625B4F3540034647C /* Build configuration list for PBXProject "OpenTax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E1BBF625B4F3550034647C /* Debug */,
+				79E1BBF725B4F3550034647C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E1BBF825B4F3550034647C /* Build configuration list for PBXNativeTarget "OpenTax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E1BBF925B4F3550034647C /* Debug */,
+				79E1BBFA25B4F3550034647C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E1BBFB25B4F3550034647C /* Build configuration list for PBXNativeTarget "OpenTaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E1BBFC25B4F3550034647C /* Debug */,
+				79E1BBFD25B4F3550034647C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E1BBFE25B4F3550034647C /* Build configuration list for PBXNativeTarget "OpenTaxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E1BBFF25B4F3550034647C /* Debug */,
+				79E1BC0025B4F3550034647C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79E1BBD725B4F3540034647C /* OpenTax.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79E1BBD825B4F3540034647C /* OpenTax.xcdatamodel */,
+			);
+			currentVersion = 79E1BBD825B4F3540034647C /* OpenTax.xcdatamodel */;
+			path = OpenTax.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 79E1BBC325B4F3540034647C /* Project object */;
+}

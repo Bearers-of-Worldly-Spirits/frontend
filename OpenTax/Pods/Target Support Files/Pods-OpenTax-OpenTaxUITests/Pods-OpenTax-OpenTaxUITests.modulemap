@@ -1,0 +1,6 @@
+framework module Pods_OpenTax_OpenTaxUITests {
+  umbrella header "Pods-OpenTax-OpenTaxUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
