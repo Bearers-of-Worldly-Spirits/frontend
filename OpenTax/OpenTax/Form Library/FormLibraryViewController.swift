@@ -8,18 +8,6 @@
 import UIKit
 import SnapKit
 
-/*
- 
- /* test */
- let queue = QueueViewController()
- queue.setQueue([
-     ChoiceViewController(title: "Favourite color.", subtitle: "What is ye favourite color?", choices: ["Blue", "Red", "Brown"]),
-     BasicTextViewController(title: "Who are you?", subtitle: "What's your first and last name.", placeholder: "First Last"),
-     ChoiceViewController(title: "Last question.", subtitle: "Favourite fruit?", choices: ["Watermelon", "Apple", "Orange", "Guava", "Strawberry"]),
- ], animated: false)
- 
- */
-
 
 class FormLibraryViewController : UIViewController, UICollectionViewDelegate {
     
@@ -84,7 +72,19 @@ class FormLibraryViewController : UIViewController, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let section = self.collectionView.data.snapshot().sectionIdentifiers[indexPath.section]
         guard section.type == .inProgress else { return }
-        let item = self.collectionView.data.snapshot().itemIdentifiers[indexPath.row]
-        print(item.text)
+        
+//        let item = self.collectionView.data.snapshot().itemIdentifiers[indexPath.row]
+        
+        //TODO: add selection logic here
+        
+        let queue = QueueViewController()
+        queue.modalPresentationStyle = .fullScreen
+        queue.setQueue([
+            ChoiceViewController(title: "Favourite color.", subtitle: "What is ye favourite color?", choices: ["Blue", "Red", "Brown"]),
+            BasicTextViewController(title: "Who are you?", subtitle: "What's your first and last name.", placeholder: "First Last"),
+            ChoiceViewController(title: "Last question.", subtitle: "Favourite fruit?", choices: ["Watermelon", "Apple", "Orange", "Guava", "Strawberry"]),
+        ], animated: false)
+        
+        self.present(queue, animated: true, completion: nil)
     }
 }

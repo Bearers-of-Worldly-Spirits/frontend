@@ -17,7 +17,7 @@ class QueueViewController : UINavigationController {
     
     init() {
         super.init(nibName: nil, bundle: nil)
-        view.backgroundColor = .systemRed
+        view.backgroundColor = .systemRed        
     }
     
     required init?(coder aDecoder: NSCoder) {
