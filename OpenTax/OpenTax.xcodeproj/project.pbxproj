@@ -13,6 +13,9 @@
 		790F504225B912DB000EBEE4 /* ResizableGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F504125B912DB000EBEE4 /* ResizableGradientView.swift */; };
 		790F505025B91A82000EBEE4 /* GradientHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F504F25B91A82000EBEE4 /* GradientHeader.swift */; };
 		790F505525B91A9B000EBEE4 /* ProfilePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F505425B91A9B000EBEE4 /* ProfilePictureView.swift */; };
+		797B4B1825D5F78500840DBE /* DatabaseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B4B1725D5F78500840DBE /* DatabaseKeys.swift */; };
+		797B4B1D25D5F83100840DBE /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B4B1C25D5F83100840DBE /* LoadingIndicator.swift */; };
+		797B4B8425D6150900840DBE /* FormLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B4B8325D6150900840DBE /* FormLibrary.swift */; };
 		79B6351E25C1142E009787B1 /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B6351D25C1142E009787B1 /* TitleCell.swift */; };
 		79BFFB0825C244A2004BFEC5 /* SubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BFFB0725C244A2004BFEC5 /* SubtitleCell.swift */; };
 		79BFFB0D25C247F0004BFEC5 /* ComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BFFB0C25C247F0004BFEC5 /* ComponentData.swift */; };
@@ -29,6 +32,11 @@
 		79E1BBDE25B4F3550034647C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E1BBDC25B4F3550034647C /* LaunchScreen.storyboard */; };
 		79E1BBE925B4F3550034647C /* OpenTaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1BBE825B4F3550034647C /* OpenTaxTests.swift */; };
 		79E1BBF425B4F3550034647C /* OpenTaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1BBF325B4F3550034647C /* OpenTaxUITests.swift */; };
+		79E6587425D4B51300E6B5B7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6587325D4B51300E6B5B7 /* SignUpView.swift */; };
+		79E6588425D4B5D700E6B5B7 /* SimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6588325D4B5D700E6B5B7 /* SimpleButton.swift */; };
+		79E6588925D4DBE000E6B5B7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6588825D4DBE000E6B5B7 /* CustomTextField.swift */; };
+		79E6588E25D4E0AB00E6B5B7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6588D25D4E0AB00E6B5B7 /* LoginView.swift */; };
+		79E658A925D4E59000E6B5B7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E658A825D4E59000E6B5B7 /* SplashView.swift */; };
 		79EAD10E25B4F4CE000C5B92 /* FormLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAD10D25B4F4CE000C5B92 /* FormLibraryViewController.swift */; };
 		79EAD11325B4F628000C5B92 /* FormLibraryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAD11225B4F628000C5B92 /* FormLibraryCollectionView.swift */; };
 		79EAD12425B4F878000C5B92 /* FormLibraryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EAD12325B4F878000C5B92 /* FormLibraryData.swift */; };
@@ -38,7 +46,6 @@
 		79EF2A3E25BFCBFE00090CCF /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF2A3D25BFCBFE00090CCF /* Appearance.swift */; };
 		79F3292825C6206C00E72113 /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3292725C6206C00E72113 /* QueueViewController.swift */; };
 		79F3293025C6244C00E72113 /* BarButtonItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3292F25C6244C00E72113 /* BarButtonItemFactory.swift */; };
-		79F3294325C6354E00E72113 /* BasicSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3294225C6354E00E72113 /* BasicSignupViewController.swift */; };
 		9183E3FB87ACCEBB2810F4F7 /* Pods_OpenTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBD2583D7A2DB90A6792ACA /* Pods_OpenTax.framework */; };
 		FF6A73F1E0AC1489EB59724C /* Pods_OpenTax_OpenTaxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337066916FB515074EBD997E /* Pods_OpenTax_OpenTaxUITests.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +76,9 @@
 		790F504125B912DB000EBEE4 /* ResizableGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableGradientView.swift; sourceTree = "<group>"; };
 		790F504F25B91A82000EBEE4 /* GradientHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientHeader.swift; sourceTree = "<group>"; };
 		790F505425B91A9B000EBEE4 /* ProfilePictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureView.swift; sourceTree = "<group>"; };
+		797B4B1725D5F78500840DBE /* DatabaseKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseKeys.swift; sourceTree = "<group>"; };
+		797B4B1C25D5F83100840DBE /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		797B4B8325D6150900840DBE /* FormLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLibrary.swift; sourceTree = "<group>"; };
 		79B6351D25C1142E009787B1 /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
 		79BFFB0725C244A2004BFEC5 /* SubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleCell.swift; sourceTree = "<group>"; };
 		79BFFB0C25C247F0004BFEC5 /* ComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentData.swift; sourceTree = "<group>"; };
@@ -91,6 +101,11 @@
 		79E1BBEF25B4F3550034647C /* OpenTaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E1BBF325B4F3550034647C /* OpenTaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTaxUITests.swift; sourceTree = "<group>"; };
 		79E1BBF525B4F3550034647C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E6587325D4B51300E6B5B7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		79E6588325D4B5D700E6B5B7 /* SimpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleButton.swift; sourceTree = "<group>"; };
+		79E6588825D4DBE000E6B5B7 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		79E6588D25D4E0AB00E6B5B7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		79E658A825D4E59000E6B5B7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		79EAD10D25B4F4CE000C5B92 /* FormLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLibraryViewController.swift; sourceTree = "<group>"; };
 		79EAD11225B4F628000C5B92 /* FormLibraryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLibraryCollectionView.swift; sourceTree = "<group>"; };
 		79EAD12325B4F878000C5B92 /* FormLibraryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLibraryData.swift; sourceTree = "<group>"; };
@@ -100,7 +115,6 @@
 		79EF2A3D25BFCBFE00090CCF /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		79F3292725C6206C00E72113 /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
 		79F3292F25C6244C00E72113 /* BarButtonItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonItemFactory.swift; sourceTree = "<group>"; };
-		79F3294225C6354E00E72113 /* BasicSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSignupViewController.swift; sourceTree = "<group>"; };
 		88F9565F61C68D9B72A3A5FD /* Pods-OpenTax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTax.release.xcconfig"; path = "Target Support Files/Pods-OpenTax/Pods-OpenTax.release.xcconfig"; sourceTree = "<group>"; };
 		8C96E520B61587DAA8031531 /* Pods-OpenTax-OpenTaxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTax-OpenTaxUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenTax-OpenTaxUITests/Pods-OpenTax-OpenTaxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BFBD2583D7A2DB90A6792ACA /* Pods_OpenTax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenTax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +164,29 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		797B4AE625D5F51000840DBE /* SwiftUI Components */ = {
+			isa = PBXGroup;
+			children = (
+				79E6588325D4B5D700E6B5B7 /* SimpleButton.swift */,
+				79E6588825D4DBE000E6B5B7 /* CustomTextField.swift */,
+				797B4B1C25D5F83100840DBE /* LoadingIndicator.swift */,
+			);
+			path = "SwiftUI Components";
+			sourceTree = "<group>";
+		};
+		797B4B8825D6158A00840DBE /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				79EAD10D25B4F4CE000C5B92 /* FormLibraryViewController.swift */,
+				79EAD11225B4F628000C5B92 /* FormLibraryCollectionView.swift */,
+				79EAD12825B4F906000C5B92 /* FormLibraryCollectionViewCell.swift */,
+				79EAD12325B4F878000C5B92 /* FormLibraryData.swift */,
+				790F504F25B91A82000EBEE4 /* GradientHeader.swift */,
+				790B89AA25B922A400E9485F /* FormLibraryHeader.swift */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
 		79E03F8B25BE5B9500ADCA4E /* Tax Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +232,8 @@
 				79E1BBCE25B4F3540034647C /* AppDelegate.swift */,
 				79E1BBD025B4F3540034647C /* SceneDelegate.swift */,
 				79EF2A3D25BFCBFE00090CCF /* Appearance.swift */,
+				797B4B1725D5F78500840DBE /* DatabaseKeys.swift */,
+				797B4AE625D5F51000840DBE /* SwiftUI Components */,
 				79F3294725C6362A00E72113 /* Signup */,
 				79E03F8B25BE5B9500ADCA4E /* Tax Components */,
 				79EAD13325B500D8000C5B92 /* UI Components */,
@@ -228,12 +267,8 @@
 		79EAD11F25B4F86B000C5B92 /* Form Library */ = {
 			isa = PBXGroup;
 			children = (
-				79EAD10D25B4F4CE000C5B92 /* FormLibraryViewController.swift */,
-				79EAD11225B4F628000C5B92 /* FormLibraryCollectionView.swift */,
-				79EAD12825B4F906000C5B92 /* FormLibraryCollectionViewCell.swift */,
-				79EAD12325B4F878000C5B92 /* FormLibraryData.swift */,
-				790F504F25B91A82000EBEE4 /* GradientHeader.swift */,
-				790B89AA25B922A400E9485F /* FormLibraryHeader.swift */,
+				797B4B8325D6150900840DBE /* FormLibrary.swift */,
+				797B4B8825D6158A00840DBE /* Legacy */,
 			);
 			path = "Form Library";
 			sourceTree = "<group>";
@@ -254,7 +289,9 @@
 		79F3294725C6362A00E72113 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				79F3294225C6354E00E72113 /* BasicSignupViewController.swift */,
+				79E658A825D4E59000E6B5B7 /* SplashView.swift */,
+				79E6587325D4B51300E6B5B7 /* SignUpView.swift */,
+				79E6588D25D4E0AB00E6B5B7 /* LoginView.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -510,25 +547,32 @@
 				79E1BBCF25B4F3540034647C /* AppDelegate.swift in Sources */,
 				79E1BBD125B4F3540034647C /* SceneDelegate.swift in Sources */,
 				79EAD11325B4F628000C5B92 /* FormLibraryCollectionView.swift in Sources */,
+				79E6588425D4B5D700E6B5B7 /* SimpleButton.swift in Sources */,
 				79EAD10E25B4F4CE000C5B92 /* FormLibraryViewController.swift in Sources */,
+				79E6588925D4DBE000E6B5B7 /* CustomTextField.swift in Sources */,
 				79BFFB1A25C253C0004BFEC5 /* BasicTextViewController.swift in Sources */,
 				79E03F9825BE62E300ADCA4E /* BaseComponentViewController.swift in Sources */,
 				79EF2A3E25BFCBFE00090CCF /* Appearance.swift in Sources */,
 				79E1BBD925B4F3540034647C /* OpenTax.xcdatamodeld in Sources */,
 				79F3292825C6206C00E72113 /* QueueViewController.swift in Sources */,
+				797B4B8425D6150900840DBE /* FormLibrary.swift in Sources */,
+				79E658A925D4E59000E6B5B7 /* SplashView.swift in Sources */,
+				797B4B1D25D5F83100840DBE /* LoadingIndicator.swift in Sources */,
 				790F504225B912DB000EBEE4 /* ResizableGradientView.swift in Sources */,
 				79BFFB1F25C254FD004BFEC5 /* TextfieldCell.swift in Sources */,
 				79EAD12425B4F878000C5B92 /* FormLibraryData.swift in Sources */,
 				79E03F8725BE5B8E00ADCA4E /* ChoiceViewController.swift in Sources */,
 				79E03F9025BE5E5200ADCA4E /* InfoHeader.swift in Sources */,
 				79BFFB0D25C247F0004BFEC5 /* ComponentData.swift in Sources */,
-				79F3294325C6354E00E72113 /* BasicSignupViewController.swift in Sources */,
+				79E6588E25D4E0AB00E6B5B7 /* LoginView.swift in Sources */,
+				79E6587425D4B51300E6B5B7 /* SignUpView.swift in Sources */,
 				790F505525B91A9B000EBEE4 /* ProfilePictureView.swift in Sources */,
 				79B6351E25C1142E009787B1 /* TitleCell.swift in Sources */,
 				790B89AB25B922A400E9485F /* FormLibraryHeader.swift in Sources */,
 				79EAD12925B4F906000C5B92 /* FormLibraryCollectionViewCell.swift in Sources */,
 				79F3293025C6244C00E72113 /* BarButtonItemFactory.swift in Sources */,
 				790F505025B91A82000EBEE4 /* GradientHeader.swift in Sources */,
+				797B4B1825D5F78500840DBE /* DatabaseKeys.swift in Sources */,
 				79EF2A3625BFC68D00090CCF /* SkipButton.swift in Sources */,
 				79BFFB1225C2491B004BFEC5 /* TextOption.swift in Sources */,
 				79EAD12E25B500C2000C5B92 /* Card.swift in Sources */,

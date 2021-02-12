@@ -10,6 +10,7 @@ target 'OpenTax' do
   pod 'Closures'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Parse'
 
   target 'OpenTaxTests' do
     inherit! :search_paths

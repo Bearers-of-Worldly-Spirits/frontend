@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import SwiftUI
+
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,8 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = FormLibraryViewController()
-        
+        window?.rootViewController = UIHostingController(rootView: FormLibrary())        
         window?.makeKeyAndVisible()
     }
 

@@ -1,5 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-OpenTax-OpenTaxUITests/Pods-OpenTax-OpenTaxUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework
 ${BUILT_PRODUCTS_DIR}/Closures/Closures.framework
+${BUILT_PRODUCTS_DIR}/Parse/Parse.framework
 ${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
 ${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
 ${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework

@@ -12,6 +12,7 @@ import SnapKit
 class BaseComponentViewController : UIViewController {
     
     
+    
     var collectionView:UICollectionView!
     
     var data:UICollectionViewDiffableDataSource<String, ComponentData>!
@@ -22,6 +23,7 @@ class BaseComponentViewController : UIViewController {
     
     var canProceed:Bool = false
         
+    
     
     init() {
         super.init(nibName: nil, bundle: nil)
