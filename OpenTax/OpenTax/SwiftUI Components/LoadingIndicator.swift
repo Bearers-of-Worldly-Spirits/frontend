@@ -26,7 +26,7 @@ struct LoadingIndicator: View {
                 .fill(Color(.primary))
                 .frame(width: 100, height: 100, alignment: .center)
                 .rotationEffect(Angle(degrees: isLoading ? 360 : 0))
-                .animation(Animation.linear(duration: 2).repeatForever(autoreverses: false))
+                .animation(Animation.linear(duration: 0.5).repeatForever(autoreverses: false))
         }        
         .onAppear() {
             self.isLoading = true

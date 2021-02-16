@@ -1,0 +1,6 @@
+framework module Pods_SeniorDesignTests {
+  umbrella header "Pods-SeniorDesignTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

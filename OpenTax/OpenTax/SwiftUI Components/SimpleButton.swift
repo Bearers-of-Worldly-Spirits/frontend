@@ -10,19 +10,23 @@ import SwiftUI
 
 struct ButtonFill: View {
     
-    var title:String = "Click me!"
+    var title:String = "Login"
     
-    var action: () -> Void
+    var action: () -> ()
     
     var body: some View {
-        Button(self.title) {action()}
-        .padding()
-        .frame(maxWidth: .infinity)
-        .font(.title3)
-        .background(Color(UIColor.primary))
-        .foregroundColor(.white)
-        .cornerRadius(8)
-        .padding([.leading, .trailing], 40)
+        Button(action: action) {
+            Text(title)
+                .frame(maxWidth: SizeGuide.maxScreenWidth)
+            .font(Font.customBody)
+            .padding()
+            .foregroundColor(Color(.systemBackground))
+            .background(
+                RoundedRectangle(cornerRadius: SizeGuide.cornerRadius)
+                    .fill(Color(.primary)))
+        }
+        .frame(maxWidth: SizeGuide.maxScreenWidth)
+        .shadow(radius: 7.0)
     }
 }
 

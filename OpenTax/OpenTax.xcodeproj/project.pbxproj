@@ -13,6 +13,7 @@
 		790F504225B912DB000EBEE4 /* ResizableGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F504125B912DB000EBEE4 /* ResizableGradientView.swift */; };
 		790F505025B91A82000EBEE4 /* GradientHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F504F25B91A82000EBEE4 /* GradientHeader.swift */; };
 		790F505525B91A9B000EBEE4 /* ProfilePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F505425B91A9B000EBEE4 /* ProfilePictureView.swift */; };
+		796F2C0B25D89D52005D70DC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2C0A25D89D52005D70DC /* Theme.swift */; };
 		797B4B1825D5F78500840DBE /* DatabaseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B4B1725D5F78500840DBE /* DatabaseKeys.swift */; };
 		797B4B1D25D5F83100840DBE /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B4B1C25D5F83100840DBE /* LoadingIndicator.swift */; };
 		797B4B8425D6150900840DBE /* FormLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B4B8325D6150900840DBE /* FormLibrary.swift */; };
@@ -76,6 +77,7 @@
 		790F504125B912DB000EBEE4 /* ResizableGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableGradientView.swift; sourceTree = "<group>"; };
 		790F504F25B91A82000EBEE4 /* GradientHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientHeader.swift; sourceTree = "<group>"; };
 		790F505425B91A9B000EBEE4 /* ProfilePictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureView.swift; sourceTree = "<group>"; };
+		796F2C0A25D89D52005D70DC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		797B4B1725D5F78500840DBE /* DatabaseKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseKeys.swift; sourceTree = "<group>"; };
 		797B4B1C25D5F83100840DBE /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		797B4B8325D6150900840DBE /* FormLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLibrary.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				79E1BBD025B4F3540034647C /* SceneDelegate.swift */,
 				79EF2A3D25BFCBFE00090CCF /* Appearance.swift */,
 				797B4B1725D5F78500840DBE /* DatabaseKeys.swift */,
+				796F2C0A25D89D52005D70DC /* Theme.swift */,
 				797B4AE625D5F51000840DBE /* SwiftUI Components */,
 				79F3294725C6362A00E72113 /* Signup */,
 				79E03F8B25BE5B9500ADCA4E /* Tax Components */,
@@ -553,6 +556,7 @@
 				79BFFB1A25C253C0004BFEC5 /* BasicTextViewController.swift in Sources */,
 				79E03F9825BE62E300ADCA4E /* BaseComponentViewController.swift in Sources */,
 				79EF2A3E25BFCBFE00090CCF /* Appearance.swift in Sources */,
+				796F2C0B25D89D52005D70DC /* Theme.swift in Sources */,
 				79E1BBD925B4F3540034647C /* OpenTax.xcdatamodeld in Sources */,
 				79F3292825C6206C00E72113 /* QueueViewController.swift in Sources */,
 				797B4B8425D6150900840DBE /* FormLibrary.swift in Sources */,
