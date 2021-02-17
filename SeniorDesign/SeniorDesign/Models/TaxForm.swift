@@ -23,6 +23,8 @@ struct TaxFormDescriptions {
 
 struct Form8843Data : Encodable {
     
+    var name:String?
+    var email:String?    
     var street:String?
     var apt:String?
     var city:String?
@@ -48,6 +50,8 @@ class FormCompiler {
         guard PFUser.current() != nil else {return Form8843Data()}
         let user = PFUser.current()!
         return Form8843Data(
+            name: user.object(forKey: "name") as? String,
+            email: user.email,
             street: user.object(forKey: "Street") as? String,
             apt: user.object(forKey: "apt") as? String,
             city: user.object(forKey: "city") as? String,

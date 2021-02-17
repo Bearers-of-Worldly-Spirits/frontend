@@ -59,6 +59,7 @@ struct DaysPresentView: View {
         .onAppear() {
             loadUserValues()
         }
+        .onTapGesture { UIApplication.shared.endEditing() }
     }
     
     func setUserValues() {

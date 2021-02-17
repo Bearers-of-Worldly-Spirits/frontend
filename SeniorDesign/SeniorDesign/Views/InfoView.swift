@@ -51,6 +51,7 @@ struct InfoView: View {
             }
             .background(Color("Background").ignoresSafeArea())
         })
+        .onTapGesture { UIApplication.shared.endEditing() }
     }
 }
 
