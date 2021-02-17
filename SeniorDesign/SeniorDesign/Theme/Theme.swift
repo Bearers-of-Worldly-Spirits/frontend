@@ -10,7 +10,7 @@ import SwiftUI
 
 
 struct Theme {
-    static let pdfAPIEndPoint:String = "https://bows-tax-app.herokuapp.com/"
+    static let pdfAPIEndPoint:String = "https://bows-tax-app.herokuapp.com/user/123/form/8843"
     
     static let maxScreenWidth:CGFloat = min(320, min(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height))
     static let cornerRadius:CGFloat = 8

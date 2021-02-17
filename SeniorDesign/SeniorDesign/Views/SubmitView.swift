@@ -49,7 +49,9 @@ struct SubmitView: View {
             .frame(maxWidth: .infinity)
         }
         .onAppear() {
-            submitForm()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                submitForm()
+            }
         }
         
         .background(Color("Background").ignoresSafeArea())
