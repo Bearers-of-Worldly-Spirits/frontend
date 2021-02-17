@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import Alamofire
+
 
 struct SubmitView: View {
     
     var dismiss:() -> ()
     
+    @State private var resultText:String = "You should receive an email any second with your completed tax document."
     @State private var text:String = "Submitting Form"
     @State private var opacity:Double = 1.0
     
@@ -31,7 +34,7 @@ struct SubmitView: View {
                         .opacity(opacity)
                         .padding(50)
                 } else {
-                    Text("You should receive an email any second with your completed tax document.")
+                    Text(resultText)
                         .font(Font.custom(Theme.fontName, size: 16).weight(.medium))
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color(.secondaryLabel))
@@ -53,12 +56,36 @@ struct SubmitView: View {
     }
     
     func submitForm() {
-        let data = try! FormCompiler.form8843().asDictionary()
+        let parameters = try! FormCompiler.form8843().asDictionary()
         
+        print(parameters)
+        
+        AF.request(Theme.pdfAPIEndPoint, method:.post, parameters: parameters,encoding: JSONEncoding.default) .responseJSON { (response) in
+                print(response.result)
+
+                switch response.result {
+
+                case .success(_):
+                    markSuccess()
+                    break
+                    
+                case .failure(let error):
+                    markFailure(txt: error.localizedDescription)
+                    break
+                }
+            }
     }
     
     func markSuccess() {
         text = "Done!"
+        withAnimation(Animation.easeOut(duration: 1)) {
+            opacity = 0.0
+        }
+    }
+    
+    func markFailure(txt:String) {
+        text = "Uh Oh."
+        resultText = txt
         withAnimation(Animation.easeOut(duration: 1)) {
             opacity = 0.0
         }

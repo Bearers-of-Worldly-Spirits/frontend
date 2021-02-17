@@ -1,5 +1,6 @@
 PODS:
   - ActivityIndicatorView (0.0.6)
+  - Alamofire (5.4.1)
   - Bolts/Tasks (1.9.1)
   - Parse (1.19.1):
     - Parse/Core (= 1.19.1)
@@ -8,19 +9,22 @@ PODS:
 
 DEPENDENCIES:
   - ActivityIndicatorView
+  - Alamofire (~> 5.2)
   - Parse
 
 SPEC REPOS:
   trunk:
     - ActivityIndicatorView
+    - Alamofire
     - Bolts
     - Parse
 
 SPEC CHECKSUMS:
   ActivityIndicatorView: f7c08841e302c86d16c29b7c9554fce2a2bd9183
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
   Parse: e40fdb9c7d665823b7fe9865949cac9a53eb2ce7
 
-PODFILE CHECKSUM: 6a2249fcc185c769fd9cdf38a67984d93c9e49e4
+PODFILE CHECKSUM: ebbdf0d6b27e7432a5e431ed6f561e646db4bf03
 
 COCOAPODS: 1.10.0
