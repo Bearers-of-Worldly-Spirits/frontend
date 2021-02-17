@@ -10,7 +10,7 @@ import SwiftUI
 
 
 struct Theme {
-    static let maxScreenWidth:CGFloat = 250
+    static let maxScreenWidth:CGFloat = min(320, min(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height))
     static let cornerRadius:CGFloat = 8
     static let lineWidth:CGFloat = 4
     

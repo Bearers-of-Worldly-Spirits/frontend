@@ -18,7 +18,7 @@ struct ComingSoonTaxFormCarousel: View {
                 Text("Coming").foregroundColor(Color(.label))
                 Text("Soon").foregroundColor(Color("Primary"))
             }.font(Font.custom(Theme.fontName, size: 20, relativeTo: .title).weight(.bold))
-            .padding([.leading, .top])
+            .padding([.leading, .top])            
             
             ScrollView (.horizontal, showsIndicators: false) {
                 HStack(spacing: 30) {
@@ -38,7 +38,7 @@ struct ComingSoonTaxFormCarousel: View {
 
 struct TaxFormCarousel: View {
              
-    var action: (_ formName:String) -> ()
+    var action: (_ form:TaxForm) -> ()
         
     var body: some View {
         VStack(alignment: .leading) {
@@ -54,7 +54,7 @@ struct TaxFormCarousel: View {
                     Spacer(minLength: 15)
                     
                     GradientCardButton(title: "Form 8843", gradient: Gradient(colors: [.orange, .red])) {
-                        
+                        action(TaxForm(name: "Form 8843"))
                     }
                     
                     Spacer(minLength: 15)

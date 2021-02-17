@@ -22,7 +22,7 @@ struct SimpleTextfield: View {
         }
         .autocapitalization(.none)
         .padding()
-        .font(Font.custom(Theme.fontName, size: 16).weight(.medium))
+        .font(Font.custom(Theme.fontName, size: 16, relativeTo: .caption).weight(.medium))
         .foregroundColor(Theme.primaryColor)
         .accentColor(Theme.primaryColor)
         .frame(maxWidth: Theme.maxScreenWidth)

@@ -17,7 +17,7 @@ struct ButtonFill: View {
             Text(title)
                 .fontWeight(.semibold)
                 .frame(maxWidth: Theme.maxScreenWidth)
-                .font(Font.custom(Theme.fontName, size: 16))
+                .font(Font.custom(Theme.fontName, size: 16, relativeTo: .body))
             .padding()
             .foregroundColor(Color("Background"))
             .background(

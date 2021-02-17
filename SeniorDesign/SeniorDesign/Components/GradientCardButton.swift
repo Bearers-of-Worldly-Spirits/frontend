@@ -13,6 +13,8 @@ struct GradientCardButton: View {
     var gradient:Gradient = Gradient(colors: [Color.red, Color.orange])
     var action: () -> ()
     
+    @State private var opacity = 1.0
+    
     var body: some View {                            
         VStack {            
             Text(title)
@@ -27,12 +29,22 @@ struct GradientCardButton: View {
                 .fill(LinearGradient(gradient: gradient, startPoint: .bottomLeading, endPoint: .topTrailing))
                 .shadow(radius: 7)
         )
+        .opacity(opacity)        
         .foregroundColor(Color("Background"))
         .font(Font.custom(Theme.fontName, size: 20, relativeTo: .title3).weight(.bold))
         .onTapGesture {
+            
+            opacity = 0.25
+            
+            withAnimation(Animation.linear(duration: 0.25)) {
+                opacity = 1.0
+            }
+            
             action()
         }
         .gesture(DragGesture(minimumDistance: 0))
+        
+
     }
 }
 

@@ -10,6 +10,9 @@
 		5E6ECC77469ECEA0467C65BB /* Pods_SeniorDesignTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D6B5489CAB2A46BDD4AC6E /* Pods_SeniorDesignTests.framework */; };
 		600222B31BE8B7652BBF61ED /* Pods_SeniorDesign_SeniorDesignUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12132FF48D51C9B608FDB0E /* Pods_SeniorDesign_SeniorDesignUITests.framework */; };
 		7432D57B5719D6136B93676B /* Pods_SeniorDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5525B59CBA8B85504339570 /* Pods_SeniorDesign.framework */; };
+		794089A425DC575200B0B338 /* LargeGradientCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794089A325DC575200B0B338 /* LargeGradientCard.swift */; };
+		794089A925DC5CDB00B0B338 /* CompletedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794089A825DC5CDB00B0B338 /* CompletedList.swift */; };
+		794089AE25DC5DB600B0B338 /* TaxForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794089AD25DC5DB600B0B338 /* TaxForm.swift */; };
 		796F2C2525D89DF7005D70DC /* SeniorDesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2C2425D89DF7005D70DC /* SeniorDesignApp.swift */; };
 		796F2C2925D89DF9005D70DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796F2C2825D89DF9005D70DC /* Assets.xcassets */; };
 		796F2C2C25D89DF9005D70DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796F2C2B25D89DF9005D70DC /* Preview Assets.xcassets */; };
@@ -27,7 +30,17 @@
 		79A1DB5D25DB7D17000A2B86 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB5C25DB7D17000A2B86 /* User.swift */; };
 		79A1DB6925DB8444000A2B86 /* GradientCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */; };
 		79A1DB7825DB881D000A2B86 /* TaxFormCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */; };
+		79BBDD6625DCAEB8003225A2 /* SubmitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBDD6525DCAEB8003225A2 /* SubmitView.swift */; };
+		79BBDD6B25DCAF4D003225A2 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBDD6A25DCAF4D003225A2 /* LoadingView.swift */; };
 		79BEF57825D8AEAB00A84186 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BEF57725D8AEAB00A84186 /* SimpleAlert.swift */; };
+		79E44BFB25DC6DAA00DEBE7E /* Form8843.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E44BFA25DC6DAA00DEBE7E /* Form8843.swift */; };
+		79E44C0025DC767500DEBE7E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E44BFF25DC767500DEBE7E /* InfoView.swift */; };
+		79E44C0525DC7AAB00DEBE7E /* DismissBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E44C0425DC7AAB00DEBE7E /* DismissBar.swift */; };
+		79E44C0A25DC7D9700DEBE7E /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E44C0925DC7D9700DEBE7E /* AddressView.swift */; };
+		79E44C1225DC805A00DEBE7E /* NextPrevBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E44C1125DC805A00DEBE7E /* NextPrevBar.swift */; };
+		79E44C2125DC862500DEBE7E /* ExtendedInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E44C2025DC862500DEBE7E /* ExtendedInfoView.swift */; };
+		79E44C2625DCA8E100DEBE7E /* VisaStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E44C2525DCA8E100DEBE7E /* VisaStatusView.swift */; };
+		79E44C2B25DCAB1400DEBE7E /* DaysPresentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E44C2A25DCAB1400DEBE7E /* DaysPresentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +64,9 @@
 		38FD97117391A1364EE22003 /* Pods-SeniorDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesign.release.xcconfig"; path = "Target Support Files/Pods-SeniorDesign/Pods-SeniorDesign.release.xcconfig"; sourceTree = "<group>"; };
 		679811C5A1775DDB2B465F58 /* Pods-SeniorDesignTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesignTests.release.xcconfig"; path = "Target Support Files/Pods-SeniorDesignTests/Pods-SeniorDesignTests.release.xcconfig"; sourceTree = "<group>"; };
 		7717917AB48CA3AF2888BA95 /* Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig"; path = "Target Support Files/Pods-SeniorDesign-SeniorDesignUITests/Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		794089A325DC575200B0B338 /* LargeGradientCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeGradientCard.swift; sourceTree = "<group>"; };
+		794089A825DC5CDB00B0B338 /* CompletedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedList.swift; sourceTree = "<group>"; };
+		794089AD25DC5DB600B0B338 /* TaxForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxForm.swift; sourceTree = "<group>"; };
 		796F2C2125D89DF7005D70DC /* SeniorDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeniorDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796F2C2425D89DF7005D70DC /* SeniorDesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeniorDesignApp.swift; sourceTree = "<group>"; };
 		796F2C2825D89DF9005D70DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,7 +90,17 @@
 		79A1DB5C25DB7D17000A2B86 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCardButton.swift; sourceTree = "<group>"; };
 		79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxFormCarousel.swift; sourceTree = "<group>"; };
+		79BBDD6525DCAEB8003225A2 /* SubmitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitView.swift; sourceTree = "<group>"; };
+		79BBDD6A25DCAF4D003225A2 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		79BEF57725D8AEAB00A84186 /* SimpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
+		79E44BFA25DC6DAA00DEBE7E /* Form8843.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form8843.swift; sourceTree = "<group>"; };
+		79E44BFF25DC767500DEBE7E /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		79E44C0425DC7AAB00DEBE7E /* DismissBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissBar.swift; sourceTree = "<group>"; };
+		79E44C0925DC7D9700DEBE7E /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		79E44C1125DC805A00DEBE7E /* NextPrevBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPrevBar.swift; sourceTree = "<group>"; };
+		79E44C2025DC862500DEBE7E /* ExtendedInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedInfoView.swift; sourceTree = "<group>"; };
+		79E44C2525DCA8E100DEBE7E /* VisaStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisaStatusView.swift; sourceTree = "<group>"; };
+		79E44C2A25DCAB1400DEBE7E /* DaysPresentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysPresentView.swift; sourceTree = "<group>"; };
 		83D6B5489CAB2A46BDD4AC6E /* Pods_SeniorDesignTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeniorDesignTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448F4C774D42082E22CC0E6 /* Pods-SeniorDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesign.debug.xcconfig"; path = "Target Support Files/Pods-SeniorDesign/Pods-SeniorDesign.debug.xcconfig"; sourceTree = "<group>"; };
 		939B41B11DF550EB8C8EF73C /* Pods-SeniorDesignTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesignTests.debug.xcconfig"; path = "Target Support Files/Pods-SeniorDesignTests/Pods-SeniorDesignTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +229,13 @@
 				796F2C5A25D89E28005D70DC /* HomeView.swift */,
 				796F2C9025D8A1D3005D70DC /* LoginView.swift */,
 				796F2C9A25D8A2E3005D70DC /* SignupView.swift */,
+				79E44BFA25DC6DAA00DEBE7E /* Form8843.swift */,
+				79E44BFF25DC767500DEBE7E /* InfoView.swift */,
+				79E44C0925DC7D9700DEBE7E /* AddressView.swift */,
+				79E44C2025DC862500DEBE7E /* ExtendedInfoView.swift */,
+				79E44C2525DCA8E100DEBE7E /* VisaStatusView.swift */,
+				79E44C2A25DCAB1400DEBE7E /* DaysPresentView.swift */,
+				79BBDD6525DCAEB8003225A2 /* SubmitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +259,11 @@
 				79BEF57725D8AEAB00A84186 /* SimpleAlert.swift */,
 				79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */,
 				79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */,
+				794089A325DC575200B0B338 /* LargeGradientCard.swift */,
+				794089A825DC5CDB00B0B338 /* CompletedList.swift */,
+				79E44C0425DC7AAB00DEBE7E /* DismissBar.swift */,
+				79E44C1125DC805A00DEBE7E /* NextPrevBar.swift */,
+				79BBDD6A25DCAF4D003225A2 /* LoadingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -234,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				79A1DB5C25DB7D17000A2B86 /* User.swift */,
+				794089AD25DC5DB600B0B338 /* TaxForm.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -475,19 +514,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E44BFB25DC6DAA00DEBE7E /* Form8843.swift in Sources */,
+				79E44C2625DCA8E100DEBE7E /* VisaStatusView.swift in Sources */,
 				796F2C8C25D8A183005D70DC /* SimpleTextfield.swift in Sources */,
 				79A1DB7825DB881D000A2B86 /* TaxFormCarousel.swift in Sources */,
 				796F2C9625D8A218005D70DC /* Extensions.swift in Sources */,
 				796F2C5B25D89E28005D70DC /* HomeView.swift in Sources */,
+				79BBDD6625DCAEB8003225A2 /* SubmitView.swift in Sources */,
 				796F2C6A25D89E56005D70DC /* Theme.swift in Sources */,
+				79BBDD6B25DCAF4D003225A2 /* LoadingView.swift in Sources */,
+				79E44C0025DC767500DEBE7E /* InfoView.swift in Sources */,
 				79A1DB6925DB8444000A2B86 /* GradientCardButton.swift in Sources */,
+				794089AE25DC5DB600B0B338 /* TaxForm.swift in Sources */,
+				79E44C1225DC805A00DEBE7E /* NextPrevBar.swift in Sources */,
+				794089A425DC575200B0B338 /* LargeGradientCard.swift in Sources */,
+				794089A925DC5CDB00B0B338 /* CompletedList.swift in Sources */,
 				796F2C9B25D8A2E3005D70DC /* SignupView.swift in Sources */,
 				79BEF57825D8AEAB00A84186 /* SimpleAlert.swift in Sources */,
 				796F2C8225D8A060005D70DC /* ButtonFill.swift in Sources */,
+				79E44C0A25DC7D9700DEBE7E /* AddressView.swift in Sources */,
 				796F2C2525D89DF7005D70DC /* SeniorDesignApp.swift in Sources */,
 				79A1DB5D25DB7D17000A2B86 /* User.swift in Sources */,
+				79E44C2125DC862500DEBE7E /* ExtendedInfoView.swift in Sources */,
+				79E44C0525DC7AAB00DEBE7E /* DismissBar.swift in Sources */,
 				796F2C7625D89F53005D70DC /* WelcomeHeader.swift in Sources */,
 				796F2C9125D8A1D3005D70DC /* LoginView.swift in Sources */,
+				79E44C2B25DCAB1400DEBE7E /* DaysPresentView.swift in Sources */,
 				796F2C8725D8A103005D70DC /* ButtonClear.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
