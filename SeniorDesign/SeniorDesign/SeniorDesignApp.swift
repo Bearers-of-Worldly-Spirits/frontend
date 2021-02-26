@@ -20,9 +20,9 @@ class SeniorDesignApp: App {
                 
     required init() {
         let parseConfig = ParseClientConfiguration {
-            $0.applicationId = "myAppId"
-            $0.clientKey = "parseClientKey"
-            $0.server = "http://localhost:1337/parse"
+            $0.applicationId = "QhZnfGAwAZoLpzkq6QFZUQvIqmHTBJAzMtHpahkJ"
+            $0.clientKey = "vpqQNJ4FHBktCdeWe4JJ4QnELY2nfozNJFCN61ek"
+            $0.server = "https://parseapi.back4app.com/"
         }
         Parse.initialize(with: parseConfig)
     }

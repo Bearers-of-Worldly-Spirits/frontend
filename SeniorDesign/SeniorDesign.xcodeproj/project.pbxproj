@@ -10,6 +10,12 @@
 		5E6ECC77469ECEA0467C65BB /* Pods_SeniorDesignTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D6B5489CAB2A46BDD4AC6E /* Pods_SeniorDesignTests.framework */; };
 		600222B31BE8B7652BBF61ED /* Pods_SeniorDesign_SeniorDesignUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12132FF48D51C9B608FDB0E /* Pods_SeniorDesign_SeniorDesignUITests.framework */; };
 		7432D57B5719D6136B93676B /* Pods_SeniorDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5525B59CBA8B85504339570 /* Pods_SeniorDesign.framework */; };
+		793A87A325E85F2D00FBF863 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A87A225E85F2D00FBF863 /* SplashView.swift */; };
+		793A87B425E860D300FBF863 /* InfoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A87B325E860D300FBF863 /* InfoPageView.swift */; };
+		793A87E325E8628700FBF863 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A87E225E8628700FBF863 /* LottieView.swift */; };
+		793A87EE25E8703900FBF863 /* apps.min.json in Resources */ = {isa = PBXBuildFile; fileRef = 793A87EB25E8703900FBF863 /* apps.min.json */; };
+		793A87EF25E8703900FBF863 /* clock.min.json in Resources */ = {isa = PBXBuildFile; fileRef = 793A87EC25E8703900FBF863 /* clock.min.json */; };
+		793A87F025E8703900FBF863 /* form.min.json in Resources */ = {isa = PBXBuildFile; fileRef = 793A87ED25E8703900FBF863 /* form.min.json */; };
 		794089A425DC575200B0B338 /* LargeGradientCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794089A325DC575200B0B338 /* LargeGradientCard.swift */; };
 		794089A925DC5CDB00B0B338 /* CompletedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794089A825DC5CDB00B0B338 /* CompletedList.swift */; };
 		794089AE25DC5DB600B0B338 /* TaxForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794089AD25DC5DB600B0B338 /* TaxForm.swift */; };
@@ -64,6 +70,12 @@
 		38FD97117391A1364EE22003 /* Pods-SeniorDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesign.release.xcconfig"; path = "Target Support Files/Pods-SeniorDesign/Pods-SeniorDesign.release.xcconfig"; sourceTree = "<group>"; };
 		679811C5A1775DDB2B465F58 /* Pods-SeniorDesignTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesignTests.release.xcconfig"; path = "Target Support Files/Pods-SeniorDesignTests/Pods-SeniorDesignTests.release.xcconfig"; sourceTree = "<group>"; };
 		7717917AB48CA3AF2888BA95 /* Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig"; path = "Target Support Files/Pods-SeniorDesign-SeniorDesignUITests/Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		793A87A225E85F2D00FBF863 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		793A87B325E860D300FBF863 /* InfoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageView.swift; sourceTree = "<group>"; };
+		793A87E225E8628700FBF863 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		793A87EB25E8703900FBF863 /* apps.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apps.min.json; sourceTree = "<group>"; };
+		793A87EC25E8703900FBF863 /* clock.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clock.min.json; sourceTree = "<group>"; };
+		793A87ED25E8703900FBF863 /* form.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = form.min.json; sourceTree = "<group>"; };
 		794089A325DC575200B0B338 /* LargeGradientCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeGradientCard.swift; sourceTree = "<group>"; };
 		794089A825DC5CDB00B0B338 /* CompletedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedList.swift; sourceTree = "<group>"; };
 		794089AD25DC5DB600B0B338 /* TaxForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxForm.swift; sourceTree = "<group>"; };
@@ -160,6 +172,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		793A87E725E8702C00FBF863 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				793A87EB25E8703900FBF863 /* apps.min.json */,
+				793A87EC25E8703900FBF863 /* clock.min.json */,
+				793A87ED25E8703900FBF863 /* form.min.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		796F2C1825D89DF7005D70DC = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				796F2C2425D89DF7005D70DC /* SeniorDesignApp.swift */,
+				793A87E725E8702C00FBF863 /* Animations */,
 				79A1DB6125DB7D22000A2B86 /* Models */,
 				796F2C7A25D8A003005D70DC /* Components */,
 				796F2C6525D89E3B005D70DC /* Views */,
@@ -236,6 +259,7 @@
 				79E44C2525DCA8E100DEBE7E /* VisaStatusView.swift */,
 				79E44C2A25DCAB1400DEBE7E /* DaysPresentView.swift */,
 				79BBDD6525DCAEB8003225A2 /* SubmitView.swift */,
+				793A87A225E85F2D00FBF863 /* SplashView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,6 +288,8 @@
 				79E44C0425DC7AAB00DEBE7E /* DismissBar.swift */,
 				79E44C1125DC805A00DEBE7E /* NextPrevBar.swift */,
 				79BBDD6A25DCAF4D003225A2 /* LoadingView.swift */,
+				793A87E225E8628700FBF863 /* LottieView.swift */,
+				793A87B325E860D300FBF863 /* InfoPageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -385,7 +411,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793A87EF25E8703900FBF863 /* clock.min.json in Resources */,
 				796F2C2C25D89DF9005D70DC /* Preview Assets.xcassets in Resources */,
+				793A87F025E8703900FBF863 /* form.min.json in Resources */,
+				793A87EE25E8703900FBF863 /* apps.min.json in Resources */,
 				796F2C2925D89DF9005D70DC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +549,7 @@
 				79A1DB7825DB881D000A2B86 /* TaxFormCarousel.swift in Sources */,
 				796F2C9625D8A218005D70DC /* Extensions.swift in Sources */,
 				796F2C5B25D89E28005D70DC /* HomeView.swift in Sources */,
+				793A87B425E860D300FBF863 /* InfoPageView.swift in Sources */,
 				79BBDD6625DCAEB8003225A2 /* SubmitView.swift in Sources */,
 				796F2C6A25D89E56005D70DC /* Theme.swift in Sources */,
 				79BBDD6B25DCAF4D003225A2 /* LoadingView.swift in Sources */,
@@ -527,8 +557,10 @@
 				79A1DB6925DB8444000A2B86 /* GradientCardButton.swift in Sources */,
 				794089AE25DC5DB600B0B338 /* TaxForm.swift in Sources */,
 				79E44C1225DC805A00DEBE7E /* NextPrevBar.swift in Sources */,
+				793A87A325E85F2D00FBF863 /* SplashView.swift in Sources */,
 				794089A425DC575200B0B338 /* LargeGradientCard.swift in Sources */,
 				794089A925DC5CDB00B0B338 /* CompletedList.swift in Sources */,
+				793A87E325E8628700FBF863 /* LottieView.swift in Sources */,
 				796F2C9B25D8A2E3005D70DC /* SignupView.swift in Sources */,
 				79BEF57825D8AEAB00A84186 /* SimpleAlert.swift in Sources */,
 				796F2C8225D8A060005D70DC /* ButtonFill.swift in Sources */,

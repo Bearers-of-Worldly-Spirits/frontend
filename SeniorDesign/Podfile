@@ -9,6 +9,8 @@ target 'SeniorDesign' do
   pod 'Parse'
   pod 'ActivityIndicatorView'
   pod 'Alamofire', '~> 5.2'
+  pod 'CAPageView'
+  pod 'lottie-ios'
 
   target 'SeniorDesignTests' do
     inherit! :search_paths

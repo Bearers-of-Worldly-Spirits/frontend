@@ -13,10 +13,7 @@ import ActivityIndicatorView
 private struct Title : View {
     var body : some View {
         HStack(alignment: .center, spacing: 4) {
-            Text("Tax")
-                .foregroundColor(Theme.primaryColor)
-            Text("App")
-                .fontWeight(.bold)
+            Text("Melon")                
         }
         .font(Font.custom(Theme.fontName, size: 30, relativeTo: .title))
         .foregroundColor(Theme.primaryColor)
@@ -54,10 +51,12 @@ struct LoginView: View {
                     Spacer(minLength: 50)
                                     
                     ButtonFill(title: "Login") {
+                        UIApplication.shared.endEditing()
                         tryLogin()
                     }
                     
                     ButtonClear(title: "Don't have an account? Signup") {
+                        UIApplication.shared.endEditing()
                         showSignup = true
                     }
                 }

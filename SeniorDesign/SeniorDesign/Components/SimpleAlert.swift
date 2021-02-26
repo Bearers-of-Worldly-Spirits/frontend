@@ -26,8 +26,12 @@ struct SimpleAlert: View {
             
             Text(message)
                 .foregroundColor(Color(.secondaryLabel))
-                .font(Font.custom(Theme.fontName, size: 15))
+                .font(Font.custom(Theme.fontName, size: 12))
                 .fontWeight(.medium)
+                .lineLimit(4)
+                .multilineTextAlignment(.center)
+                .padding()
+                .frame(maxWidth: Theme.maxScreenWidth)
             
             Spacer()
                             

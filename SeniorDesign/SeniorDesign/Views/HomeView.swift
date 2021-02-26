@@ -10,17 +10,20 @@ import Combine
 import Parse
 
 
-enum DisplayedView {
-    case login
-    case form8843
+private enum ActiveSheet: Identifiable {
+    case login, form8843
+    
+    var id: Int {
+        hashValue
+    }
 }
 
 
 struct HomeView: View {
     
     @ObservedObject var userData:User = User()
-    @State private var showModalView:Bool = false
-    @State private var modalView:DisplayedView = .login
+    
+    @State fileprivate var modalView:ActiveSheet? = .login
     
     
     var body: some View {
@@ -42,8 +45,7 @@ struct HomeView: View {
                 Divider()
                 TaxFormCarousel { (form) in
                     if form.name == "Form 8843" {
-                        modalView = DisplayedView.form8843
-                        showModalView = true
+                        modalView = .form8843
                     }
                 }
                 Divider()
@@ -64,20 +66,22 @@ struct HomeView: View {
         }
         
         .onAppear() { loginIfNeeded() }
-        .fullScreenCover(isPresented: $showModalView, content: {
-            if modalView == .login { LoginView(fullname: $userData.fullname)}
-            if modalView == .form8843 { Form8843() }
-        })
         .background(Color("Background").ignoresSafeArea())
+        .fullScreenCover(item: $modalView) { item in
+            switch item {
+            case .login:
+                SplashView(fullname: $userData.fullname)
+//                LoginView(fullname: $userData.fullname)
+            case .form8843:
+                Form8843()
+            }
+        }
     }
     
     func loginIfNeeded() {
         if (PFUser.current() == nil) {
-            modalView = DisplayedView.login
-            showModalView = true
+            modalView = .login
         }else{
-            modalView = DisplayedView.form8843
-            showModalView = false
             userData.fullname = PFUser.current()?.object(forKey: "name") as? String ?? "User"
         }
     }

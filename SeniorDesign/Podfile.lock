@@ -2,6 +2,8 @@ PODS:
   - ActivityIndicatorView (0.0.6)
   - Alamofire (5.4.1)
   - Bolts/Tasks (1.9.1)
+  - CAPageView (1.1.1)
+  - lottie-ios (3.1.9)
   - Parse (1.19.1):
     - Parse/Core (= 1.19.1)
   - Parse/Core (1.19.1):
@@ -10,6 +12,8 @@ PODS:
 DEPENDENCIES:
   - ActivityIndicatorView
   - Alamofire (~> 5.2)
+  - CAPageView
+  - lottie-ios
   - Parse
 
 SPEC REPOS:
@@ -17,14 +21,18 @@ SPEC REPOS:
     - ActivityIndicatorView
     - Alamofire
     - Bolts
+    - CAPageView
+    - lottie-ios
     - Parse
 
 SPEC CHECKSUMS:
   ActivityIndicatorView: f7c08841e302c86d16c29b7c9554fce2a2bd9183
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  CAPageView: 5673c3b97b9e03e035457c63494e4390e7a66ece
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
   Parse: e40fdb9c7d665823b7fe9865949cac9a53eb2ce7
 
-PODFILE CHECKSUM: ebbdf0d6b27e7432a5e431ed6f561e646db4bf03
+PODFILE CHECKSUM: 76287cd09baf919634e669ab8003180a429ab2fe
 
 COCOAPODS: 1.10.0

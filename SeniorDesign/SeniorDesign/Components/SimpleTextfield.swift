@@ -20,6 +20,7 @@ struct SimpleTextfield: View {
                 TextField(placeholder, text: $text)
             }
         }
+        .disableAutocorrection(true)
         .autocapitalization(.none)
         .padding()
         .font(Font.custom(Theme.fontName, size: 16, relativeTo: .caption).weight(.medium))

@@ -42,10 +42,12 @@ struct SignupView: View {
                     Spacer(minLength: 50)
                                     
                     ButtonFill(title: "Signup") {
+                        UIApplication.shared.endEditing()
                         signupUser()
                     }
                     
                     ButtonClear(title: "Have an account? Login") {
+                        UIApplication.shared.endEditing()
                         presentationMode.wrappedValue.dismiss()
                     }
                 }
