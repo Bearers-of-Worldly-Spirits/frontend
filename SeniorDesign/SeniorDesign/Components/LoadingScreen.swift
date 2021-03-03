@@ -17,7 +17,7 @@ struct LoadingScreen: View {
         ZStack {
             if (isLoading == true) {
                 Rectangle()
-                    .fill(Color(UIColor(white: 0, alpha: 0.35)))
+                    .fill(Color(UIColor(white: 0, alpha: 0.3)))
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
                         

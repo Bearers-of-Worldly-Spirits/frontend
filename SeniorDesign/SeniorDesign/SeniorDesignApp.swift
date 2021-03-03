@@ -12,21 +12,36 @@ import Parse
 @main
 struct SeniorDesignApp: App {
     
-    @ObservedObject private var userState:UserState = UserState()
+    @ObservedObject private var userState:AppState = AppState()
             
     var body: some Scene {
         WindowGroup {
-            Group {
-                switch userState.authenticated {
-                    case .no:
-                        SplashView()
-                            .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
-                    case .yes:
-                        HomeView()
-                            .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
-                    case .unknown:
-                        EmptyView()
+            ZStack {
+                
+                Group {
+                    switch userState.authenticated {
+                        case .no:
+                            SplashView()
+                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
+                        case .yes:
+                            HomeView()
+                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
+                        case .unknown:
+                            EmptyView()
+                    }
                 }
+                
+                if userState.isLoading == true {
+                    LoadingScreen(isLoading: .constant(userState.isLoading))
+                }
+                
+                VStack {
+                    if userState.isShowingAlert == true {
+                        SimpleAlert(title: "Uh Oh.", message: userState.alertMessage) {
+                            userState.isShowingAlert = false
+                        }
+                    }
+                }.transition(.opacity).animation(.easeInOut(duration: 0.25))
             }
             .environmentObject(userState)
             .onAppear {

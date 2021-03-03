@@ -24,13 +24,10 @@ private struct Title : View {
 
 struct LoginView: View {
     
-    @State private var showSignup:Bool = false
-    @State private var isLoading:Bool = false
-    @State private var isShowingAlert:Bool = false
-    @State private var alertMessage:String = ""
+    @State private var showSignup:Bool = false    
     @AppStorage("email") private var username:String = ""
     @State private var password:String = ""    
-    @EnvironmentObject var userState:UserState
+    @EnvironmentObject var userState:AppState
     
     var body: some View {
         
@@ -60,18 +57,7 @@ struct LoginView: View {
                 }
                 .frame(maxWidth: .infinity)
             }
-            .onTapGesture { UIApplication.shared.endEditing() }
-            
-            
-            LoadingScreen(isLoading: $isLoading)
-                        
-            VStack {
-                if isShowingAlert == true {
-                    SimpleAlert(title: "Uh Oh.", message: alertMessage) {
-                        isShowingAlert = false
-                    }
-                }
-            }.transition(.opacity).animation(.easeInOut(duration: 0.25))
+            .onTapGesture { UIApplication.shared.endEditing() }                                                            
         }
         
         .fullScreenCover(isPresented: $showSignup, content: {
@@ -84,18 +70,17 @@ struct LoginView: View {
     
     func tryLogin() {
                 
-        isLoading = true
+        userState.isLoading = true
         
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
             
-            isLoading = false
+            userState.isLoading = false
             
             if (error == nil) {
-                isShowingAlert = false
                 withAnimation {self.userState.authenticated = .yes}
             }else{
-                alertMessage = error?.localizedDescription ?? "Something went wrong!"
-                isShowingAlert = true
+                userState.alertMessage = error?.localizedDescription ?? "Something went wrong!"
+                userState.isShowingAlert = true                
             }
         }
     }

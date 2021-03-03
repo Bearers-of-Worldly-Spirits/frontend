@@ -34,7 +34,7 @@
 		796F2C9125D8A1D3005D70DC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2C9025D8A1D3005D70DC /* LoginView.swift */; };
 		796F2C9625D8A218005D70DC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2C9525D8A218005D70DC /* Extensions.swift */; };
 		796F2C9B25D8A2E3005D70DC /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2C9A25D8A2E3005D70DC /* SignupView.swift */; };
-		79A1DB5D25DB7D17000A2B86 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB5C25DB7D17000A2B86 /* User.swift */; };
+		79A1DB5D25DB7D17000A2B86 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB5C25DB7D17000A2B86 /* AppState.swift */; };
 		79A1DB6925DB8444000A2B86 /* GradientCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */; };
 		79A1DB7825DB881D000A2B86 /* TaxFormCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */; };
 		79BBDD6625DCAEB8003225A2 /* SubmitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBDD6525DCAEB8003225A2 /* SubmitView.swift */; };
@@ -101,7 +101,7 @@
 		796F2C9025D8A1D3005D70DC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		796F2C9525D8A218005D70DC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		796F2C9A25D8A2E3005D70DC /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
-		79A1DB5C25DB7D17000A2B86 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		79A1DB5C25DB7D17000A2B86 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCardButton.swift; sourceTree = "<group>"; };
 		79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxFormCarousel.swift; sourceTree = "<group>"; };
 		79BBDD6525DCAEB8003225A2 /* SubmitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitView.swift; sourceTree = "<group>"; };
@@ -281,7 +281,6 @@
 				796F2C7525D89F53005D70DC /* WelcomeHeader.swift */,
 				796F2C8125D8A060005D70DC /* ButtonFill.swift */,
 				796F2C8625D8A103005D70DC /* ButtonClear.swift */,
-				79BEF57725D8AEAB00A84186 /* SimpleAlert.swift */,
 				79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */,
 				79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */,
 				794089A325DC575200B0B338 /* LargeGradientCard.swift */,
@@ -291,8 +290,9 @@
 				79BBDD6A25DCAF4D003225A2 /* LoadingView.swift */,
 				793A87E225E8628700FBF863 /* LottieView.swift */,
 				793A87B325E860D300FBF863 /* InfoPageView.swift */,
-				7908E96225F03068007F11D9 /* LoadingScreen.swift */,
 				796F2C8B25D8A183005D70DC /* SimpleTextfield.swift */,
+				7908E96225F03068007F11D9 /* LoadingScreen.swift */,
+				79BEF57725D8AEAB00A84186 /* SimpleAlert.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -300,7 +300,7 @@
 		79A1DB6125DB7D22000A2B86 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				79A1DB5C25DB7D17000A2B86 /* User.swift */,
+				79A1DB5C25DB7D17000A2B86 /* AppState.swift */,
 				794089AD25DC5DB600B0B338 /* TaxForm.swift */,
 			);
 			path = Models;
@@ -569,7 +569,7 @@
 				796F2C8225D8A060005D70DC /* ButtonFill.swift in Sources */,
 				79E44C0A25DC7D9700DEBE7E /* AddressView.swift in Sources */,
 				796F2C2525D89DF7005D70DC /* SeniorDesignApp.swift in Sources */,
-				79A1DB5D25DB7D17000A2B86 /* User.swift in Sources */,
+				79A1DB5D25DB7D17000A2B86 /* AppState.swift in Sources */,
 				79E44C2125DC862500DEBE7E /* ExtendedInfoView.swift in Sources */,
 				79E44C0525DC7AAB00DEBE7E /* DismissBar.swift in Sources */,
 				7908E96325F03068007F11D9 /* LoadingScreen.swift in Sources */,

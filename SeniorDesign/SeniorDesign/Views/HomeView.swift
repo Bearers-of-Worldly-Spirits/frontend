@@ -25,7 +25,7 @@ struct HomeView: View {
     
     @State fileprivate var modalView:ActiveSheet?
     
-    @EnvironmentObject var userState:UserState
+    @EnvironmentObject var userState:AppState
     
     
     var body: some View {
@@ -60,13 +60,7 @@ struct HomeView: View {
                 Spacer(minLength: 30)
                 
                 ButtonFill(title: "Logout") {
-                    PFUser.logOutInBackground { (error) in
-                        if error == nil {
-                            withAnimation {
-                                userState.authenticated = .no
-                            }
-                        }
-                    }                    
+                    logoutUser()
                 }
                 
                 ButtonClear(title: "Need help? Contact us") {
@@ -83,6 +77,21 @@ struct HomeView: View {
                 Form8843()
             }
         }
+    }
+    
+    func logoutUser() {
+        userState.isLoading = true
+        PFUser.logOutInBackground { (error) in
+            userState.isLoading = false
+            if error == nil {
+                withAnimation {
+                    userState.authenticated = .no
+                }
+            }else{
+                userState.alertMessage = error?.localizedDescription ?? "Something went wrong!"
+                userState.isShowingAlert = true
+            }
+        }  
     }
     
     func loadUserData() {                                

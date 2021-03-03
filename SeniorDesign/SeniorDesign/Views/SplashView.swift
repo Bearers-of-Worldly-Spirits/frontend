@@ -20,7 +20,7 @@ private enum ActiveSheet: Identifiable {
 struct SplashView: View {
     
     @State fileprivate var activeSheet:ActiveSheet?
-    @EnvironmentObject var userState:UserState
+    @EnvironmentObject var userState:AppState
     
     var body: some View {
         ZStack {

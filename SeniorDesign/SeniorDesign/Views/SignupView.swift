@@ -10,17 +10,12 @@ import Parse
 
 
 struct SignupView: View {
-    
-    static let userNameKey = "email"
-        
-    @State var isLoading:Bool = false
-    @State var isShowingAlert:Bool = false
-    @State var alertMessage:String = ""
+                        
     @State var firstLast:String = ""
     @AppStorage("email") var username:String = ""
     @State var password:String = ""
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var userState:UserState
+    @EnvironmentObject var userState:AppState
     
     var body: some View {
         
@@ -57,16 +52,6 @@ struct SignupView: View {
             .onTapGesture {
                 UIApplication.shared.endEditing()
             }
-            
-            LoadingScreen(isLoading: $isLoading)
-            
-            VStack {
-                if isShowingAlert == true {
-                    SimpleAlert(title: "Uh Oh.", message: alertMessage) {
-                        isShowingAlert = false
-                    }
-                }
-            }.transition(.opacity).animation(.easeInOut(duration: 0.2))
         }
                 
         .background(Color("Background").ignoresSafeArea())
@@ -75,8 +60,8 @@ struct SignupView: View {
     func signupUser() {
         
         guard firstLast.count > 0 else {
-            alertMessage = "Please enter your first & last name."
-            isShowingAlert = true
+            userState.alertMessage = "Please enter your first & last name."
+            userState.isShowingAlert = true            
             return
         }
         
@@ -86,17 +71,16 @@ struct SignupView: View {
         user.password = password
         user["name"] = firstLast
         
-        isLoading = true
+        userState.isLoading = true
         
         user.signUpInBackground { (success, error) in
-            isLoading = false
+            userState.isLoading = false
             
             if (error == nil) {
-                isShowingAlert = false
                 withAnimation {self.userState.authenticated = .yes}                
             }else{
-                alertMessage = error?.localizedDescription ?? "Something went wrong!"
-                isShowingAlert = true
+                userState.alertMessage = error?.localizedDescription ?? "Something went wrong!"
+                userState.isShowingAlert = true
             }
         }
     }
