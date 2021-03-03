@@ -24,15 +24,13 @@ private struct Title : View {
 
 struct LoginView: View {
     
-    @Binding var fullname:String
-    
     @State private var showSignup:Bool = false
     @State private var isLoading:Bool = false
     @State private var isShowingAlert:Bool = false
     @State private var alertMessage:String = ""
-    @State private var username:String = ""
-    @State private var password:String = ""
-    @Environment(\.presentationMode) var presentationMode
+    @AppStorage("email") private var username:String = ""
+    @State private var password:String = ""    
+    @EnvironmentObject var userState:UserState
     
     var body: some View {
         
@@ -44,8 +42,8 @@ struct LoginView: View {
                     Title()
                     
                     VStack(spacing: 0) {
-                        SimpleTextfield(text: $username, placeholder: "Email")
-                        SimpleTextfield(text: $password, placeholder: "Password", secure: true)
+                        SimpleTextfield(text: $username, systemImageName: "envelope.fill", placeholder: "Email", keyboardType: .emailAddress)
+                        SimpleTextfield(text: $password, systemImageName: "lock.fill", placeholder: "Password", secure: true)
                     }
                     
                     Spacer(minLength: 50)
@@ -65,11 +63,8 @@ struct LoginView: View {
             .onTapGesture { UIApplication.shared.endEditing() }
             
             
-            ActivityIndicatorView(isVisible: $isLoading, type: .arcs)
-                .frame(width: 50.0, height: 50.0)
-                .foregroundColor(Theme.primaryColor)
-            
-            
+            LoadingScreen(isLoading: $isLoading)
+                        
             VStack {
                 if isShowingAlert == true {
                     SimpleAlert(title: "Uh Oh.", message: alertMessage) {
@@ -81,6 +76,7 @@ struct LoginView: View {
         
         .fullScreenCover(isPresented: $showSignup, content: {
             SignupView()
+                .environmentObject(userState)
         })
         
         .background(Color("Background").ignoresSafeArea())
@@ -96,8 +92,7 @@ struct LoginView: View {
             
             if (error == nil) {
                 isShowingAlert = false
-                fullname = user?.object(forKey: "name") as? String ?? "User"
-                presentationMode.wrappedValue.dismiss()
+                withAnimation {self.userState.authenticated = .yes}
             }else{
                 alertMessage = error?.localizedDescription ?? "Something went wrong!"
                 isShowingAlert = true
@@ -108,6 +103,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(fullname: .constant("Steve Jobs"))
+        LoginView()
     }
 }

@@ -1,0 +1,441 @@
+{
+  "defaultConfiguration" : {
+    "41DF79F8-1378-42FB-82F5-F07098FAD2D0" : {
+      "properties" : {
+        "bounds.size.height" : 22,
+        "bounds.size.width" : 99,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 11,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 11,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 11,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 11,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.4859999999999998976,
+          "green" : 0.718,
+          "red" : 0
+        },
+        "position.x" : 105.5,
+        "position.y" : 11
+      }
+    },
+    "89AD07F0-553E-46B5-A14D-DDBA44147CFF" : {
+      "properties" : {
+        "bounds.size.height" : 222,
+        "bounds.size.width" : 211,
+        "position.x" : 225.5,
+        "position.y" : 145
+      }
+    },
+    "658BD3A9-C39E-4108-9A76-7D749F6A4E4E" : {
+      "properties" : {
+        "bounds.size.height" : 211,
+        "bounds.size.width" : 211,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 0,
+                  "curveFrom" : {
+                    "x" : 0.2238576300000000512,
+                    "y" : 1
+                  },
+                  "curveTo" : {
+                    "x" : 0.7761423700000001024,
+                    "y" : 1
+                  },
+                  "point" : {
+                    "x" : 0.5,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "curveFrom" : {
+                    "x" : 1,
+                    "y" : 0.7761423700000001024
+                  },
+                  "curveTo" : {
+                    "x" : 1,
+                    "y" : 0.2238576300000000512
+                  },
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0.5
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "curveFrom" : {
+                    "x" : 0.7761423700000001024,
+                    "y" : 0
+                  },
+                  "curveTo" : {
+                    "x" : 0.2238576300000000512,
+                    "y" : 0
+                  },
+                  "point" : {
+                    "x" : 0.5,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "curveFrom" : {
+                    "x" : 0,
+                    "y" : 0.2238576300000000512
+                  },
+                  "curveTo" : {
+                    "x" : 0,
+                    "y" : 0.7761423700000001024
+                  },
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0.5
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.4859999999999998976,
+          "green" : 0.718,
+          "red" : 0
+        },
+        "position.x" : 105.5,
+        "position.y" : 116.5
+      }
+    },
+    "967A18FF-35DA-460B-891A-13145937C2AA" : {
+      "properties" : {
+        "bounds.size.height" : 22,
+        "bounds.size.width" : 75,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 11,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 11,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 11,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 11,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.4859999999999998976,
+          "green" : 0.718,
+          "red" : 0
+        },
+        "position.x" : 106,
+        "position.y" : 93.5,
+        "transform.rotation.z" : -1.5707963267948969984
+      }
+    },
+    "81425FBB-03B7-4694-8624-7C0A6A2A7FFB" : {
+      "properties" : {
+        "bounds.size.height" : 176,
+        "bounds.size.width" : 176,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 0,
+                  "curveFrom" : {
+                    "x" : 0.2238576300000000512,
+                    "y" : 1
+                  },
+                  "curveTo" : {
+                    "x" : 0.7761423700000001024,
+                    "y" : 1
+                  },
+                  "point" : {
+                    "x" : 0.5,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "curveFrom" : {
+                    "x" : 1,
+                    "y" : 0.7761423700000001024
+                  },
+                  "curveTo" : {
+                    "x" : 1,
+                    "y" : 0.2238576300000000512
+                  },
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0.5
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "curveFrom" : {
+                    "x" : 0.7761423700000001024,
+                    "y" : 0
+                  },
+                  "curveTo" : {
+                    "x" : 0.2238576300000000512,
+                    "y" : 0
+                  },
+                  "point" : {
+                    "x" : 0.5,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "curveFrom" : {
+                    "x" : 0,
+                    "y" : 0.2238576300000000512
+                  },
+                  "curveTo" : {
+                    "x" : 0,
+                    "y" : 0.7761423700000001024
+                  },
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0.5
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.624,
+          "green" : 0.922,
+          "red" : 0.008
+        },
+        "position.x" : 105,
+        "position.y" : 116
+      }
+    },
+    "A1EE056C-474F-4F9B-97B4-B1F8BA09C60D" : {
+      "properties" : {
+        "backgroundColor" : {
+          "alpha" : 0,
+          "blue" : 1,
+          "green" : 1,
+          "red" : 1
+        },
+        "bounds.size.height" : 300,
+        "bounds.size.width" : 450,
+        "position.x" : 225,
+        "position.y" : 150
+      }
+    },
+    "F64C36A0-4FC3-42D2-8DD9-F96F0E6ECD89" : {
+      "properties" : {
+        "bounds.size.height" : 22,
+        "bounds.size.width" : 53,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 11,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 11,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 11,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 11,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.4859999999999998976,
+          "green" : 0.718,
+          "red" : 0
+        },
+        "position.x" : 121.88,
+        "position.y" : 106.12,
+        "transform.rotation.z" : -0.7504915783575614464
+      }
+    }
+  },
+  "id" : "0C30B7D4-42F6-4F77-B39F-DF199266CD4D",
+  "rootLayer" : {
+    "adjustContentOnResize" : true,
+    "aspectRatioUnlocked" : true,
+    "id" : "A1EE056C-474F-4F9B-97B4-B1F8BA09C60D",
+    "isClippingMask" : false,
+    "locked" : false,
+    "masksToBounds" : false,
+    "name" : "app isometric",
+    "resizingConstraint" : 0,
+    "sublayers" : [
+      {
+        "adjustContentOnResize" : true,
+        "aspectRatioUnlocked" : true,
+        "id" : "89AD07F0-553E-46B5-A14D-DDBA44147CFF",
+        "isClippingMask" : false,
+        "locked" : false,
+        "masksToBounds" : false,
+        "name" : "clock",
+        "resizingConstraint" : 0,
+        "sublayers" : [
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "id" : "658BD3A9-C39E-4108-9A76-7D749F6A4E4E",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Oval",
+            "resizingConstraint" : 0,
+            "type" : "shape",
+            "visible" : true
+          },
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "id" : "81425FBB-03B7-4694-8624-7C0A6A2A7FFB",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Oval",
+            "resizingConstraint" : 0,
+            "type" : "shape",
+            "visible" : true
+          },
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "id" : "41DF79F8-1378-42FB-82F5-F07098FAD2D0",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Rectangle",
+            "resizingConstraint" : 0,
+            "type" : "shape",
+            "visible" : true
+          },
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "id" : "967A18FF-35DA-460B-891A-13145937C2AA",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Rectangle",
+            "resizingConstraint" : 0,
+            "type" : "shape",
+            "visible" : true
+          },
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "id" : "F64C36A0-4FC3-42D2-8DD9-F96F0E6ECD89",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Rectangle",
+            "resizingConstraint" : 0,
+            "type" : "shape",
+            "visible" : true
+          }
+        ],
+        "type" : "group",
+        "visible" : true
+      }
+    ],
+    "type" : "group",
+    "visible" : true
+  }
+}

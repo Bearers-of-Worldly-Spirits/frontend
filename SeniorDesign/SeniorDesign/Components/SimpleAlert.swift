@@ -38,13 +38,16 @@ struct SimpleAlert: View {
             Divider()
                 .frame(maxWidth: 300)
                                             
-            ButtonClear(title: "OK", action: action)
+            ButtonClear(title: "OK", action: {
+                let impactMed = UIImpactFeedbackGenerator(style: .medium)
+                impactMed.impactOccurred()
+                action()
+            })
             
         }
         .frame(maxWidth: Theme.maxScreenWidth, maxHeight: 170)
         .background(RoundedRectangle(cornerRadius: 20, style: .continuous)
                         .fill(Color("Background"))
-//                        .frame(maxWidth: Theme.maxScreenWidth, maxHeight: 170)
                         .shadow(color: Color(.systemGray4), radius: 12)
                         .transition(.scale))
     }

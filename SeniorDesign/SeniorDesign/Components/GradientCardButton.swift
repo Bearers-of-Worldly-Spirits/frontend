@@ -39,6 +39,8 @@ struct GradientCardButton: View {
             withAnimation(Animation.linear(duration: 0.25)) {
                 opacity = 1.0
             }
+                        
+            UIImpactFeedbackGenerator(style: .heavy).impactOccurred() // Impact!
             
             action()
         }

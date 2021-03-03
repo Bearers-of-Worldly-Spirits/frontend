@@ -33,11 +33,11 @@ struct AddressView: View {
                     prev()
                 })
                                                 
-                SimpleTextfield(text: $street, placeholder: "Street", secure: false)
-                SimpleTextfield(text: $apt, placeholder: "Apt Number", secure: false)
-                SimpleTextfield(text: $city, placeholder: "City", secure: false)
-                SimpleTextfield(text: $state, placeholder: "State", secure: false)
-                SimpleTextfield(text: $zipCode, placeholder: "Zip", secure: false)
+                SimpleTextfield(text: $street, systemImageName: "house.fill", placeholder: "Street", secure: false)
+                SimpleTextfield(text: $apt, systemImageName: "number", placeholder: "Apt Number", secure: false)
+                SimpleTextfield(text: $city, systemImageName: "mappin", placeholder: "City", secure: false)
+                SimpleTextfield(text: $state, systemImageName: "mappin.and.ellipse", placeholder: "State", secure: false)
+                SimpleTextfield(text: $zipCode, systemImageName: "number", placeholder: "Zip", secure: false)
                                 
                 Spacer()                                
             }

@@ -46,6 +46,7 @@ struct InfoView: View {
                     Spacer()
                     
                     ButtonFill(title: "Continue", action: done)
+                        .padding(.bottom, 50)
                 }
                 .frame(width: geometry.size.width, height: geometry.size.height)
             }

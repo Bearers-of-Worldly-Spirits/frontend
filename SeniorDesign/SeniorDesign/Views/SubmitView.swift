@@ -59,11 +59,8 @@ struct SubmitView: View {
     
     func submitForm() {
         let parameters = try! FormCompiler.form8843().asDictionary()
-        
-        print(parameters)
-        
+                        
         AF.request(Theme.pdfAPIEndPoint, method:.post, parameters: parameters,encoding: JSONEncoding.default) .responseJSON { (response) in
-                print(response.result)
 
                 switch response.result {
 

@@ -1,0 +1,732 @@
+{
+  "defaultConfiguration" : {
+    "3B34C603-9F5A-4FB6-A96F-A11F59FCB6D3" : {
+      "properties" : {
+        "bounds.size.height" : 24,
+        "bounds.size.width" : 59,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.484,
+          "green" : 0.7189999999999998976,
+          "red" : 0
+        },
+        "position.x" : 42.5,
+        "position.y" : 159
+      }
+    },
+    "9A764C12-A627-4E56-BE94-D2902C133B93" : {
+      "properties" : {
+        "bounds.size.height" : 92,
+        "bounds.size.width" : 13,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.624,
+          "green" : 0.922,
+          "red" : 0.008
+        },
+        "position.x" : 6.5,
+        "position.y" : 52
+      }
+    },
+    "79AE8576-29B2-422E-B9D6-437C28DD38FF" : {
+      "properties" : {
+        "bounds.size.height" : 9.22,
+        "bounds.size.width" : 12.78,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0.014004140000000002048
+                  }
+                },
+                {
+                  "cornerRadius" : 2,
+                  "point" : {
+                    "x" : 0.5087553099999998976,
+                    "y" : 1.2206330899999997952
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.4859999999999998976,
+          "green" : 0.718,
+          "red" : 0
+        },
+        "position.x" : 6.39,
+        "position.y" : 102.11
+      }
+    },
+    "225EA105-6B1F-454F-83DD-8A167F71A8D6" : {
+      "properties" : {
+        "bounds.size.height" : 24,
+        "bounds.size.width" : 97,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.484,
+          "green" : 0.7189999999999998976,
+          "red" : 0
+        },
+        "position.x" : 61.5,
+        "position.y" : 66
+      }
+    },
+    "240C626C-1BD3-478D-9A08-3814E4E1C2E5" : {
+      "properties" : {
+        "bounds.size.height" : 224,
+        "bounds.size.width" : 238,
+        "position.x" : 225,
+        "position.y" : 150
+      }
+    },
+    "3007C06B-6BD8-4846-99D6-A9D681AE87A2" : {
+      "properties" : {
+        "bounds.size.height" : 24,
+        "bounds.size.width" : 79,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.484,
+          "green" : 0.7189999999999998976,
+          "red" : 0
+        },
+        "position.x" : 52.5,
+        "position.y" : 97
+      }
+    },
+    "0920647E-D961-48A8-B6A7-2C97EB3D6E9B" : {
+      "properties" : {
+        "backgroundColor" : {
+          "alpha" : 1,
+          "blue" : 1,
+          "green" : 1,
+          "red" : 1
+        },
+        "bounds.size.height" : 300,
+        "bounds.size.width" : 450,
+        "position.x" : 225,
+        "position.y" : 150
+      }
+    },
+    "A0CFEC6A-A368-41BB-857B-6FD7216C2D72" : {
+      "properties" : {
+        "bounds.size.height" : 224,
+        "bounds.size.width" : 162,
+        "position.x" : 81,
+        "position.y" : 112
+      }
+    },
+    "A23C4D45-8817-45C6-B6D2-64CDC916B02C" : {
+      "properties" : {
+        "bounds.size.height" : 24,
+        "bounds.size.width" : 122,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.484,
+          "green" : 0.7189999999999998976,
+          "red" : 0
+        },
+        "position.x" : 74,
+        "position.y" : 128
+      }
+    },
+    "B4C67DBF-91AE-467A-A2AC-F5E5C3E9C120" : {
+      "properties" : {
+        "bounds.size.height" : 6,
+        "bounds.size.width" : 13,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 3,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 3,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 3,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 3,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.4859999999999998976,
+          "green" : 0.718,
+          "red" : 0
+        },
+        "position.x" : 6.5,
+        "position.y" : 3
+      }
+    },
+    "C7E59D52-165C-4EF1-820D-04269E8E8451" : {
+      "properties" : {
+        "bounds.size.height" : 107,
+        "bounds.size.width" : 13,
+        "position.x" : 231.5,
+        "position.y" : 112.5
+      }
+    },
+    "CE4B74A0-0847-4586-B63D-AE4775EF0B00" : {
+      "properties" : {
+        "bounds.size.height" : 24,
+        "bounds.size.width" : 107,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.484,
+          "green" : 0.7189999999999998976,
+          "red" : 0
+        },
+        "position.x" : 66.5,
+        "position.y" : 190
+      }
+    },
+    "D3262E1C-DC79-49B0-964D-3484B0531970" : {
+      "properties" : {
+        "bounds.size.height" : 224,
+        "bounds.size.width" : 162,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.624,
+          "green" : 0.922,
+          "red" : 0.008
+        },
+        "position.x" : 81,
+        "position.y" : 112
+      }
+    },
+    "DC25A62B-C600-440D-9DDD-8239E8207361" : {
+      "properties" : {
+        "bounds.size.height" : 24,
+        "bounds.size.width" : 136,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.484,
+          "green" : 0.7189999999999998976,
+          "red" : 0
+        },
+        "position.x" : 81,
+        "position.y" : 35
+      }
+    }
+  },
+  "id" : "F3E54252-760F-457C-B45D-2F2693ECCC3D",
+  "rootLayer" : {
+    "adjustContentOnResize" : true,
+    "aspectRatioUnlocked" : true,
+    "id" : "0920647E-D961-48A8-B6A7-2C97EB3D6E9B",
+    "isClippingMask" : false,
+    "locked" : false,
+    "masksToBounds" : false,
+    "name" : "forms",
+    "resizingConstraint" : 0,
+    "sublayers" : [
+      {
+        "adjustContentOnResize" : true,
+        "aspectRatioUnlocked" : true,
+        "id" : "240C626C-1BD3-478D-9A08-3814E4E1C2E5",
+        "isClippingMask" : false,
+        "locked" : false,
+        "masksToBounds" : false,
+        "name" : "pen and paper",
+        "resizingConstraint" : 0,
+        "sublayers" : [
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "id" : "A0CFEC6A-A368-41BB-857B-6FD7216C2D72",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Group",
+            "resizingConstraint" : 0,
+            "sublayers" : [
+              {
+                "adjustContentOnResize" : true,
+                "aspectRatioUnlocked" : true,
+                "id" : "D3262E1C-DC79-49B0-964D-3484B0531970",
+                "isClippingMask" : false,
+                "locked" : false,
+                "masksToBounds" : false,
+                "name" : "Rectangle",
+                "resizingConstraint" : 0,
+                "type" : "shape",
+                "visible" : true
+              },
+              {
+                "adjustContentOnResize" : true,
+                "aspectRatioUnlocked" : true,
+                "id" : "DC25A62B-C600-440D-9DDD-8239E8207361",
+                "isClippingMask" : false,
+                "locked" : false,
+                "masksToBounds" : false,
+                "name" : "Rectangle",
+                "resizingConstraint" : 0,
+                "type" : "shape",
+                "visible" : true
+              },
+              {
+                "adjustContentOnResize" : true,
+                "aspectRatioUnlocked" : true,
+                "id" : "225EA105-6B1F-454F-83DD-8A167F71A8D6",
+                "isClippingMask" : false,
+                "locked" : false,
+                "masksToBounds" : false,
+                "name" : "Rectangle",
+                "resizingConstraint" : 0,
+                "type" : "shape",
+                "visible" : true
+              },
+              {
+                "adjustContentOnResize" : true,
+                "aspectRatioUnlocked" : true,
+                "id" : "3007C06B-6BD8-4846-99D6-A9D681AE87A2",
+                "isClippingMask" : false,
+                "locked" : false,
+                "masksToBounds" : false,
+                "name" : "Rectangle",
+                "resizingConstraint" : 0,
+                "type" : "shape",
+                "visible" : true
+              },
+              {
+                "adjustContentOnResize" : true,
+                "aspectRatioUnlocked" : true,
+                "id" : "A23C4D45-8817-45C6-B6D2-64CDC916B02C",
+                "isClippingMask" : false,
+                "locked" : false,
+                "masksToBounds" : false,
+                "name" : "Rectangle",
+                "resizingConstraint" : 0,
+                "type" : "shape",
+                "visible" : true
+              },
+              {
+                "adjustContentOnResize" : true,
+                "aspectRatioUnlocked" : true,
+                "id" : "3B34C603-9F5A-4FB6-A96F-A11F59FCB6D3",
+                "isClippingMask" : false,
+                "locked" : false,
+                "masksToBounds" : false,
+                "name" : "Rectangle",
+                "resizingConstraint" : 0,
+                "type" : "shape",
+                "visible" : true
+              },
+              {
+                "adjustContentOnResize" : true,
+                "aspectRatioUnlocked" : true,
+                "id" : "CE4B74A0-0847-4586-B63D-AE4775EF0B00",
+                "isClippingMask" : false,
+                "locked" : false,
+                "masksToBounds" : false,
+                "name" : "Rectangle",
+                "resizingConstraint" : 0,
+                "type" : "shape",
+                "visible" : true
+              }
+            ],
+            "type" : "group",
+            "visible" : true
+          },
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "id" : "C7E59D52-165C-4EF1-820D-04269E8E8451",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Group 2",
+            "resizingConstraint" : 0,
+            "sublayers" : [
+              {
+                "adjustContentOnResize" : true,
+                "aspectRatioUnlocked" : true,
+                "id" : "9A764C12-A627-4E56-BE94-D2902C133B93",
+                "isClippingMask" : false,
+                "locked" : false,
+                "masksToBounds" : false,
+                "name" : "Rectangle",
+                "resizingConstraint" : 0,
+                "type" : "shape",
+                "visible" : true
+              },
+              {
+                "adjustContentOnResize" : true,
+                "aspectRatioUnlocked" : true,
+                "id" : "79AE8576-29B2-422E-B9D6-437C28DD38FF",
+                "isClippingMask" : false,
+                "locked" : false,
+                "masksToBounds" : false,
+                "name" : "Triangle",
+                "resizingConstraint" : 0,
+                "type" : "shape",
+                "visible" : true
+              },
+              {
+                "adjustContentOnResize" : true,
+                "aspectRatioUnlocked" : true,
+                "id" : "B4C67DBF-91AE-467A-A2AC-F5E5C3E9C120",
+                "isClippingMask" : false,
+                "locked" : false,
+                "masksToBounds" : false,
+                "name" : "Rectangle",
+                "resizingConstraint" : 0,
+                "type" : "shape",
+                "visible" : true
+              }
+            ],
+            "type" : "group",
+            "visible" : true
+          }
+        ],
+        "type" : "group",
+        "visible" : true
+      }
+    ],
+    "type" : "group",
+    "visible" : true
+  }
+}

@@ -31,9 +31,9 @@ struct VisaStatusView: View {
                     prev()
                 })
                                                 
-                SimpleTextfield(text: $countryOfCitizenship, placeholder: "Country of citizenship", secure: false)
-                SimpleTextfield(text: $passportNumber, placeholder: "Passport #", secure: false)
-                SimpleTextfield(text: $visa, placeholder: "Visa e.g F1, H-1B", secure: false)
+                SimpleTextfield(text: $countryOfCitizenship, systemImageName: "mappin", placeholder: "Country of citizenship", secure: false)
+                SimpleTextfield(text: $passportNumber, systemImageName: "number", placeholder: "Passport #", secure: false)
+                SimpleTextfield(text: $visa, systemImageName: "creditcard.fill", placeholder: "Visa e.g F1, H-1B", secure: false)
                                 
                 Spacer()
             }

@@ -13,7 +13,11 @@ struct ButtonFill: View {
     var action: () -> ()
     
     var body: some View {
-        Button(action: action) {
+        Button(action: {
+            let impactMed = UIImpactFeedbackGenerator(style: .medium)
+            impactMed.impactOccurred()
+            action()
+        }) {
             Text(title)
                 .fontWeight(.semibold)
                 .frame(maxWidth: Theme.maxScreenWidth)

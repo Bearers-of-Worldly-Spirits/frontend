@@ -20,7 +20,7 @@ private enum ActiveSheet: Identifiable {
 struct SplashView: View {
     
     @State fileprivate var activeSheet:ActiveSheet?
-    @Binding var fullname:String
+    @EnvironmentObject var userState:UserState
     
     var body: some View {
         ZStack {
@@ -37,19 +37,20 @@ struct SplashView: View {
                             .font(Font.system(.body))
                             .foregroundColor(Color(.secondaryLabel))
                             .padding()
-                                                                
+                                                 
+                        Spacer()
+                        
                         InfoPageView()
+                            .padding(.bottom, 50)
                         
                         Spacer()
                         
-                        ButtonFill(title: "Login") {
-                            let impactMed = UIImpactFeedbackGenerator(style: .medium)
-                            impactMed.impactOccurred()
+                        ButtonFill(title: "Login") {                            
                             withAnimation {
                                 activeSheet = .login
                             }
                         }
-                        .padding()
+                        .padding(.bottom, 50)
                     }
                     .frame(width: geometry.size.width, height: geometry.size.height)
                 }
@@ -58,8 +59,9 @@ struct SplashView: View {
             
             switch activeSheet {
                 case .login:
-                    LoginView(fullname: $fullname)
+                    LoginView()
                         .transition(.move(edge: .trailing))
+                        .environmentObject(userState)
                 case .none:
                     EmptyView()                
             }
@@ -69,6 +71,6 @@ struct SplashView: View {
 
 struct SplashView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashView(fullname: .constant(""))
+        SplashView()
     }
 }

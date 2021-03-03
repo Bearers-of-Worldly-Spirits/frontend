@@ -29,8 +29,8 @@ struct ExtendedInfoView: View {
                     prev()
                 })
                                                 
-                SimpleTextfield(text: $phone, placeholder: "Phone", secure: false)
-                SimpleTextfield(text: $ssn, placeholder: "SSN", secure: false)
+                SimpleTextfield(text: $phone, systemImageName: "phone.fill", placeholder: "Phone", secure: false)
+                SimpleTextfield(text: $ssn, systemImageName: "number", placeholder: "SSN", secure: false)
                 
                 DatePicker("Date of Birth", selection: $dob, displayedComponents: .date)
                     .padding()

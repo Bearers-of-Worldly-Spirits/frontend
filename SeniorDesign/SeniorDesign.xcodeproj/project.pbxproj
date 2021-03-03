@@ -10,6 +10,7 @@
 		5E6ECC77469ECEA0467C65BB /* Pods_SeniorDesignTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D6B5489CAB2A46BDD4AC6E /* Pods_SeniorDesignTests.framework */; };
 		600222B31BE8B7652BBF61ED /* Pods_SeniorDesign_SeniorDesignUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12132FF48D51C9B608FDB0E /* Pods_SeniorDesign_SeniorDesignUITests.framework */; };
 		7432D57B5719D6136B93676B /* Pods_SeniorDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5525B59CBA8B85504339570 /* Pods_SeniorDesign.framework */; };
+		7908E96325F03068007F11D9 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908E96225F03068007F11D9 /* LoadingScreen.swift */; };
 		793A87A325E85F2D00FBF863 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A87A225E85F2D00FBF863 /* SplashView.swift */; };
 		793A87B425E860D300FBF863 /* InfoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A87B325E860D300FBF863 /* InfoPageView.swift */; };
 		793A87E325E8628700FBF863 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A87E225E8628700FBF863 /* LottieView.swift */; };
@@ -70,6 +71,7 @@
 		38FD97117391A1364EE22003 /* Pods-SeniorDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesign.release.xcconfig"; path = "Target Support Files/Pods-SeniorDesign/Pods-SeniorDesign.release.xcconfig"; sourceTree = "<group>"; };
 		679811C5A1775DDB2B465F58 /* Pods-SeniorDesignTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesignTests.release.xcconfig"; path = "Target Support Files/Pods-SeniorDesignTests/Pods-SeniorDesignTests.release.xcconfig"; sourceTree = "<group>"; };
 		7717917AB48CA3AF2888BA95 /* Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig"; path = "Target Support Files/Pods-SeniorDesign-SeniorDesignUITests/Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7908E96225F03068007F11D9 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 		793A87A225E85F2D00FBF863 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		793A87B325E860D300FBF863 /* InfoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageView.swift; sourceTree = "<group>"; };
 		793A87E225E8628700FBF863 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
@@ -208,11 +210,11 @@
 			isa = PBXGroup;
 			children = (
 				796F2C2425D89DF7005D70DC /* SeniorDesignApp.swift */,
+				796F2C6E25D89E5B005D70DC /* Theme */,
 				793A87E725E8702C00FBF863 /* Animations */,
 				79A1DB6125DB7D22000A2B86 /* Models */,
 				796F2C7A25D8A003005D70DC /* Components */,
 				796F2C6525D89E3B005D70DC /* Views */,
-				796F2C6E25D89E5B005D70DC /* Theme */,
 				796F2C2825D89DF9005D70DC /* Assets.xcassets */,
 				796F2C3225D89DF9005D70DC /* Info.plist */,
 				796F2C2A25D89DF9005D70DC /* Preview Content */,
@@ -249,6 +251,7 @@
 		796F2C6525D89E3B005D70DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				793A87A225E85F2D00FBF863 /* SplashView.swift */,
 				796F2C5A25D89E28005D70DC /* HomeView.swift */,
 				796F2C9025D8A1D3005D70DC /* LoginView.swift */,
 				796F2C9A25D8A2E3005D70DC /* SignupView.swift */,
@@ -259,7 +262,6 @@
 				79E44C2525DCA8E100DEBE7E /* VisaStatusView.swift */,
 				79E44C2A25DCAB1400DEBE7E /* DaysPresentView.swift */,
 				79BBDD6525DCAEB8003225A2 /* SubmitView.swift */,
-				793A87A225E85F2D00FBF863 /* SplashView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,7 +281,6 @@
 				796F2C7525D89F53005D70DC /* WelcomeHeader.swift */,
 				796F2C8125D8A060005D70DC /* ButtonFill.swift */,
 				796F2C8625D8A103005D70DC /* ButtonClear.swift */,
-				796F2C8B25D8A183005D70DC /* SimpleTextfield.swift */,
 				79BEF57725D8AEAB00A84186 /* SimpleAlert.swift */,
 				79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */,
 				79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */,
@@ -290,6 +291,8 @@
 				79BBDD6A25DCAF4D003225A2 /* LoadingView.swift */,
 				793A87E225E8628700FBF863 /* LottieView.swift */,
 				793A87B325E860D300FBF863 /* InfoPageView.swift */,
+				7908E96225F03068007F11D9 /* LoadingScreen.swift */,
+				796F2C8B25D8A183005D70DC /* SimpleTextfield.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				79A1DB5D25DB7D17000A2B86 /* User.swift in Sources */,
 				79E44C2125DC862500DEBE7E /* ExtendedInfoView.swift in Sources */,
 				79E44C0525DC7AAB00DEBE7E /* DismissBar.swift in Sources */,
+				7908E96325F03068007F11D9 /* LoadingScreen.swift in Sources */,
 				796F2C7625D89F53005D70DC /* WelcomeHeader.swift in Sources */,
 				796F2C9125D8A1D3005D70DC /* LoginView.swift in Sources */,
 				79E44C2B25DCAB1400DEBE7E /* DaysPresentView.swift in Sources */,

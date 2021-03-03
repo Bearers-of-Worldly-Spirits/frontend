@@ -8,20 +8,30 @@
 import SwiftUI
 
 struct SimpleTextfield: View {
+        
     @Binding var text:String
-    var placeholder:String = "Placeholder"
-    var secure:Bool = false
     
+    var systemImageName:String = "pencil"
+    var placeholder:String = "Placeholder"
+    var keyboardType:UIKeyboardType = .default
+    var secure:Bool = false
+    var capitalize:UITextAutocapitalizationType = .none
+            
     var body: some View {
-        Group {
-            if secure {
-                SecureField(placeholder, text: $text)
-            }else{
-                TextField(placeholder, text: $text)
+        
+        HStack {
+            Image(systemName: systemImageName)
+            Group {
+                if secure {
+                    SecureField(placeholder, text: $text)
+                }else{
+                    TextField(placeholder, text: $text)
+                }
             }
+            .keyboardType(keyboardType)
+            .disableAutocorrection(true)
+            .autocapitalization(capitalize)
         }
-        .disableAutocorrection(true)
-        .autocapitalization(.none)
         .padding()
         .font(Font.custom(Theme.fontName, size: 16, relativeTo: .caption).weight(.medium))
         .foregroundColor(Theme.primaryColor)

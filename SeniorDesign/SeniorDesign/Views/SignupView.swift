@@ -7,19 +7,20 @@
 
 import SwiftUI
 import Parse
-import ActivityIndicatorView
 
 
 struct SignupView: View {
     
-    @State var userSignedUp:Bool = false
+    static let userNameKey = "email"
+        
     @State var isLoading:Bool = false
     @State var isShowingAlert:Bool = false
     @State var alertMessage:String = ""
     @State var firstLast:String = ""
-    @State var username:String = ""
+    @AppStorage("email") var username:String = ""
     @State var password:String = ""
     @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var userState:UserState
     
     var body: some View {
         
@@ -34,9 +35,9 @@ struct SignupView: View {
                         .frame(height: 150)
                     
                     VStack(spacing: 0) {
-                        SimpleTextfield(text: $firstLast, placeholder: "First Last")
-                        SimpleTextfield(text: $username, placeholder: "Email")
-                        SimpleTextfield(text: $password, placeholder: "Password", secure: true)
+                        SimpleTextfield(text: $firstLast, systemImageName: "person.fill", placeholder: "First Last", capitalize: .words)
+                        SimpleTextfield(text: $username, systemImageName: "envelope.fill", placeholder: "Email", keyboardType: .emailAddress)
+                        SimpleTextfield(text: $password, systemImageName: "lock.fill", placeholder: "Password", secure: true)
                     }
                     
                     Spacer(minLength: 50)
@@ -57,9 +58,7 @@ struct SignupView: View {
                 UIApplication.shared.endEditing()
             }
             
-            ActivityIndicatorView(isVisible: $isLoading, type: .arcs)
-                .frame(width: 50.0, height: 50.0)
-                .foregroundColor(Theme.primaryColor)
+            LoadingScreen(isLoading: $isLoading)
             
             VStack {
                 if isShowingAlert == true {
@@ -69,11 +68,7 @@ struct SignupView: View {
                 }
             }.transition(.opacity).animation(.easeInOut(duration: 0.2))
         }
-        
-        .fullScreenCover(isPresented: $userSignedUp, content: {
-            HomeView()
-        })
-        
+                
         .background(Color("Background").ignoresSafeArea())
     }
     
@@ -98,7 +93,7 @@ struct SignupView: View {
             
             if (error == nil) {
                 isShowingAlert = false
-                userSignedUp = true                
+                withAnimation {self.userState.authenticated = .yes}                
             }else{
                 alertMessage = error?.localizedDescription ?? "Something went wrong!"
                 isShowingAlert = true

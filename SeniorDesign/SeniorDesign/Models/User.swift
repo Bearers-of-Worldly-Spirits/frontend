@@ -10,6 +10,10 @@ import SwiftUI
 import Combine
 
 
-class User : ObservableObject {
-    @Published var fullname:String = "User"
+enum UserStateType {
+    case yes, no, unknown
+}
+
+class UserState : ObservableObject {
+    @Published var authenticated:UserStateType = .unknown
 }

@@ -11,7 +11,7 @@ import Parse
 
 
 private enum ActiveSheet: Identifiable {
-    case login, form8843
+    case form8843
     
     var id: Int {
         hashValue
@@ -21,9 +21,11 @@ private enum ActiveSheet: Identifiable {
 
 struct HomeView: View {
     
-    @ObservedObject var userData:User = User()
+    @State var fullname:String = "User"
     
-    @State fileprivate var modalView:ActiveSheet? = .login
+    @State fileprivate var modalView:ActiveSheet?
+    
+    @EnvironmentObject var userState:UserState
     
     
     var body: some View {
@@ -32,7 +34,7 @@ struct HomeView: View {
                               
             // Header
             Group {
-                WelcomeHeader(name: $userData.fullname)
+                WelcomeHeader(name: $fullname)
                 LargeGradientCard(
                     title: "Welcome back! Your tax forms are due in 129 days.",
                     gradient: Gradient(colors: [Color.purple, Color.pink])
@@ -56,34 +58,35 @@ struct HomeView: View {
             Group {
                 Divider()
                 Spacer(minLength: 30)
+                
                 ButtonFill(title: "Logout") {
                     PFUser.logOutInBackground { (error) in
-                        loginIfNeeded()}}
+                        if error == nil {
+                            withAnimation {
+                                userState.authenticated = .no
+                            }
+                        }
+                    }                    
+                }
+                
                 ButtonClear(title: "Need help? Contact us") {
                     //TODO
                 }
             }
         }
         
-        .onAppear() { loginIfNeeded() }
+        .onAppear() { loadUserData() }
         .background(Color("Background").ignoresSafeArea())
         .fullScreenCover(item: $modalView) { item in
             switch item {
-            case .login:
-                SplashView(fullname: $userData.fullname)
-//                LoginView(fullname: $userData.fullname)
             case .form8843:
                 Form8843()
             }
         }
     }
     
-    func loginIfNeeded() {
-        if (PFUser.current() == nil) {
-            modalView = .login
-        }else{
-            userData.fullname = PFUser.current()?.object(forKey: "name") as? String ?? "User"
-        }
+    func loadUserData() {                                
+        fullname = PFUser.current()?.object(forKey: "name") as? String ?? "User"
     }
 }
 

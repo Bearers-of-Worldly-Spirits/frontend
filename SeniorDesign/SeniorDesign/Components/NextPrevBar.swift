@@ -20,7 +20,11 @@ struct NextPrevBar: View {
             Spacer()
             Text(title)
             Spacer()
-            Button("Next", action: next)
+            Button("Next", action: {
+                let impactMed = UIImpactFeedbackGenerator(style: .medium)
+                impactMed.impactOccurred()
+                next()
+            })
             .foregroundColor(Color("Primary"))
         }
         .padding()
