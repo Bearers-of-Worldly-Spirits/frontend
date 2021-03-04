@@ -15,7 +15,7 @@ private struct Title : View {
         HStack(alignment: .center, spacing: 4) {
             Text("Melon")                
         }
-        .font(Font.custom(Theme.fontName, size: 30, relativeTo: .title))
+        .dynamicFont(weight: .regular, scale: 3.0)
         .foregroundColor(Theme.primaryColor)
         .frame(height: 150)
     }
@@ -60,6 +60,7 @@ struct LoginView: View {
             .onTapGesture { UIApplication.shared.endEditing() }                                                            
         }
         
+        //TODO: Add this navigation to add state so it can inherit
         .fullScreenCover(isPresented: $showSignup, content: {
             SignupView()
                 .environmentObject(userState)

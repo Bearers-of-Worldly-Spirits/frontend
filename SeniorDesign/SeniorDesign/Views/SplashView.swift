@@ -29,14 +29,17 @@ struct SplashView: View {
                     VStack {
                         
                         Text("Melon")
-                            .font(Font.system(size: 40, weight: .light, design: .rounded))
+                            .dynamicFont(scale: 3.0)
                             .padding()
                             .foregroundColor(Color("Primary"))
+                            
                         
                         Text("Melon makes tax filing, simple.")
-                            .font(Font.system(.body))
+                            .dynamicFont(weight: .bold, scale: 1.0)
                             .foregroundColor(Color(.secondaryLabel))
                             .padding()
+                            .multilineTextAlignment(.center)
+                        
                                                  
                         Spacer()
                         
@@ -52,7 +55,9 @@ struct SplashView: View {
                         }
                         .padding(.bottom, 50)
                     }
-                    .frame(width: geometry.size.width, height: geometry.size.height)
+                    .frame(minHeight: geometry.size.height)
+//                    .frame(maxWidth: geometry.size.width, minHeight: geometry.size.height)
+//                    .frame(maxHeight: .infinity)
                 }
                 .background(Color(.systemBackground).ignoresSafeArea())
             })

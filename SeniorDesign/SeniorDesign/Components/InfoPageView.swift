@@ -14,42 +14,45 @@ struct InfoPageView: View {
     
     @State private var idx:Int = 0
     
+    private var size:CGFloat = 250
+    
     var body: some View {
         
         PageView(pageCount: 3, currentIndex: $idx) {
             
-            VStack {
-                LottieView(name: "form.min", speed: 0.15)
-                    .frame(maxWidth:.infinity, maxHeight: 200)
-                Text("Taxes can be difficult.")
-                    .padding()
-                    .multilineTextAlignment(.center)
-                    .font(Font.system(.body))
-                    .foregroundColor(Color(.secondaryLabel))
+            Group {
+                VStack {
+                    LottieView(name: "form.min", speed: 0.15)
+                        .frame(maxWidth:.infinity)
+                        .frame(height: size)
+                    Text("Taxes can be difficult.")
+                        .frame(maxWidth: Theme.maxScreenWidth)
+                        .padding(.bottom, 50)
+                }
+                
+                VStack {
+                    LottieView(name: "apps.min", speed: 0.35)
+                        .frame(maxWidth:.infinity, maxHeight: size)
+                    Text("We make it as simple as tapping a few buttons.")
+                        .frame(maxWidth: Theme.maxScreenWidth)
+                        .padding(.bottom, 50)
+                }
+                
+                VStack {
+                    LottieView(name: "clock.min", speed: 0.35)
+                        .frame(maxWidth:.infinity, maxHeight: size)
+                    Text("Melon saves you time 🎉")
+                        .frame(maxWidth: Theme.maxScreenWidth)
+                        .padding(.bottom, 50)
+                }
             }
-            
-            VStack {
-                LottieView(name: "apps.min", speed: 0.35)
-                    .frame(maxWidth:.infinity, maxHeight: 200)
-                Text("We make it as simple as tapping a few buttons.")
-                    .padding([.leading, .trailing], 50)
-                    .multilineTextAlignment(.center)
-                    .font(Font.system(.body))
-                    .foregroundColor(Color(.secondaryLabel))
-            }
-            
-            VStack {
-                LottieView(name: "clock.min", speed: 0.35)
-                    .frame(maxWidth:.infinity, maxHeight: 200)
-                Text("Melon saves you time 🎉")
-                    .padding()
-                    .multilineTextAlignment(.center)
-                    .font(Font.system(.body))
-                    .foregroundColor(Color(.secondaryLabel))
-            }
+            .dynamicFont(weight: .regular, scale: 1.0)
+            .multilineTextAlignment(.center)
+            .lineLimit(5)
+            .foregroundColor(Color(.secondaryLabel))
         }
         .indicator(current: UIColor(Color("Primary")), other: UIColor.secondarySystemBackground)
-        .frame(maxHeight: 400)
+        .frame(minHeight: size+50+10, maxHeight: .infinity)
     }
 }
 

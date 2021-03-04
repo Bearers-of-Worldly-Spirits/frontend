@@ -11,6 +11,7 @@
 		600222B31BE8B7652BBF61ED /* Pods_SeniorDesign_SeniorDesignUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12132FF48D51C9B608FDB0E /* Pods_SeniorDesign_SeniorDesignUITests.framework */; };
 		7432D57B5719D6136B93676B /* Pods_SeniorDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5525B59CBA8B85504339570 /* Pods_SeniorDesign.framework */; };
 		7908E96325F03068007F11D9 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908E96225F03068007F11D9 /* LoadingScreen.swift */; };
+		7908E98125F0588E007F11D9 /* DynamicTypeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908E98025F0588E007F11D9 /* DynamicTypeModifier.swift */; };
 		793A87A325E85F2D00FBF863 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A87A225E85F2D00FBF863 /* SplashView.swift */; };
 		793A87B425E860D300FBF863 /* InfoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A87B325E860D300FBF863 /* InfoPageView.swift */; };
 		793A87E325E8628700FBF863 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A87E225E8628700FBF863 /* LottieView.swift */; };
@@ -72,6 +73,7 @@
 		679811C5A1775DDB2B465F58 /* Pods-SeniorDesignTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesignTests.release.xcconfig"; path = "Target Support Files/Pods-SeniorDesignTests/Pods-SeniorDesignTests.release.xcconfig"; sourceTree = "<group>"; };
 		7717917AB48CA3AF2888BA95 /* Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig"; path = "Target Support Files/Pods-SeniorDesign-SeniorDesignUITests/Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7908E96225F03068007F11D9 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		7908E98025F0588E007F11D9 /* DynamicTypeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeModifier.swift; sourceTree = "<group>"; };
 		793A87A225E85F2D00FBF863 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		793A87B325E860D300FBF863 /* InfoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageView.swift; sourceTree = "<group>"; };
 		793A87E225E8628700FBF863 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
@@ -174,6 +176,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7908E98525F06098007F11D9 /* modifier */ = {
+			isa = PBXGroup;
+			children = (
+				7908E98025F0588E007F11D9 /* DynamicTypeModifier.swift */,
+			);
+			path = modifier;
+			sourceTree = "<group>";
+		};
 		793A87E725E8702C00FBF863 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				796F2C2425D89DF7005D70DC /* SeniorDesignApp.swift */,
+				7908E98525F06098007F11D9 /* modifier */,
 				796F2C6E25D89E5B005D70DC /* Theme */,
 				793A87E725E8702C00FBF863 /* Animations */,
 				79A1DB6125DB7D22000A2B86 /* Models */,
@@ -289,10 +300,10 @@
 				79E44C1125DC805A00DEBE7E /* NextPrevBar.swift */,
 				79BBDD6A25DCAF4D003225A2 /* LoadingView.swift */,
 				793A87E225E8628700FBF863 /* LottieView.swift */,
-				793A87B325E860D300FBF863 /* InfoPageView.swift */,
-				796F2C8B25D8A183005D70DC /* SimpleTextfield.swift */,
 				7908E96225F03068007F11D9 /* LoadingScreen.swift */,
 				79BEF57725D8AEAB00A84186 /* SimpleAlert.swift */,
+				796F2C8B25D8A183005D70DC /* SimpleTextfield.swift */,
+				793A87B325E860D300FBF863 /* InfoPageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -556,6 +567,7 @@
 				79BBDD6625DCAEB8003225A2 /* SubmitView.swift in Sources */,
 				796F2C6A25D89E56005D70DC /* Theme.swift in Sources */,
 				79BBDD6B25DCAF4D003225A2 /* LoadingView.swift in Sources */,
+				7908E98125F0588E007F11D9 /* DynamicTypeModifier.swift in Sources */,
 				79E44C0025DC767500DEBE7E /* InfoView.swift in Sources */,
 				79A1DB6925DB8444000A2B86 /* GradientCardButton.swift in Sources */,
 				794089AE25DC5DB600B0B338 /* TaxForm.swift in Sources */,

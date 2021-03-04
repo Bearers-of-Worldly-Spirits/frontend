@@ -25,7 +25,7 @@ struct SignupView: View {
                 VStack {
                     
                     Text("Signup")
-                        .font(Font.custom(Theme.fontName, size: 30, relativeTo: .title))
+                        .dynamicFont(weight: .regular, scale: 3.0)
                         .foregroundColor(Theme.primaryColor)
                         .frame(height: 150)
                     
@@ -59,9 +59,9 @@ struct SignupView: View {
     
     func signupUser() {
         
-        guard firstLast.count > 0 else {
+        guard firstLast.count > 0 else {            
             userState.alertMessage = "Please enter your first & last name."
-            userState.isShowingAlert = true            
+            userState.isShowingAlert = true
             return
         }
         
@@ -70,10 +70,11 @@ struct SignupView: View {
         user.email = username
         user.password = password
         user["name"] = firstLast
-        
+                
         userState.isLoading = true
         
         user.signUpInBackground { (success, error) in
+                        
             userState.isLoading = false
             
             if (error == nil) {

@@ -39,7 +39,7 @@ struct SeniorDesignApp: App {
                     if userState.isShowingAlert == true {
                         SimpleAlert(title: "Uh Oh.", message: userState.alertMessage) {
                             userState.isShowingAlert = false
-                        }
+                        }                        
                     }
                 }.transition(.opacity).animation(.easeInOut(duration: 0.25))
             }

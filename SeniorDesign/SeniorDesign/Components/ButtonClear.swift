@@ -15,7 +15,7 @@ struct ButtonClear: View {
     var body: some View {
         Button(action: action) {
             Text(title)
-                .font(Font.custom(Theme.fontName, size: 16).weight(.medium))
+                .dynamicFont(weight: .medium, scale: 1.0)
                 .multilineTextAlignment(.center)
             .foregroundColor(Color(.tertiaryLabel))
             .padding()

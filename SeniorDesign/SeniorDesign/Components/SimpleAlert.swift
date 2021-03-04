@@ -24,15 +24,13 @@ struct SimpleAlert: View {
                 
                 Text(title)
                     .foregroundColor(Theme.primaryColor)
-                    .font(Font.custom(Theme.fontName, size: 20))
-                    .fontWeight(.bold)
+                    .dynamicFont(weight: .bold, scale: 0.95)
                     .padding()
                     .frame(maxWidth: Theme.maxScreenWidth)
                 
                 Text(message)
                     .foregroundColor(Color(.secondaryLabel))
-                    .font(Font.custom(Theme.fontName, size: 12))
-                    .fontWeight(.medium)
+                    .dynamicFont(weight: .regular, scale: 0.85)
                     .lineLimit(4)
                     .multilineTextAlignment(.center)
                     .padding()
@@ -50,7 +48,7 @@ struct SimpleAlert: View {
                 })
                 
             }
-            .frame(maxWidth: Theme.maxScreenWidth, maxHeight: 170)
+            .frame(maxWidth: Theme.maxScreenWidth, maxHeight: 190)
             .background(RoundedRectangle(cornerRadius: 20, style: .continuous)
                             .fill(Color("Background"))
                             .shadow(color: Color(.systemGray4), radius: 12)
