@@ -15,18 +15,18 @@ struct DynamicTypeModifier: ViewModifier {
     var design: Font.Design = .rounded
     var scale:CGFloat = 1.0
     
-    var extraSmall:CGFloat = 8
-    var small:CGFloat = 10
-    var medium:CGFloat = 12
-    var large:CGFloat = 14
-    var extraLarge:CGFloat = 16
-    var extraExtraLarge:CGFloat = 18
-    var extraExtraExtraLarge:CGFloat = 20
-    var accessibilityMedium:CGFloat = 22
-    var accessibilityLarge:CGFloat = 24
-    var accessibilityExtraLarge:CGFloat = 26
-    var accessibilityExtraExtraLarge:CGFloat = 28
-    var accessibilityExtraExtraExtraLarge:CGFloat = 30
+    var extraSmall:CGFloat = 12
+    var small:CGFloat = 13
+    var medium:CGFloat = 14
+    var large:CGFloat = 16
+    var extraLarge:CGFloat = 18
+    var extraExtraLarge:CGFloat = 20
+    var extraExtraExtraLarge:CGFloat = 22
+    var accessibilityMedium:CGFloat = 24
+    var accessibilityLarge:CGFloat = 26
+    var accessibilityExtraLarge:CGFloat = 28
+    var accessibilityExtraExtraLarge:CGFloat = 30
+    var accessibilityExtraExtraExtraLarge:CGFloat = 32
 
     func body(content: Content) -> some View {
                 

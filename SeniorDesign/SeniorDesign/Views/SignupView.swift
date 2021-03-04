@@ -11,6 +11,10 @@ import Parse
 
 struct SignupView: View {
                         
+    @State var isLoading:Bool = false
+    @State var isShowingAlert:Bool = false
+    @State var alertMessage:String = ""
+    
     @State var firstLast:String = ""
     @AppStorage("email") var username:String = ""
     @State var password:String = ""
@@ -52,6 +56,18 @@ struct SignupView: View {
             .onTapGesture {
                 UIApplication.shared.endEditing()
             }
+            
+            if isLoading == true {
+                LoadingScreen(isLoading: $isLoading)
+            }
+            
+            VStack {
+                if isShowingAlert == true {
+                    SimpleAlert(title: "Uh Oh.", message: alertMessage) {
+                        isShowingAlert = false
+                    }
+                }
+            }.transition(.opacity).animation(.easeInOut(duration: 0.25))
         }
                 
         .background(Color("Background").ignoresSafeArea())
@@ -59,9 +75,9 @@ struct SignupView: View {
     
     func signupUser() {
         
-        guard firstLast.count > 0 else {            
-            userState.alertMessage = "Please enter your first & last name."
-            userState.isShowingAlert = true
+        guard firstLast.count > 0 else {
+            alertMessage = "Please enter your first & last name."
+            isShowingAlert = true
             return
         }
         
@@ -71,17 +87,17 @@ struct SignupView: View {
         user.password = password
         user["name"] = firstLast
                 
-        userState.isLoading = true
+        isLoading = true
         
         user.signUpInBackground { (success, error) in
                         
-            userState.isLoading = false
+            isLoading = false
             
             if (error == nil) {
                 withAnimation {self.userState.authenticated = .yes}                
             }else{
-                userState.alertMessage = error?.localizedDescription ?? "Something went wrong!"
-                userState.isShowingAlert = true
+                alertMessage = error?.localizedDescription ?? "Something went wrong!"
+                isShowingAlert = true
             }
         }
     }

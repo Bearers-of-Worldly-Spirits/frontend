@@ -16,11 +16,14 @@ struct SimpleAlert: View {
     var body: some View {
         
         ZStack {
+            
             Rectangle()
                 .fill(Color(UIColor(white: 0, alpha: 0.3)))
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         
             VStack(alignment: .center, spacing: 0) {
+                
+                Spacer()
                 
                 Text(title)
                     .foregroundColor(Theme.primaryColor)
@@ -39,7 +42,6 @@ struct SimpleAlert: View {
                 Spacer()
                                 
                 Divider()
-                    .frame(maxWidth: 300)
                                                 
                 ButtonClear(title: "OK", action: {
                     let impactMed = UIImpactFeedbackGenerator(style: .medium)
@@ -48,7 +50,7 @@ struct SimpleAlert: View {
                 })
                 
             }
-            .frame(maxWidth: Theme.maxScreenWidth, maxHeight: 190)
+            .frame(maxWidth: Theme.maxScreenWidth, maxHeight: 250)
             .background(RoundedRectangle(cornerRadius: 20, style: .continuous)
                             .fill(Color("Background"))
                             .shadow(color: Color(.systemGray4), radius: 12)
