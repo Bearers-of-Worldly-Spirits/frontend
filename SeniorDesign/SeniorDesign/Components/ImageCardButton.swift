@@ -1,22 +1,22 @@
 //
-//  GradientCardButton.swift
+//  ImageCardButton.swift
 //  SeniorDesign
 //
-//  Created by Josh Arnold on 2/15/21.
+//  Created by Josh Arnold on 3/4/21.
 //
 
 import SwiftUI
 
-struct GradientCardButton: View {
+struct ImageCardButton: View {
     
     var title:String
-    var gradient:Gradient = Gradient(colors: [Color.red, Color.orange])
+    var imageName:String = "City"
     var action: () -> ()
     
     @State private var opacity = 1.0
     
-    var body: some View {                            
-        VStack {            
+    var body: some View {
+        VStack {
             Text(title)
             Image("Form").renderingMode(.template)
                 .resizable()
@@ -25,11 +25,13 @@ struct GradientCardButton: View {
         .foregroundColor(Color(.white))
         .frame(width: 250, height: 135, alignment: .center)
         .background(
-            RoundedRectangle(cornerRadius: 23, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
-                .fill(LinearGradient(gradient: gradient, startPoint: .bottomLeading, endPoint: .topTrailing))
-                .shadow(radius: 7)
+                Image(imageName)
+                    .resizable()
+                    .overlay(Color(UIColor(white: 0, alpha: 0.35)))
+                    .cornerRadius(23)
+                    .shadow(radius: 7)
         )
-        .opacity(opacity)        
+        .opacity(opacity)
         .foregroundColor(Color("Background"))
         .dynamicFont(min: 14, step: 0.5, weight: .bold)
         .onTapGesture {
@@ -50,10 +52,8 @@ struct GradientCardButton: View {
     }
 }
 
-struct GradientCardButton_Previews: PreviewProvider {
+struct ImageCardButton_Previews: PreviewProvider {
     static var previews: some View {
-        GradientCardButton(title: "Form 8843") {
-            
-        }
+        ImageCardButton(title: "Hello world") {}
     }
 }

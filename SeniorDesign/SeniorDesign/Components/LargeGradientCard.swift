@@ -31,7 +31,7 @@ struct LargeGradientCard: View {
                 .shadow(radius: 7)
         )
         .foregroundColor(Color("Background"))
-        .font(Font.custom(Theme.fontName, size: 20, relativeTo: .title3).weight(.bold))
+        .dynamicFont(min: 16, step: 0.35, weight: .bold)
     }
 }
 

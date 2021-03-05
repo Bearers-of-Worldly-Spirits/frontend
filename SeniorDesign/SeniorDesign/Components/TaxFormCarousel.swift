@@ -17,7 +17,8 @@ struct ComingSoonTaxFormCarousel: View {
             HStack {
                 Text("Coming").foregroundColor(Color(.label))
                 Text("Soon").foregroundColor(Color("Primary"))
-            }.font(Font.custom(Theme.fontName, size: 20, relativeTo: .title).weight(.bold))
+            }
+            .dynamicFont(min: 16, step: 0.7, weight: .bold)
             .padding([.leading, .top])            
             
             ScrollView (.horizontal, showsIndicators: false) {
@@ -46,7 +47,8 @@ struct TaxFormCarousel: View {
             HStack {
                 Text("Available").foregroundColor(Color(.label))
                 Text("Forms").foregroundColor(Color("Primary"))
-            }.font(Font.custom(Theme.fontName, size: 20, relativeTo: .title).weight(.bold))
+            }
+            .dynamicFont(min: 16, step: 0.7, weight: .bold)
             .padding([.leading, .top])
             
             ScrollView (.horizontal, showsIndicators: false) {

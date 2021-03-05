@@ -12,6 +12,8 @@
 		7432D57B5719D6136B93676B /* Pods_SeniorDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5525B59CBA8B85504339570 /* Pods_SeniorDesign.framework */; };
 		7908E96325F03068007F11D9 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908E96225F03068007F11D9 /* LoadingScreen.swift */; };
 		7908E98125F0588E007F11D9 /* DynamicTypeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908E98025F0588E007F11D9 /* DynamicTypeModifier.swift */; };
+		7936B34925F1E22500C5BED7 /* DiscussionCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7936B34825F1E22500C5BED7 /* DiscussionCarousel.swift */; };
+		7936B34E25F1E43200C5BED7 /* ImageCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7936B34D25F1E43200C5BED7 /* ImageCardButton.swift */; };
 		793A87A325E85F2D00FBF863 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A87A225E85F2D00FBF863 /* SplashView.swift */; };
 		793A87B425E860D300FBF863 /* InfoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A87B325E860D300FBF863 /* InfoPageView.swift */; };
 		793A87E325E8628700FBF863 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A87E225E8628700FBF863 /* LottieView.swift */; };
@@ -74,6 +76,8 @@
 		7717917AB48CA3AF2888BA95 /* Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig"; path = "Target Support Files/Pods-SeniorDesign-SeniorDesignUITests/Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7908E96225F03068007F11D9 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 		7908E98025F0588E007F11D9 /* DynamicTypeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeModifier.swift; sourceTree = "<group>"; };
+		7936B34825F1E22500C5BED7 /* DiscussionCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionCarousel.swift; sourceTree = "<group>"; };
+		7936B34D25F1E43200C5BED7 /* ImageCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardButton.swift; sourceTree = "<group>"; };
 		793A87A225E85F2D00FBF863 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		793A87B325E860D300FBF863 /* InfoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageView.swift; sourceTree = "<group>"; };
 		793A87E225E8628700FBF863 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
@@ -176,12 +180,12 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		7908E98525F06098007F11D9 /* modifier */ = {
+		7908E98525F06098007F11D9 /* Modifier */ = {
 			isa = PBXGroup;
 			children = (
 				7908E98025F0588E007F11D9 /* DynamicTypeModifier.swift */,
 			);
-			path = modifier;
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 		793A87E725E8702C00FBF863 /* Animations */ = {
@@ -221,7 +225,7 @@
 			children = (
 				796F2C2425D89DF7005D70DC /* SeniorDesignApp.swift */,
 				79A1DB5C25DB7D17000A2B86 /* AppState.swift */,
-				7908E98525F06098007F11D9 /* modifier */,
+				7908E98525F06098007F11D9 /* Modifier */,
 				796F2C6E25D89E5B005D70DC /* Theme */,
 				793A87E725E8702C00FBF863 /* Animations */,
 				79A1DB6125DB7D22000A2B86 /* Models */,
@@ -289,8 +293,6 @@
 				796F2C8125D8A060005D70DC /* ButtonFill.swift */,
 				796F2C8625D8A103005D70DC /* ButtonClear.swift */,
 				796F2C8B25D8A183005D70DC /* SimpleTextfield.swift */,
-				79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */,
-				79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */,
 				794089A325DC575200B0B338 /* LargeGradientCard.swift */,
 				794089A825DC5CDB00B0B338 /* CompletedList.swift */,
 				79E44C0425DC7AAB00DEBE7E /* DismissBar.swift */,
@@ -305,6 +307,10 @@
 				79E44C2525DCA8E100DEBE7E /* VisaStatusView.swift */,
 				79E44C2A25DCAB1400DEBE7E /* DaysPresentView.swift */,
 				79BBDD6525DCAEB8003225A2 /* SubmitView.swift */,
+				79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */,
+				7936B34825F1E22500C5BED7 /* DiscussionCarousel.swift */,
+				79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */,
+				7936B34D25F1E43200C5BED7 /* ImageCardButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -558,9 +564,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E44BFB25DC6DAA00DEBE7E /* Form8843.swift in Sources */,
+				7936B34E25F1E43200C5BED7 /* ImageCardButton.swift in Sources */,
 				79E44C2625DCA8E100DEBE7E /* VisaStatusView.swift in Sources */,
 				796F2C8C25D8A183005D70DC /* SimpleTextfield.swift in Sources */,
 				79A1DB7825DB881D000A2B86 /* TaxFormCarousel.swift in Sources */,
+				7936B34925F1E22500C5BED7 /* DiscussionCarousel.swift in Sources */,
 				796F2C9625D8A218005D70DC /* Extensions.swift in Sources */,
 				796F2C5B25D89E28005D70DC /* HomeView.swift in Sources */,
 				793A87B425E860D300FBF863 /* InfoPageView.swift in Sources */,
