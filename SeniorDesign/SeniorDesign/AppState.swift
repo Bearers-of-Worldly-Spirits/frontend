@@ -10,12 +10,14 @@ import SwiftUI
 import Combine
 
 
-enum AuthenticationType {
-    case yes, no, unknown
+enum AppView: Identifiable {
+    case unknown, splash, login, signup, home, form8843
+    var id: Int { hashValue }
 }
 
+
 class AppState : ObservableObject {
-    @Published var authenticated:AuthenticationType = .unknown
+    @Published var currentScreen:AppView = AppView.unknown
     @Published var isLoading:Bool = false
     @Published var isShowingAlert:Bool = false
     @Published var alertMessage:String = ""

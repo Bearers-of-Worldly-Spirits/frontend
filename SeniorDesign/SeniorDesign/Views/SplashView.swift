@@ -8,18 +8,8 @@
 import SwiftUI
 
 
-private enum ActiveSheet: Identifiable {
-    case login
-    
-    var id: Int {
-        hashValue
-    }
-}
-
-
 struct SplashView: View {
-    
-    @State fileprivate var activeSheet:ActiveSheet?
+        
     @EnvironmentObject var userState:AppState
     
     var body: some View {
@@ -29,13 +19,13 @@ struct SplashView: View {
                     VStack {
                         
                         Text("Melon")
-                            .dynamicFont(scale: 3.0)
+                            .dynamicFont(min: 50, weight: .medium, design: .rounded)
                             .padding()
                             .foregroundColor(Color("Primary"))
                             
                         
                         Text("Melon makes tax filing, simple.")
-                            .dynamicFont(weight: .bold, scale: 1.0)
+                            .dynamicFont(min: 16, weight: .medium, design: .rounded)
                             .foregroundColor(Color(.secondaryLabel))
                             .padding()
                             .multilineTextAlignment(.center)
@@ -50,32 +40,31 @@ struct SplashView: View {
                         
                         ButtonFill(title: "Login") {                            
                             withAnimation {
-                                activeSheet = .login
+                                userState.currentScreen = .login
                             }
                         }
                         .padding(.bottom, 50)
                     }
                     .frame(minHeight: geometry.size.height)
-//                    .frame(maxWidth: geometry.size.width, minHeight: geometry.size.height)
-//                    .frame(maxHeight: .infinity)
                 }
                 .background(Color(.systemBackground).ignoresSafeArea())
             })
-            
-            switch activeSheet {
-                case .login:
-                    LoginView()
-                        .transition(.move(edge: .trailing))
-                        .environmentObject(userState)
-                case .none:
-                    EmptyView()                
-            }
         }
     }
 }
 
 struct SplashView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashView()
+        
+        ForEach([ContentSizeCategory.extraSmall, ContentSizeCategory.accessibilityExtraExtraExtraLarge], id: \.self) { size in
+            Group {
+                SplashView()
+                    .previewDevice("iPhone SE (2nd generation)")
+                SplashView()
+                    .previewDevice("iPad Pro (12.9-inch) (4th generation)")
+            }
+            .environment(\.sizeCategory, size)
+        }
+        
     }
 }

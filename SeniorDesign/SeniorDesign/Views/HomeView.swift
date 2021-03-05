@@ -10,22 +10,11 @@ import Combine
 import Parse
 
 
-private enum ActiveSheet: Identifiable {
-    case form8843
-    
-    var id: Int {
-        hashValue
-    }
-}
-
-
 struct HomeView: View {
     
-    @State var fullname:String = "User"
-    
-    @State fileprivate var modalView:ActiveSheet?
     
     @EnvironmentObject var userState:AppState
+    @State var fullname:String = "User"
     
     
     var body: some View {
@@ -42,12 +31,17 @@ struct HomeView: View {
                 Spacer(minLength: 30)
             }
             
+            // Join the discussion!
+            Group {
+                
+            }
+            
             // Form data
             Group {
                 Divider()
                 TaxFormCarousel { (form) in
                     if form.name == "Form 8843" {
-                        modalView = .form8843
+                        userState.currentScreen = .form8843
                     }
                 }
                 Divider()
@@ -71,12 +65,6 @@ struct HomeView: View {
         
         .onAppear() { loadUserData() }
         .background(Color("Background").ignoresSafeArea())
-        .fullScreenCover(item: $modalView) { item in
-            switch item {
-            case .form8843:
-                Form8843()
-            }
-        }
     }
     
     func logoutUser() {
@@ -85,7 +73,7 @@ struct HomeView: View {
             userState.isLoading = false
             if error == nil {
                 withAnimation {
-                    userState.authenticated = .no
+                    userState.currentScreen = .splash
                 }
             }else{
                 userState.alertMessage = error?.localizedDescription ?? "Something went wrong!"

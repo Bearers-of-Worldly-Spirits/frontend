@@ -12,38 +12,47 @@ import Parse
 @main
 struct SeniorDesignApp: App {
     
-    @ObservedObject private var userState:AppState = AppState()
+    @ObservedObject private var appState:AppState = AppState()
             
     var body: some Scene {
         WindowGroup {
             ZStack {
                 
                 Group {
-                    switch userState.authenticated {
-                        case .no:
+                    switch appState.currentScreen {
+                        case .splash:
                             SplashView()
                                 .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
-                        case .yes:
+                        case .login:
+                            LoginView()
+                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
+                        case .signup:
+                            SignupView()
+                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
+                        case .home:
                             HomeView()
+                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
+                        case .form8843:
+                            Form8843()
                                 .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
                         case .unknown:
                             EmptyView()
                     }
                 }
                 
-                if userState.isLoading == true {
-                    LoadingScreen(isLoading: .constant(userState.isLoading))
+                if appState.isLoading == true {
+                    LoadingScreen(isLoading: .constant(appState.isLoading))
                 }
                 
                 VStack {
-                    if userState.isShowingAlert == true {
-                        SimpleAlert(title: "Uh Oh.", message: userState.alertMessage) {
-                            userState.isShowingAlert = false
+                    if appState.isShowingAlert == true {
+                        SimpleAlert(title: "Uh Oh.", message: appState.alertMessage) {
+                            appState.isShowingAlert = false
                         }                        
                     }
                 }.transition(.opacity).animation(.easeInOut(duration: 0.25))
             }
-            .environmentObject(userState)
+            .environmentObject(appState)
             .onAppear {
                 loadParse()
                 checkUserState()
@@ -63,9 +72,9 @@ struct SeniorDesignApp: App {
     func checkUserState() {
         withAnimation {
             if (PFUser.current() != nil) {
-                userState.authenticated = .yes
+                appState.currentScreen = .home
             }else{
-                userState.authenticated = .no
+                appState.currentScreen = .splash
             }
         }
     }

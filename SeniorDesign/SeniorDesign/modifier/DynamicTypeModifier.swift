@@ -1,69 +1,75 @@
 //
-//  DynamicTypeModifier.swift
-//  SeniorDesign
+//  Accessibility.swift
+//  AccessibilityDemo
 //
-//  Created by Josh Arnold on 3/3/21.
+//  Created by Josh Arnold on 3/4/21.
 //
 
+import Foundation
 import SwiftUI
 
 
-struct DynamicTypeModifier: ViewModifier {
+struct LinearDynamicTypeModifier: ViewModifier {
     
     @Environment(\.sizeCategory) var sizeCategory
-    var weight: Font.Weight = .regular
-    var design: Font.Design = .rounded
-    var scale:CGFloat = 1.0
+    @Environment(\.verticalSizeClass) var verticalSizeClass
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     
-    var extraSmall:CGFloat = 12
-    var small:CGFloat = 13
-    var medium:CGFloat = 14
-    var large:CGFloat = 16
-    var extraLarge:CGFloat = 18
-    var extraExtraLarge:CGFloat = 20
-    var extraExtraExtraLarge:CGFloat = 22
-    var accessibilityMedium:CGFloat = 24
-    var accessibilityLarge:CGFloat = 26
-    var accessibilityExtraLarge:CGFloat = 28
-    var accessibilityExtraExtraLarge:CGFloat = 30
-    var accessibilityExtraExtraExtraLarge:CGFloat = 32
-
+    var minSize:CGFloat = 12.0
+    var maxSize:CGFloat? = 100.0
+    var stepSize:CGFloat = 1.0
+    var scaleFactor:CGFloat = 1.0
+    var nonCompactScaleFactor:CGFloat = 1.5
+    
+    var weight:Font.Weight = .regular
+    var design:Font.Design = .default
+    
     func body(content: Content) -> some View {
-                
+        
         var scaledSize:CGFloat = 0.0
-        
-        
-        
+                        
         switch sizeCategory {
             case .extraSmall:
-                scaledSize = extraSmall
+                scaledSize = 1.0
             case .small:
-                scaledSize = small
+                scaledSize = 1*stepSize
             case .medium:
-                scaledSize = medium
+                scaledSize = 2*stepSize
             case .large:
-                scaledSize = large
+                scaledSize = 3*stepSize
             case .extraLarge:
-                scaledSize = extraLarge
+                scaledSize = 4*stepSize
             case .extraExtraLarge:
-                scaledSize = extraExtraLarge
+                scaledSize = 5*stepSize
             case .extraExtraExtraLarge:
-                scaledSize = extraExtraExtraLarge
+                scaledSize = 6*stepSize
             case .accessibilityMedium:
-                scaledSize = accessibilityMedium
+                scaledSize = 7*stepSize
             case .accessibilityLarge:
-                scaledSize = accessibilityLarge
+                scaledSize = 8*stepSize
             case .accessibilityExtraLarge:
-                scaledSize = accessibilityExtraLarge
+                scaledSize = 9*stepSize
             case .accessibilityExtraExtraLarge:
-                scaledSize = accessibilityExtraExtraLarge
+                scaledSize = 10*stepSize
             case .accessibilityExtraExtraExtraLarge:
-                scaledSize = accessibilityExtraExtraExtraLarge
+                scaledSize = 11*stepSize
             @unknown default:
-                scaledSize = medium
+                scaledSize =  0.0
         }
         
-        return content.font(.system(size: scaledSize*scale, weight: weight, design: design))
+        scaledSize += minSize
+        scaledSize *= scaleFactor
+        
+        if verticalSizeClass == .regular && horizontalSizeClass == .regular {
+            scaledSize = scaledSize*nonCompactScaleFactor
+        }
+        
+        if maxSize != nil {
+            scaledSize = min(maxSize!, scaledSize)
+        }
+                        
+        //MARK: Define custom font here!
+        return content.font(Font.system(size: scaledSize, weight: weight, design: design))
     }
 }
 
@@ -71,7 +77,36 @@ struct DynamicTypeModifier: ViewModifier {
 @available(iOS 13, macCatalyst 13, tvOS 13, watchOS 6, *)
 extension View {
     
-    func dynamicFont(weight:Font.Weight = .medium, scale:CGFloat = 1.0) -> some View {
-        self.modifier(DynamicTypeModifier(weight: .medium, design: .rounded, scale: scale))
+    //MARK: Define custom initial values here
+    func dynamicFont(
+        min:CGFloat, max:CGFloat = 100.0, step:CGFloat = 1.0, scale:CGFloat = 1.0, nonCompactScale:CGFloat = 1.5,
+        weight:Font.Weight = .regular,
+        design:Font.Design = .default
+    ) -> some View {
+        self.modifier(
+            LinearDynamicTypeModifier(
+                minSize: min, maxSize: max, stepSize: step, scaleFactor: scale, nonCompactScaleFactor: nonCompactScale,
+                weight: weight, design: design
+            )
+        )
     }
 }
+
+
+/*
+ // A neat preview
+ struct ContentView_Previews: PreviewProvider {
+     static var previews: some View {
+         
+         ForEach([ContentSizeCategory.extraSmall, ContentSizeCategory.accessibilityExtraExtraExtraLarge], id: \.self) { size in
+             Group {
+                 ContentView()
+                     .previewDevice("iPhone SE (2nd generation)")
+                 ContentView()
+                     .previewDevice("iPad Pro (12.9-inch) (4th generation)")
+             }
+             .environment(\.sizeCategory, size)
+         }
+     }
+ }
+ */

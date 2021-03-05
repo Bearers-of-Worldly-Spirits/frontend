@@ -20,7 +20,7 @@ struct SimpleTextfield: View {
     var body: some View {
         
         HStack {
-            Image(systemName: systemImageName)
+            Image(systemName: systemImageName)                
             Group {
                 if secure {
                     SecureField(placeholder, text: $text)
@@ -33,7 +33,7 @@ struct SimpleTextfield: View {
             .autocapitalization(capitalize)
         }
         .padding()
-        .dynamicFont(weight: .regular, scale: 0.8)
+        .dynamicFont(min: 14, step: 0.5, weight: .medium, design: .rounded)
         .foregroundColor(Theme.primaryColor)
         .accentColor(Theme.primaryColor)
         .frame(maxWidth: Theme.maxScreenWidth)

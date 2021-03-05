@@ -20,18 +20,19 @@ enum Form8843View {
 
 struct Form8843: View {
     
-    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var userState:AppState
     @State private var currentView:Form8843View = .info
     
+    
     var body: some View {
-        Group {
+        ZStack {
             switch currentView {
             
                 case .info:
                     InfoView(formNumber: "8843", description: TaxFormDescriptions.form8843) {
                         withAnimation { currentView = .address }
                     } canceled: {
-                        presentationMode.wrappedValue.dismiss()
+                        userState.currentScreen = .home
                     }
                             
                 case .address:
@@ -64,12 +65,11 @@ struct Form8843: View {
                     
                 case .submit:
                     SubmitView {
-                        presentationMode.wrappedValue.dismiss()
+                        userState.currentScreen = .home
                     }
             }
         }
         .background(Color("Background").ignoresSafeArea())
-        .transition(.opacity)
     }
 }
 

@@ -27,13 +27,13 @@ struct SimpleAlert: View {
                 
                 Text(title)
                     .foregroundColor(Theme.primaryColor)
-                    .dynamicFont(weight: .bold, scale: 0.95)
+                    .dynamicFont(min: 20)
                     .padding()
                     .frame(maxWidth: Theme.maxScreenWidth)
                 
                 Text(message)
                     .foregroundColor(Color(.secondaryLabel))
-                    .dynamicFont(weight: .regular, scale: 0.85)
+                    .dynamicFont(min: 20)
                     .lineLimit(4)
                     .multilineTextAlignment(.center)
                     .padding()

@@ -10,16 +10,12 @@ import Parse
 
 
 struct SignupView: View {
-                        
-    @State var isLoading:Bool = false
-    @State var isShowingAlert:Bool = false
-    @State var alertMessage:String = ""
-    
-    @State var firstLast:String = ""
-    @AppStorage("email") var username:String = ""
-    @State var password:String = ""
+                            
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var userState:AppState
+    @EnvironmentObject var userState:AppState    
+    @AppStorage("email") var username:String = ""
+    @State var firstLast:String = ""
+    @State var password:String = ""
     
     var body: some View {
         
@@ -29,7 +25,7 @@ struct SignupView: View {
                 VStack {
                     
                     Text("Signup")
-                        .dynamicFont(weight: .regular, scale: 3.0)
+                        .dynamicFont(min: 40)
                         .foregroundColor(Theme.primaryColor)
                         .frame(height: 150)
                     
@@ -48,7 +44,7 @@ struct SignupView: View {
                     
                     ButtonClear(title: "Have an account? Login") {
                         UIApplication.shared.endEditing()
-                        presentationMode.wrappedValue.dismiss()
+                        userState.currentScreen = .login
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -56,18 +52,6 @@ struct SignupView: View {
             .onTapGesture {
                 UIApplication.shared.endEditing()
             }
-            
-            if isLoading == true {
-                LoadingScreen(isLoading: $isLoading)
-            }
-            
-            VStack {
-                if isShowingAlert == true {
-                    SimpleAlert(title: "Uh Oh.", message: alertMessage) {
-                        isShowingAlert = false
-                    }
-                }
-            }.transition(.opacity).animation(.easeInOut(duration: 0.25))
         }
                 
         .background(Color("Background").ignoresSafeArea())
@@ -76,8 +60,8 @@ struct SignupView: View {
     func signupUser() {
         
         guard firstLast.count > 0 else {
-            alertMessage = "Please enter your first & last name."
-            isShowingAlert = true
+            userState.alertMessage = "Please enter your first & last name."
+            userState.isShowingAlert = true
             return
         }
         
@@ -87,17 +71,17 @@ struct SignupView: View {
         user.password = password
         user["name"] = firstLast
                 
-        isLoading = true
+        userState.isLoading = true
         
         user.signUpInBackground { (success, error) in
                         
-            isLoading = false
+            self.userState.isLoading = false
             
             if (error == nil) {
-                withAnimation {self.userState.authenticated = .yes}                
+                withAnimation {self.userState.currentScreen = .home}
             }else{
-                alertMessage = error?.localizedDescription ?? "Something went wrong!"
-                isShowingAlert = true
+                self.userState.alertMessage = error?.localizedDescription ?? "Something went wrong!"
+                self.userState.isShowingAlert = true
             }
         }
     }

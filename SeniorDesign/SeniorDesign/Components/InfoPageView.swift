@@ -46,7 +46,7 @@ struct InfoPageView: View {
                         .padding(.bottom, 50)
                 }
             }
-            .dynamicFont(weight: .regular, scale: 1.0)
+            .dynamicFont(min: 15, step: 0.5)
             .multilineTextAlignment(.center)
             .lineLimit(5)
             .foregroundColor(Color(.secondaryLabel))

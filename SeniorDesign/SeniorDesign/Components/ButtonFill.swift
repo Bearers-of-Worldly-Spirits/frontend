@@ -19,7 +19,7 @@ struct ButtonFill: View {
             action()
         }) {
             Text(title)
-                .dynamicFont(scale: 1.2)
+                .dynamicFont(min: 15, step: 0.75, weight: .medium, design: .rounded)
                 .frame(maxWidth: Theme.maxScreenWidth)
             .padding()
             .foregroundColor(Color("Background"))

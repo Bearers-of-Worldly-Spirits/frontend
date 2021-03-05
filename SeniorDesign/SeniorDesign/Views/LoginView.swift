@@ -15,7 +15,7 @@ private struct Title : View {
         HStack(alignment: .center, spacing: 4) {
             Text("Melon")                
         }
-        .dynamicFont(weight: .regular, scale: 3.0)
+        .dynamicFont(min: 40)
         .foregroundColor(Theme.primaryColor)
         .frame(height: 150)
     }
@@ -36,6 +36,7 @@ struct LoginView: View {
             ScrollView {
                 
                 VStack {
+                                                            
                     Title()
                     
                     VStack(spacing: 0) {
@@ -52,20 +53,13 @@ struct LoginView: View {
                     
                     ButtonClear(title: "Don't have an account? Signup") {
                         UIApplication.shared.endEditing()
-                        showSignup = true
+                        userState.currentScreen = .signup
                     }
                 }
                 .frame(maxWidth: .infinity)
             }
             .onTapGesture { UIApplication.shared.endEditing() }                                                            
         }
-        
-        //TODO: Add this navigation to add state so it can inherit
-        .fullScreenCover(isPresented: $showSignup, content: {
-            SignupView()
-                .environmentObject(userState)
-        })
-        
         .background(Color("Background").ignoresSafeArea())
     }
     
@@ -78,7 +72,7 @@ struct LoginView: View {
             userState.isLoading = false
             
             if (error == nil) {
-                withAnimation {self.userState.authenticated = .yes}
+                withAnimation {self.userState.currentScreen = AppView.home}
             }else{
                 userState.alertMessage = error?.localizedDescription ?? "Something went wrong!"
                 userState.isShowingAlert = true                
@@ -89,6 +83,17 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        
+        ForEach([ContentSizeCategory.extraSmall, ContentSizeCategory.accessibilityExtraExtraExtraLarge], id: \.self) { size in
+            Group {
+                LoginView()
+                    .previewDevice("iPhone SE (2nd generation)")
+                LoginView()
+                    .previewDevice("iPhone 12")
+                LoginView()
+                    .previewDevice("iPad Pro (12.9-inch) (4th generation)")
+            }
+            .environment(\.sizeCategory, size)
+        }
     }
 }
