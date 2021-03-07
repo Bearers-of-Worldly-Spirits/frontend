@@ -23,15 +23,16 @@ struct LargeGradientCard: View {
                 .foregroundColor(.white)
                 .padding(.trailing, 30)
         }
+        .padding([.top, .bottom], 30)
         .foregroundColor(Color(.white))
-        .frame(height: 160, alignment: .center)
+        .frame(minHeight: 160, alignment: .center)
         .background(
             RoundedRectangle(cornerRadius: 23, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
                 .fill(LinearGradient(gradient: gradient, startPoint: .bottomLeading, endPoint: .topTrailing))
                 .shadow(radius: 7)
         )
-        .foregroundColor(Color("Background"))
-        .dynamicFont(min: 16, step: 0.35, weight: .bold)
+        .foregroundColor(Color("Background"))        
+        .scaledFont(size: 16, name: Theme.font.bold)
     }
 }
 
@@ -42,5 +43,6 @@ struct LargeGradientCard_Previews: PreviewProvider {
             LargeGradientCard()
                 .previewDevice("iPad Pro (12.9-inch) (4th generation)")
         }
+        .environment(\.sizeCategory, ContentSizeCategory.accessibilityExtraExtraExtraLarge)
     }
 }

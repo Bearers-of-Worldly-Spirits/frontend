@@ -18,5 +18,13 @@ struct Theme {
     
     static let primaryColor:Color = Color("Primary")
     
-    static let fontName:String = "Avenir Next"
+    static let font:FontInfo = FontInfo()
+}
+
+
+struct FontInfo {
+    let regular:String = "Avenir Next"
+    let medium:String = "AvenirNext-Medium"
+    let bold:String = "AvenirNext-Bold"
+    let ultraLight:String = "AvenirNext-UltraLight"
 }

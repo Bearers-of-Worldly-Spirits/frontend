@@ -45,8 +45,8 @@ struct InfoPageView: View {
                         .frame(maxWidth: Theme.maxScreenWidth)
                         .padding(.bottom, 50)
                 }
-            }
-            .dynamicFont(min: 15, step: 0.5)
+            }            
+            .scaledFont(size: 15, name: Theme.font.regular)
             .multilineTextAlignment(.center)
             .lineLimit(5)
             .foregroundColor(Color(.secondaryLabel))

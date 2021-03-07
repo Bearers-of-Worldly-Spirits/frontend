@@ -33,7 +33,7 @@ struct SimpleTextfield: View {
             .autocapitalization(capitalize)
         }
         .padding()
-        .dynamicFont(min: 14, step: 0.5, weight: .medium, design: .rounded)
+        .scaledFont(size: 14, name: Theme.font.medium)
         .foregroundColor(Theme.primaryColor)
         .accentColor(Theme.primaryColor)
         .frame(maxWidth: Theme.maxScreenWidth)

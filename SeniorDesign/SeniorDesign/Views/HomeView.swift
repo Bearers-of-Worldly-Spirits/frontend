@@ -37,9 +37,8 @@ struct HomeView: View {
             Group {
                 Divider()
                 DiscussionCarousel {
-                                        
+                    userState.currentScreen = .discussion
                 }
-                
             }
             
             // Form data

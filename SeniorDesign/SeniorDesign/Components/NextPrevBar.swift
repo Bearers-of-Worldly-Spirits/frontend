@@ -27,8 +27,8 @@ struct NextPrevBar: View {
             })
             .foregroundColor(Color("Primary"))
         }
-        .padding()
-        .font(Font.custom(Theme.fontName, size: 15).weight(.bold))
+        .padding()        
+        .scaledFont(size: 15, name: Theme.font.bold)
     }
 }
 

@@ -51,6 +51,13 @@
 		79E44C2125DC862500DEBE7E /* ExtendedInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E44C2025DC862500DEBE7E /* ExtendedInfoView.swift */; };
 		79E44C2625DCA8E100DEBE7E /* VisaStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E44C2525DCA8E100DEBE7E /* VisaStatusView.swift */; };
 		79E44C2B25DCAB1400DEBE7E /* DaysPresentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E44C2A25DCAB1400DEBE7E /* DaysPresentView.swift */; };
+		79F1E34925F43B6200FC4B13 /* DiscussionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1E34825F43B6200FC4B13 /* DiscussionView.swift */; };
+		79F1E35125F43D6C00FC4B13 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1E35025F43D6C00FC4B13 /* BackButton.swift */; };
+		79F1E36325F440D900FC4B13 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1E36225F440D900FC4B13 /* Post.swift */; };
+		79F1E36825F442AE00FC4B13 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1E36725F442AE00FC4B13 /* CircleButton.swift */; };
+		79F1E38A25F449F900FC4B13 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1E38925F449F900FC4B13 /* CreatePostView.swift */; };
+		79F1E3A925F44E2800FC4B13 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1E3A825F44E2800FC4B13 /* TextArea.swift */; };
+		79F1E3AE25F451EF00FC4B13 /* SmallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1E3AD25F451EF00FC4B13 /* SmallButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +128,13 @@
 		79E44C2025DC862500DEBE7E /* ExtendedInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedInfoView.swift; sourceTree = "<group>"; };
 		79E44C2525DCA8E100DEBE7E /* VisaStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisaStatusView.swift; sourceTree = "<group>"; };
 		79E44C2A25DCAB1400DEBE7E /* DaysPresentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysPresentView.swift; sourceTree = "<group>"; };
+		79F1E34825F43B6200FC4B13 /* DiscussionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionView.swift; sourceTree = "<group>"; };
+		79F1E35025F43D6C00FC4B13 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		79F1E36225F440D900FC4B13 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		79F1E36725F442AE00FC4B13 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		79F1E38925F449F900FC4B13 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		79F1E3A825F44E2800FC4B13 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		79F1E3AD25F451EF00FC4B13 /* SmallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallButton.swift; sourceTree = "<group>"; };
 		83D6B5489CAB2A46BDD4AC6E /* Pods_SeniorDesignTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeniorDesignTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448F4C774D42082E22CC0E6 /* Pods-SeniorDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesign.debug.xcconfig"; path = "Target Support Files/Pods-SeniorDesign/Pods-SeniorDesign.debug.xcconfig"; sourceTree = "<group>"; };
 		939B41B11DF550EB8C8EF73C /* Pods-SeniorDesignTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesignTests.debug.xcconfig"; path = "Target Support Files/Pods-SeniorDesignTests/Pods-SeniorDesignTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -272,6 +286,8 @@
 				796F2C5A25D89E28005D70DC /* HomeView.swift */,
 				796F2C9A25D8A2E3005D70DC /* SignupView.swift */,
 				79E44BFA25DC6DAA00DEBE7E /* Form8843.swift */,
+				79F1E34825F43B6200FC4B13 /* DiscussionView.swift */,
+				79F1E38925F449F900FC4B13 /* CreatePostView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,6 +327,10 @@
 				7936B34825F1E22500C5BED7 /* DiscussionCarousel.swift */,
 				79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */,
 				7936B34D25F1E43200C5BED7 /* ImageCardButton.swift */,
+				79F1E35025F43D6C00FC4B13 /* BackButton.swift */,
+				79F1E36725F442AE00FC4B13 /* CircleButton.swift */,
+				79F1E3A825F44E2800FC4B13 /* TextArea.swift */,
+				79F1E3AD25F451EF00FC4B13 /* SmallButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -319,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				794089AD25DC5DB600B0B338 /* TaxForm.swift */,
+				79F1E36225F440D900FC4B13 /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -565,10 +586,12 @@
 			files = (
 				79E44BFB25DC6DAA00DEBE7E /* Form8843.swift in Sources */,
 				7936B34E25F1E43200C5BED7 /* ImageCardButton.swift in Sources */,
+				79F1E38A25F449F900FC4B13 /* CreatePostView.swift in Sources */,
 				79E44C2625DCA8E100DEBE7E /* VisaStatusView.swift in Sources */,
 				796F2C8C25D8A183005D70DC /* SimpleTextfield.swift in Sources */,
 				79A1DB7825DB881D000A2B86 /* TaxFormCarousel.swift in Sources */,
 				7936B34925F1E22500C5BED7 /* DiscussionCarousel.swift in Sources */,
+				79F1E3A925F44E2800FC4B13 /* TextArea.swift in Sources */,
 				796F2C9625D8A218005D70DC /* Extensions.swift in Sources */,
 				796F2C5B25D89E28005D70DC /* HomeView.swift in Sources */,
 				793A87B425E860D300FBF863 /* InfoPageView.swift in Sources */,
@@ -576,13 +599,16 @@
 				796F2C6A25D89E56005D70DC /* Theme.swift in Sources */,
 				79BBDD6B25DCAF4D003225A2 /* LoadingView.swift in Sources */,
 				7908E98125F0588E007F11D9 /* DynamicTypeModifier.swift in Sources */,
+				79F1E36325F440D900FC4B13 /* Post.swift in Sources */,
 				79E44C0025DC767500DEBE7E /* InfoView.swift in Sources */,
 				79A1DB6925DB8444000A2B86 /* GradientCardButton.swift in Sources */,
+				79F1E3AE25F451EF00FC4B13 /* SmallButton.swift in Sources */,
 				794089AE25DC5DB600B0B338 /* TaxForm.swift in Sources */,
 				79E44C1225DC805A00DEBE7E /* NextPrevBar.swift in Sources */,
 				793A87A325E85F2D00FBF863 /* SplashView.swift in Sources */,
 				794089A425DC575200B0B338 /* LargeGradientCard.swift in Sources */,
 				794089A925DC5CDB00B0B338 /* CompletedList.swift in Sources */,
+				79F1E34925F43B6200FC4B13 /* DiscussionView.swift in Sources */,
 				793A87E325E8628700FBF863 /* LottieView.swift in Sources */,
 				796F2C9B25D8A2E3005D70DC /* SignupView.swift in Sources */,
 				79BEF57825D8AEAB00A84186 /* SimpleAlert.swift in Sources */,
@@ -594,6 +620,8 @@
 				79E44C0525DC7AAB00DEBE7E /* DismissBar.swift in Sources */,
 				7908E96325F03068007F11D9 /* LoadingScreen.swift in Sources */,
 				796F2C7625D89F53005D70DC /* WelcomeHeader.swift in Sources */,
+				79F1E36825F442AE00FC4B13 /* CircleButton.swift in Sources */,
+				79F1E35125F43D6C00FC4B13 /* BackButton.swift in Sources */,
 				796F2C9125D8A1D3005D70DC /* LoginView.swift in Sources */,
 				79E44C2B25DCAB1400DEBE7E /* DaysPresentView.swift in Sources */,
 				796F2C8725D8A103005D70DC /* ButtonClear.swift in Sources */,

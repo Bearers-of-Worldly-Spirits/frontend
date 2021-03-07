@@ -34,7 +34,7 @@ struct DaysPresentView: View {
                 
                 Text("Please list the days you were present in the U.S.A during the following years.")
                     .multilineTextAlignment(.center)
-                    .font(Font.custom(Theme.fontName, size: 16).weight(.medium))
+                    .scaledFont(size: 16, name: Theme.font.medium)
                     .foregroundColor(Color(.secondaryLabel))
                     .padding()
                     .frame(maxWidth: Theme.maxScreenWidth)
@@ -46,7 +46,7 @@ struct DaysPresentView: View {
                 Divider()
                 
                 Toggle("Did you file a U.S income tax return any prior year?", isOn: $filedBefore)
-                    .font(Font.custom(Theme.fontName, size: 16).weight(.medium))
+                    .scaledFont(size: 16, name: Theme.font.medium)
                     .toggleStyle(SwitchToggleStyle(tint: Color("Primary")))
                     .foregroundColor(Color(.secondaryLabel))
                     .padding()

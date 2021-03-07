@@ -30,8 +30,8 @@ struct GradientCardButton: View {
                 .shadow(radius: 7)
         )
         .opacity(opacity)        
-        .foregroundColor(Color("Background"))
-        .dynamicFont(min: 14, step: 0.5, weight: .bold)
+        .foregroundColor(Color("Background"))        
+        .scaledFont(size: 14, name: Theme.font.bold)
         .onTapGesture {
             
             opacity = 0.25

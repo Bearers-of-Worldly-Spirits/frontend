@@ -21,14 +21,14 @@ struct CompletedList: View {
                 Text("Forms").foregroundColor(Color(.label))
                 Text("Completed").foregroundColor(Color("Primary"))
             }
-            .font(Font.custom(Theme.fontName, size: 20, relativeTo: .title).weight(.bold))
+            .scaledFont(size: 20, name: Theme.font.bold)
             .padding([.leading, .top])
                         
             VStack {
                 ForEach(completedItems) { item in
                     HStack(alignment: .center) {
-                        Text(item.name)
-                            .font(Font.custom(Theme.fontName, size: 16, relativeTo: .body).weight(.medium))
+                        Text(item.name)                            
+                            .scaledFont(size: 16, name: Theme.font.medium)
                         Spacer().frame(maxWidth: Theme.maxScreenWidth)
                         Circle()
                             .fill(Color("Primary"))

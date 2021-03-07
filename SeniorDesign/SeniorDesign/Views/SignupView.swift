@@ -24,8 +24,8 @@ struct SignupView: View {
             ScrollView {
                 VStack {
                     
-                    Text("Signup")
-                        .dynamicFont(min: 40)
+                    Text("Signup")                        
+                        .scaledFont(size: 50, name: Theme.font.medium)
                         .foregroundColor(Theme.primaryColor)
                         .frame(height: 150)
                     

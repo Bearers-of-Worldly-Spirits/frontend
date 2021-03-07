@@ -24,7 +24,7 @@ struct SubmitView: View {
             VStack {
                                         
                 Text(text)
-                    .font(Font.custom(Theme.fontName, size: 40).weight(.light))
+                    .scaledFont(size: 40, name: Theme.font.ultraLight)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color("Primary"))
                     .padding()                    
@@ -34,8 +34,8 @@ struct SubmitView: View {
                         .opacity(opacity)
                         .padding(50)
                 } else {
-                    Text(resultText)
-                        .font(Font.custom(Theme.fontName, size: 16).weight(.medium))
+                    Text(resultText)                        
+                        .scaledFont(size: 16, name: Theme.font.medium)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color(.secondaryLabel))
                         .padding()

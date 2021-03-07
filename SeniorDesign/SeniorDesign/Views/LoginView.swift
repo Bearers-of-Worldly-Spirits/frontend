@@ -14,8 +14,8 @@ private struct Title : View {
     var body : some View {
         HStack(alignment: .center, spacing: 4) {
             Text("Melon")                
-        }
-        .dynamicFont(min: 40)
+        }    
+        .scaledFont(size: 50, name: Theme.font.medium)
         .foregroundColor(Theme.primaryColor)
         .frame(height: 150)
     }

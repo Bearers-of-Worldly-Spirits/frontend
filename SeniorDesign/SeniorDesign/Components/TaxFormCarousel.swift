@@ -14,11 +14,11 @@ struct ComingSoonTaxFormCarousel: View {
     var body: some View {
         VStack(alignment: .leading) {
                         
-            HStack {
+            HStack(spacing: 5) {
                 Text("Coming").foregroundColor(Color(.label))
                 Text("Soon").foregroundColor(Color("Primary"))
             }
-            .dynamicFont(min: 16, step: 0.7, weight: .bold)
+            .scaledFont(size: 16, name: Theme.font.bold)
             .padding([.leading, .top])            
             
             ScrollView (.horizontal, showsIndicators: false) {
@@ -44,11 +44,11 @@ struct TaxFormCarousel: View {
     var body: some View {
         VStack(alignment: .leading) {
                         
-            HStack {
+            HStack(spacing: 5) {
                 Text("Available").foregroundColor(Color(.label))
                 Text("Forms").foregroundColor(Color("Primary"))
             }
-            .dynamicFont(min: 16, step: 0.7, weight: .bold)
+            .scaledFont(size: 16, name: Theme.font.bold)
             .padding([.leading, .top])
             
             ScrollView (.horizontal, showsIndicators: false) {

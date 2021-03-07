@@ -28,19 +28,19 @@ struct InfoView: View {
                         
                         Text("Form")
                             .foregroundColor(Color(.label))
-                            .font(Font.custom(Theme.fontName, size: 27).weight(.bold))
+                            .scaledFont(size: 27, name: Theme.font.bold)
                         
                         Text(formNumber)
                             .foregroundColor(Color("Primary"))
-                            .font(Font.custom(Theme.fontName, size: 27).weight(.light))
+                            .scaledFont(size: 27, name: Theme.font.ultraLight)
                     }
                     
                     .padding()
                     
                     Text(description)
                         .foregroundColor(Color(.secondaryLabel))
-                        .multilineTextAlignment(.center)
-                        .font(Font.custom(Theme.fontName, size: 15).weight(.medium))
+                        .multilineTextAlignment(.center)                        
+                        .scaledFont(size: 15, name: Theme.font.medium)
                         .frame(maxWidth: Theme.maxScreenWidth)
                     
                     Spacer()

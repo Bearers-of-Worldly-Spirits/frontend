@@ -14,11 +14,11 @@ struct DiscussionCarousel: View {
     var body: some View {
         VStack(alignment: .leading) {
                         
-            HStack {
+            HStack(spacing: 5) {
                 Text("Join the").foregroundColor(Color(.label))
                 Text("Discussion").foregroundColor(Color("Primary"))
-            }
-            .dynamicFont(min: 16, step: 0.7, weight: .bold)
+            }            
+            .scaledFont(size: 16, name: Theme.font.bold)
             .padding([.leading, .top])
             
             ScrollView (.horizontal, showsIndicators: false) {
@@ -26,7 +26,7 @@ struct DiscussionCarousel: View {
                     Spacer(minLength: 15)
                     
                     ImageCardButton(title: "General Forum") {
-                        
+                        action()
                     }                        
                     
                     Spacer(minLength: 15)

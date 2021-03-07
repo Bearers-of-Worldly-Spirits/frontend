@@ -16,14 +16,14 @@ struct WelcomeHeader: View {
         HStack {
             VStack(alignment: .leading) {
                 Text("Hello " + name)
-                    .dynamicFont(min: 16, step: 0.5, weight: .medium)
+                    .scaledFont(size: 16, name: Theme.font.medium)
                 
-                HStack {
+                HStack(spacing: 5) {
                     Text("Your Tax")
                         .foregroundColor(Color(.label))
-                        .dynamicFont(min: 20, step: 0.5, weight: .semibold)
+                        .scaledFont(size: 20, name: Theme.font.medium)
                     Text("Report")
-                        .dynamicFont(min: 20, step: 0.5, weight: .bold)
+                        .scaledFont(size: 20, name: Theme.font.bold)                        
                 }
             }
             

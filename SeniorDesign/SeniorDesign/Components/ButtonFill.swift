@@ -13,13 +13,14 @@ struct ButtonFill: View {
     var action: () -> ()
     
     var body: some View {
+        
         Button(action: {
             let impactMed = UIImpactFeedbackGenerator(style: .medium)
             impactMed.impactOccurred()
             action()
         }) {
-            Text(title)
-                .dynamicFont(min: 15, step: 0.75, weight: .medium, design: .rounded)
+            Text(title)                
+                .scaledFont(size: 15, name: Theme.font.medium)
                 .frame(maxWidth: Theme.maxScreenWidth)
             .padding()
             .foregroundColor(Color("Background"))

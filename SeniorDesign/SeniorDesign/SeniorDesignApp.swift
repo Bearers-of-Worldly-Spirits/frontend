@@ -35,27 +35,33 @@ struct SeniorDesignApp: App {
                         case .form8843:
                             Form8843()
                                 .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
+                        case .discussion:
+                            DiscussionView()
+                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
+                        case .createPost:
+                            CreatePostView()
+                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
                         case .unknown:
                             EmptyView()
                     }
+                }
+                .alert(isPresented: $appState.isShowingAlert) {
+                    Alert(title:
+                            Text("Uh Oh."),
+                          message:
+                            Text(appState.alertMessage),
+                          dismissButton: .default(Text("Got it!"))
+                    )
                 }
                 
                 if appState.isLoading == true {
                     LoadingScreen(isLoading: .constant(appState.isLoading))
                 }
-                
-                VStack {
-                    if appState.isShowingAlert == true {
-                        SimpleAlert(title: "Uh Oh.", message: appState.alertMessage) {
-                            appState.isShowingAlert = false
-                        }                        
-                    }
-                }.transition(.opacity).animation(.easeInOut(duration: 0.25))
             }
             .environmentObject(appState)
             .onAppear {
                 loadParse()
-                checkUserState()
+                checkUserState()                
             }
         }
     }

@@ -33,7 +33,7 @@ struct ImageCardButton: View {
         )
         .opacity(opacity)
         .foregroundColor(Color("Background"))
-        .dynamicFont(min: 14, step: 0.5, weight: .bold)
+        .scaledFont(size: 14, name: Theme.font.bold)
         .onTapGesture {
             
             opacity = 0.25

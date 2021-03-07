@@ -19,13 +19,13 @@ struct SplashView: View {
                     VStack {
                         
                         Text("Melon")
-                            .dynamicFont(min: 50, weight: .medium, design: .rounded)
+                            .scaledFont(size: 50, name: Theme.font.medium)
                             .padding()
                             .foregroundColor(Color("Primary"))
                             
                         
-                        Text("Melon makes tax filing, simple.")
-                            .dynamicFont(min: 16, weight: .medium, design: .rounded)
+                        Text("Melon makes tax filing, simple.")                            
+                            .scaledFont(size: 16, name: Theme.font.medium)
                             .foregroundColor(Color(.secondaryLabel))
                             .padding()
                             .multilineTextAlignment(.center)
