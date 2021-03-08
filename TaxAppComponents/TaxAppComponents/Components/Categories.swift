@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Categories: View {
     var body: some View {
-        //let teal = UIColor(red: 0.0549, green: 0.9137, blue: 0.8902, alpha: 1.0);
         
         let space_vertical = Spacer().frame(width: 25);
         let space_between = Spacer().frame(width: 45);
@@ -44,8 +43,7 @@ struct Categories: View {
                 SingleCategory()
                 space_vertical
             }.padding(.all, 10)
-        }
-        //.background(Color.init(teal))
+        }//.background(Color.black)
     }
 }
 

@@ -14,9 +14,11 @@ struct SearchCategories: View {
         // Using temporary  "teal" color throughout app components and views -- need to replace with gradient background
         VStack {
             TopMenu()
-            Categories().padding(.bottom, 20)
+            SearchBar().padding(.top, -60).padding(.bottom, 20)
+            Categories()
             PullUp()
-        }.padding(.top, 45)
+            BottomMenu().padding(.top, -60)
+        }//.background(Color.black)//.padding(.top, 45)
     }
 }
 
