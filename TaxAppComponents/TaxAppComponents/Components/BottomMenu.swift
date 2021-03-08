@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct BottomMenu: View {
-    var body: some View {        
+    var body: some View {
         HStack {
             Spacer()
             VStack {
-                Spacer().frame(width: 20, height: 10)
                 Button(action: {
                     print("Button was tapped")
                 }) { Image("pull_up") }
-                //Spacer().frame(height: 30)
+                Spacer().frame(height: 30)
                 HStack(spacing: 45) {
                     Button(action: {
                         print("Button was tapped")
@@ -27,10 +26,11 @@ struct BottomMenu: View {
                     Button(action: {
                         print("Button was tapped")
                     }) { Image("profile") }
-                }.padding()
-            }
+                }.padding(.bottom,  80)
+            }.padding(.top, 10)
             Spacer()
-        }.background(Color.white)
+        }.background(Color.white).cornerRadius(40.0)
+        
     }
 }
 
