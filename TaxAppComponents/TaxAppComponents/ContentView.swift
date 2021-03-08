@@ -12,7 +12,7 @@ struct ContentView: View {
         // Replace teal with gradients
         let teal = UIColor(red: 0.0549, green: 0.9137, blue: 0.8902, alpha: 1.0);
         
-        SearchCategories().background(Color.init(teal))
+        //SearchCategories().background(Color.init(teal))
         SearchPosts().background(Color.init(teal))
     }
 }

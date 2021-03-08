@@ -15,7 +15,7 @@ struct PullUp: View {
                 print("Pull Up public posts")
             }) { Image("pull_up") }.padding()
             Spacer()
-        }.padding(.bottom, 50).background(Color.white).cornerRadius(40.0)
+        }.padding(.bottom, 50).background(Color.white).cornerRadius(20.0)
     }
 }
 

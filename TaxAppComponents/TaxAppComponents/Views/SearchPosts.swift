@@ -14,9 +14,9 @@ struct SearchPosts: View {
         VStack {
             TopMenu()
             SearchBar().padding(.top, -60).padding(.bottom, 20)
-            PullDown().padding(.top, -10)
+            PullDown().padding(.top, -15)
             BottomMenu().padding(.top, -85)
-        }//.background(Color.black)
+        }//background(Color.black)
     }
 }
 
