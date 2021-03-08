@@ -16,8 +16,8 @@ struct SearchCategories: View {
         VStack {
             TopMenu()
             Categories()
-            BottomMenu()
-        }.background(Color.init(teal)).padding(.top, 35)
+            PullUp()
+        }.background(Color.init(teal)).padding(.top, 45)
     }
 }
 

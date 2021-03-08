@@ -21,26 +21,8 @@ struct ContentView: View {
 //            print("Hello")
 //        })
 //
-        
-           HStack{
-                Text("Login")
-                    .font(.headline)
-                    .foregroundColor(Color.white)
-                    .padding()
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .background(Color.green)
-                    .cornerRadius(40.0)
-                Text("Join")
-                    .font(.headline)
-                    .foregroundColor(Color.black)
-                    .padding()
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .background(Color.gray)
-                    .cornerRadius(40.0)
-            }.overlay(
-                RoundedRectangle(cornerRadius: 40)
-                    .stroke(Color.green, lineWidth: 1)
-            )
+        //SearchCategories()
+        SearchPosts()
     }
 }
 
