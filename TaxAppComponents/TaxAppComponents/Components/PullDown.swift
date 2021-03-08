@@ -17,15 +17,15 @@ struct PullDown: View {
                 Button(action: {
                     print("Pull Up public posts")
                 }) { Image("pull_down") }
-                Spacer().frame(height: 20)
+                //Spacer().frame(height: 20)
                 //Post(status: self.status)
-                Post()
-                Post()
-                Post()
-                Post()
+                Post().padding(.bottom, 10)
+                Post().padding(.bottom, 10)
+                Post().padding(.bottom, 10)
+                Post().padding(.bottom, -10)
                 HStack(spacing: 45) {
                     BottomMenu()
-                }.padding(.bottom, 100).padding(.top, 20)
+                }.padding(.bottom, 80).padding(.top, 20)
             }.padding(.top, 10)
             Spacer()
         }.background(Color.white).cornerRadius(40.0)
