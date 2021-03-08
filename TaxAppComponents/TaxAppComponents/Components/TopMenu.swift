@@ -11,41 +11,36 @@ struct TopMenu: View {
     var body: some View {
         
         let teal = UIColor(red: 0.0549, green: 0.9137, blue: 0.8902, alpha: 1.0);
-        //var username:String = "";
         
         VStack {
             HStack {
-                VStack {
-                    Button(action: {
-                        print("Button was clicked")
-                    }) {
-                        Image("hamburger")
-                            .padding(.all, 10)
-                    }
-                    Spacer().frame(height: 50)
-                }
+                Button(action: {
+                    print("Button was clicked")
+                }) {
+                    Image("hamburger")
+                        .padding(.all, 10)
+                }.padding(.bottom, 30).padding(.leading, 5)
                 
                 Image("user")
-                    .padding(.top, 40)
+                    .padding(.top, 20)
                 
+                // Space between user profile and notifications
                 Spacer()
-                VStack {
-                    Button(action: {
-                        print("Button was clicked")
-                    }) {
-                        Image("notifs")
-                            .padding(.all, 10)
-                    }
-                    Spacer().frame(height: 40)
-                }
-            }
-            //Spacer()
+                
+                Button(action: {
+                    print("Button was clicked")
+                }) {
+                    Image("notifs")
+                        .padding(.all, 10)
+                }.padding(.bottom, 20)
+                
+            }.padding(.bottom, -40)
             HStack {
                 Spacer()
                 Image("search_bar")
                     .padding(.all, 10)
             }
-        }
+        }.padding(.bottom, 20)
         .background(Color.init(teal))
     }
 }

@@ -9,42 +9,43 @@ import SwiftUI
 
 struct Categories: View {
     var body: some View {
-        let teal = UIColor(red: 0.0549, green: 0.9137, blue: 0.8902, alpha: 1.0);
+        //let teal = UIColor(red: 0.0549, green: 0.9137, blue: 0.8902, alpha: 1.0);
         
-        let space = Spacer().frame(width: 15);
+        let space_vertical = Spacer().frame(width: 25);
+        let space_between = Spacer().frame(width: 45);
         
         VStack {
             HStack {
-                space
+                space_vertical
                 SingleCategory()
-                Spacer()
+                space_between
                 SingleCategory()
-                Spacer()
+                space_between
                 SingleCategory()
-                space
+                space_vertical
             }.padding(.all, 10)
             
             HStack {
-                space
+                space_vertical
                 SingleCategory()
                 Spacer()
                 SingleCategory()
                 Spacer()
                 SingleCategory()
-                space
+                space_vertical
             }.padding(.all, 10)
             
             HStack {
-                space
+                space_vertical
                 SingleCategory()
                 Spacer()
                 SingleCategory()
                 Spacer()
                 SingleCategory()
-                space
+                space_vertical
             }.padding(.all, 10)
         }
-        .background(Color.init(teal))
+        //.background(Color.init(teal))
     }
 }
 

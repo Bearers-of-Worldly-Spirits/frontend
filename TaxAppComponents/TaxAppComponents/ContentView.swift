@@ -9,20 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        // code inside here
-        //Hstack {}
-        //Vstack {}
-        //Zstack {}
-//        Text("Testing...!")
-//            .font(Font.system(.title))
-//            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-//            .padding()
-//        Button("Click me", action : {
-//            print("Hello")
-//        })
-//
-        //SearchCategories()
-        SearchPosts()
+        // Replace teal with gradients
+        let teal = UIColor(red: 0.0549, green: 0.9137, blue: 0.8902, alpha: 1.0);
+        
+        //SearchCategories().background(Color.init(teal))
+        SearchPosts().background(Color.init(teal))
     }
 }
 

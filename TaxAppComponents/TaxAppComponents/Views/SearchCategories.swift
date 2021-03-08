@@ -12,12 +12,11 @@ import SwiftUI
 struct SearchCategories: View {
     var body: some View {
         // Using temporary  "teal" color throughout app components and views -- need to replace with gradient background
-        let teal = UIColor(red: 0.0549, green: 0.9137, blue: 0.8902, alpha: 1.0);
         VStack {
             TopMenu()
-            Categories()
+            Categories().padding(.bottom, 20)
             PullUp()
-        }.background(Color.init(teal)).padding(.top, 45)
+        }.padding(.top, 45)
     }
 }
 
