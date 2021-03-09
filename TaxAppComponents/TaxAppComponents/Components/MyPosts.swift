@@ -12,18 +12,13 @@ struct MyPosts: View {
         HStack {
             Spacer()
             VStack {
-                Button(action: {
-                    print("Pull Up public posts")
-                }) { Image("pull_down") }.padding(.top, 13)
+                Text("Your open posts:").font(.caption).foregroundColor(Color.gray).padding(.trailing, 170)
                 Post().padding(.bottom, 13)
                 Post().padding(.bottom, 13)
-                Post().padding(.bottom, -30)
-                HStack(spacing: 45) {
-                    BottomMenu()
-                }.padding(.bottom, 80).padding(.top, 40)
-            }.padding(.top, 10)
+                Post().padding(.bottom, 13)
+            }.padding(.top, 20).padding(.bottom, 40)
             Spacer()
-        }.background(Color.black).cornerRadius(20.0)
+        }.background(Color.white).cornerRadius(20.0)
     }
 }
 

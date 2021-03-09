@@ -9,7 +9,19 @@ import SwiftUI
 
 struct Profile: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//        HStack {
+//            Spacer()
+            VStack {
+                Text("Display Name").foregroundColor(.white).font(.caption)
+                Image("user")
+                Text("username").foregroundColor(.white).font(.caption)
+                RoundedRectangle(cornerRadius: 25, style: .continuous)     .fill(Color.white)
+                    .frame(width: 200, height: 2)
+                Text("bio").foregroundColor(.white).font(.caption).padding(.bottom, 20)
+            }//.background(Color.black)
+//            Spacer()
+//        }.background(Color.black)
+        
     }
 }
 
