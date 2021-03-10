@@ -9,43 +9,11 @@ import SwiftUI
 import Parse
 
 
-struct DiscussionHeader: View {
-    
-    var title:String = "Discussions"
-    var previousScreen:AppView = .home
-        
-    @EnvironmentObject var appState:AppState
-    
-    
-    var body: some View {
-        ZStack {
-            HStack {
-                Text(title)
-                    .scaledFont(size: 18, name: Theme.font.medium, max: 21)
-                    .foregroundColor(Color("Primary"))
-            }
-            .frame(maxWidth: .infinity)
-            HStack {
-                BackButton {appState.currentScreen = previousScreen}
-                Spacer()
-            }
-        }
-    }
-}
-
-
 struct DiscussionView: View {
     
     @EnvironmentObject var appState:AppState
     
-    @State var posts:[Post] = [
-        Post(object: nil, title: "Hello", description: "World"),
-        Post(object: nil, title: "Hello", description: "World"),
-        Post(object: nil, title: "Hello", description: "World"),
-        Post(object: nil, title: "Hello", description: "World"),
-        Post(object: nil, title: "Hello", description: "World"),
-        Post(object: nil, title: "Hello", description: "World"),
-    ]
+    @State var posts:[Post] = []
     
     
     var body: some View {
@@ -54,27 +22,41 @@ struct DiscussionView: View {
             
             // Scroll view
             ScrollView {
-                DiscussionHeader()
+                SimpleHeader()
                     .environmentObject(appState)
                 Divider()                
                 ForEach(posts, id: \.self) { post in
-                    RoundedRectangle(cornerRadius: 25.0)
-                        .fill(Color(.secondarySystemBackground))
-                        .frame(maxWidth:.infinity, minHeight: 175)
-                        .padding([.top, .leading, .trailing])
+                    DiscussionPost(post: post)
                 }
             }
             
             // Circle button
             VStack {
                 Spacer()
-                CircleButton() {
-                    appState.currentScreen = .createPost
-                }
+                CircleButton() { appState.currentScreen = .createPost }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .background(Color(.systemBackground))
+        .onAppear {
+            loadPosts()
+        }
+    }
+    
+    
+    func loadPosts() {
+        guard PFUser.current() != nil else {return}
+        let query = PFQuery(className: "Post")
+        query.order(byDescending: "createdAt")
+        query.includeKey("user")
+        query.findObjectsInBackground { (objects, error) in
+            if objects == nil {return}
+            if let objects = objects {
+                withAnimation {
+                    self.posts = objects.map {Post(object: $0, title: $0.object(forKey: "title") as? String ?? "", description: $0.object(forKey: "description") as? String ?? "")}
+                }
+            }
+        }
     }
 }
 

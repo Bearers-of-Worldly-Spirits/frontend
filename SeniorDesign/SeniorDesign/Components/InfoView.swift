@@ -32,7 +32,7 @@ struct InfoView: View {
                         
                         Text(formNumber)
                             .foregroundColor(Color("Primary"))
-                            .scaledFont(size: 27, name: Theme.font.ultraLight)
+                            .scaledFont(size: 27, name: Theme.font.medium)
                     }
                     
                     .padding()
