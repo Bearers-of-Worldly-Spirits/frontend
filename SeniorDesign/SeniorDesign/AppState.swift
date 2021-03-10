@@ -11,7 +11,7 @@ import Combine
 
 
 enum AppView: Identifiable {
-    case unknown, splash, login, signup, home, form8843, discussion, createPost
+    case unknown, splash, login, signup, home, form8843, discussion, createPost, post
     var id: Int { hashValue }
 }
 
@@ -21,4 +21,5 @@ class AppState : ObservableObject {
     @Published var isLoading:Bool = false
     @Published var isShowingAlert:Bool = false
     @Published var alertMessage:String = ""
+    @Published var recentPost:Post = Post(object: nil, title: "", description: "")
 }

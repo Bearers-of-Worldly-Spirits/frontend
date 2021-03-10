@@ -17,34 +17,29 @@ struct SeniorDesignApp: App {
     var body: some Scene {
         WindowGroup {
             ZStack {
-                
                 Group {
                     switch appState.currentScreen {
                         case .splash:
                             SplashView()
-                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
                         case .login:
                             LoginView()
-                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
                         case .signup:
                             SignupView()
-                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
                         case .home:
                             HomeView()
-                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
                         case .form8843:
                             Form8843()
-                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
                         case .discussion:
                             DiscussionView()
-                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
                         case .createPost:
                             CreatePostView()
-                                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
+                        case .post:
+                            PostView()
                         case .unknown:
                             EmptyView()
                     }
                 }
+                .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.35)))
                 .alert(isPresented: $appState.isShowingAlert) {
                     Alert(title:
                             Text("Uh Oh."),
@@ -52,8 +47,7 @@ struct SeniorDesignApp: App {
                             Text(appState.alertMessage),
                           dismissButton: .default(Text("Got it!"))
                     )
-                }
-                
+                }                
                 if appState.isLoading == true {
                     LoadingScreen(isLoading: .constant(appState.isLoading))
                 }

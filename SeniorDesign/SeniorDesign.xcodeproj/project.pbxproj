@@ -43,6 +43,8 @@
 		79A1DB5D25DB7D17000A2B86 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB5C25DB7D17000A2B86 /* AppState.swift */; };
 		79A1DB6925DB8444000A2B86 /* GradientCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */; };
 		79A1DB7825DB881D000A2B86 /* TaxFormCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */; };
+		79B714F425F8686100C41C78 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B714F325F8686100C41C78 /* PostView.swift */; };
+		79B714F925F873A700C41C78 /* DynamicKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B714F825F873A700C41C78 /* DynamicKeyboardView.swift */; };
 		79BBDD6625DCAEB8003225A2 /* SubmitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBDD6525DCAEB8003225A2 /* SubmitView.swift */; };
 		79BBDD6B25DCAF4D003225A2 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBDD6A25DCAF4D003225A2 /* LoadingView.swift */; };
 		79BEF57825D8AEAB00A84186 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BEF57725D8AEAB00A84186 /* SimpleAlert.swift */; };
@@ -123,6 +125,8 @@
 		79A1DB5C25DB7D17000A2B86 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCardButton.swift; sourceTree = "<group>"; };
 		79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxFormCarousel.swift; sourceTree = "<group>"; };
+		79B714F325F8686100C41C78 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		79B714F825F873A700C41C78 /* DynamicKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicKeyboardView.swift; sourceTree = "<group>"; };
 		79BBDD6525DCAEB8003225A2 /* SubmitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitView.swift; sourceTree = "<group>"; };
 		79BBDD6A25DCAF4D003225A2 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		79BEF57725D8AEAB00A84186 /* SimpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 				796F2C2425D89DF7005D70DC /* SeniorDesignApp.swift */,
 				79A1DB5C25DB7D17000A2B86 /* AppState.swift */,
 				796F2C9525D8A218005D70DC /* Extensions.swift */,
+				79B714F825F873A700C41C78 /* DynamicKeyboardView.swift */,
 				7908E98525F06098007F11D9 /* Modifier */,
 				796F2C6E25D89E5B005D70DC /* Theme */,
 				793A87E725E8702C00FBF863 /* Animations */,
@@ -295,6 +300,7 @@
 				79E44BFA25DC6DAA00DEBE7E /* Form8843.swift */,
 				79F1E34825F43B6200FC4B13 /* DiscussionView.swift */,
 				79F1E38925F449F900FC4B13 /* CreatePostView.swift */,
+				79B714F325F8686100C41C78 /* PostView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -614,6 +620,7 @@
 				79A1DB6925DB8444000A2B86 /* GradientCardButton.swift in Sources */,
 				7962DA4925F851AE00F8D77F /* SimpleHeader.swift in Sources */,
 				79F1E3AE25F451EF00FC4B13 /* SmallButton.swift in Sources */,
+				79B714F925F873A700C41C78 /* DynamicKeyboardView.swift in Sources */,
 				794089AE25DC5DB600B0B338 /* TaxForm.swift in Sources */,
 				79E44C1225DC805A00DEBE7E /* NextPrevBar.swift in Sources */,
 				793A87A325E85F2D00FBF863 /* SplashView.swift in Sources */,
@@ -636,6 +643,7 @@
 				79F1E35125F43D6C00FC4B13 /* BackButton.swift in Sources */,
 				796F2C9125D8A1D3005D70DC /* LoginView.swift in Sources */,
 				79E44C2B25DCAB1400DEBE7E /* DaysPresentView.swift in Sources */,
+				79B714F425F8686100C41C78 /* PostView.swift in Sources */,
 				796F2C8725D8A103005D70DC /* ButtonClear.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

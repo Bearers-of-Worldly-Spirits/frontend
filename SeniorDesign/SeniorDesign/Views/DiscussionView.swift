@@ -27,6 +27,10 @@ struct DiscussionView: View {
                 Divider()                
                 ForEach(posts, id: \.self) { post in
                     DiscussionPost(post: post)
+                        .onTapGesture {
+                            appState.recentPost = post
+                            appState.currentScreen = .post
+                        }
                 }
             }
             
