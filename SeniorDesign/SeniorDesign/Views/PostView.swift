@@ -14,6 +14,7 @@ struct PostView: View {
     
     @EnvironmentObject var appState:AppState
     @State private var userComment:String = ""
+    @State private var comments:[Comment] = []
     
     
     var body: some View {
@@ -53,23 +54,29 @@ struct PostView: View {
                                 .foregroundColor(Color(.secondaryLabel))
                         }
                     }
-                    .padding(.bottom, 5)
+                    .padding(5)
                     .lineLimit(200)
                     
                     Spacer()
                 }
-                .padding([.top, .bottom])
+                .padding()
                         
                 Divider()
                 
                 // Comments section here, for each
+                ForEach(comments, id: \.self) { comment in
+                    CommentView(comment: comment)
+                    Spacer()
+                }
             }
-            .padding()
+//            .padding()
             .onTapGesture {
                 UIApplication.shared.endEditing()
             }
-            
             HoverTextfield(text: $userComment) {postComment()}
+        }
+        .onAppear() {
+            loadComments()
         }
     }
             
@@ -92,7 +99,44 @@ struct PostView: View {
     }
     
     func postComment() {
+        if userComment == "" {return}
+        guard PFUser.current() != nil && appState.recentPost.object != nil else {return}
+        let comment = PFObject(className: "Comment")
+        comment["text"] = userComment
+        comment["post"] = appState.recentPost.object
+        comment["user"] = PFUser.current()!
         
+        appState.isLoading = true
+        comment.saveInBackground { (done, error) in
+            self.appState.isLoading = false
+            if done == true && error == nil {
+                self.userComment = ""
+                UIApplication.shared.endEditing()
+                loadComments()
+            }else{
+                self.appState.alertMessage = error?.localizedDescription ?? "Something absolutely catastrophic has occured."
+                self.appState.isShowingAlert = true
+            }
+        }
+    }
+    
+    func loadComments() {
+        guard appState.recentPost.object != nil else {return}
+        let query = PFQuery(className: "Comment")
+        query.whereKey("post", equalTo: appState.recentPost.object!)
+        query.addDescendingOrder("createdAt")
+        query.includeKey("user")
+        query.findObjectsInBackground { (objects, error) in
+            if objects == [] || error != nil {return}
+            withAnimation {self.comments = objects!.map {
+                Comment(
+                    username: "@"+(($0.object(forKey: "user") as? PFUser)?.object(forKey: "name") as? String ?? "user").lowercased().replacingOccurrences(of: " ", with: ""),
+                    text: $0.object(forKey: "text") as? String ?? "<Comment>",
+                    date: $0.createdAt ?? Date(),
+                    object: $0)
+                }
+            }
+        }
     }
 }
 

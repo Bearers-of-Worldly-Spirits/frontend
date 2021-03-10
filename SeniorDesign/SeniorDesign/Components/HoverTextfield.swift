@@ -36,7 +36,10 @@ struct HoverTextfield: View {
                 
                 Spacer()
 
-                Button(action: sendMessage) {
+                Button(action: {
+                    UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                    sendMessage()
+                }) {
                     Circle()
                         .shadow(color: isEditing == false ? Color(UIColor(white: 0, alpha: 0.25)) : .clear, radius: isEditing == false ? 5 : 0)
                         .frame(width: 60, height: 60, alignment: .center)
@@ -57,7 +60,7 @@ struct HoverTextfield: View {
             .padding(isEditing == false ? [.all] : [])
             .frame(maxWidth: isEditing == false ? Theme.maxScreenWidth : .infinity)
         }
-        .offset(y: kGuardian.slide).animation(.easeInOut(duration: 0.35))
+        .offset(y: kGuardian.slide).animation(.easeInOut(duration: 0.5))
         .background(GeometryGetter(rect: $kGuardian.rects[0]))
     }
 }

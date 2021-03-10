@@ -41,6 +41,8 @@ struct VoteCounter: View {
                     
     func setVote(style:UserPostVoteStatus) {
         guard let id = PFUser.current()?.objectId else {return}
+        
+        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                 
         if userState != style {
             if style == .upvoted {
