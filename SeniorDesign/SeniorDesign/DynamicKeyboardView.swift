@@ -9,77 +9,86 @@ import Foundation
 import SwiftUI
 import Combine
 
+final class KeyboardGuardian: ObservableObject {
+    public var rects: Array<CGRect>
+    public var keyboardRect: CGRect = CGRect()
 
-extension Publishers {
-    // 1.
-    static var keyboardHeight: AnyPublisher<CGFloat, Never> {
-        // 2.
-        let willShow = NotificationCenter.default.publisher(for: UIApplication.keyboardWillShowNotification)
-            .map { $0.keyboardHeight }
-        
-        let willHide = NotificationCenter.default.publisher(for: UIApplication.keyboardWillHideNotification)
-            .map { _ in CGFloat(0) }
-        
-        // 3.
-        return MergeMany(willShow, willHide)
-            .eraseToAnyPublisher()
+    // keyboardWillShow notification may be posted repeatedly,
+    // this flag makes sure we only act once per keyboard appearance
+    public var keyboardIsHidden = true
+
+    @Published var slide: CGFloat = 0
+
+    var showField: Int = 0 {
+        didSet {
+            updateSlide()
+        }
     }
+
+    init(textFieldCount: Int) {
+        self.rects = Array<CGRect>(repeating: CGRect(), count: textFieldCount)
+
+    }
+
+    func addObserver() {
+NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardDidHide(notification:)), name: UIResponder.keyboardDidHideNotification, object: nil)
 }
 
-
-extension Notification {
-    var keyboardHeight: CGFloat {
-        return (userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect)?.height ?? 0
-    }
+func removeObserver() {
+ NotificationCenter.default.removeObserver(self)
 }
 
-
-extension UIResponder {
-    static var currentFirstResponder: UIResponder? {
-        _currentFirstResponder = nil
-        UIApplication.shared.sendAction(#selector(UIResponder.findFirstResponder(_:)), to: nil, from: nil, for: nil)
-        return _currentFirstResponder
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 
-    private static weak var _currentFirstResponder: UIResponder?
-
-    @objc private func findFirstResponder(_ sender: Any) {
-        UIResponder._currentFirstResponder = self
-    }
-
-    var globalFrame: CGRect? {
-        guard let view = self as? UIView else { return nil }
-        return view.superview?.convert(view.frame, to: nil)
-    }
-}
 
 
-struct KeyboardAdaptive: ViewModifier {
-    @State private var bottomPadding: CGFloat = 0
-    
-    func body(content: Content) -> some View {
-        // 1.
-        GeometryReader { geometry in
-            content
-                .padding(.bottom, self.bottomPadding)
-                // 2.
-                .onReceive(Publishers.keyboardHeight) { keyboardHeight in
-                    // 3.
-                    let keyboardTop = geometry.frame(in: .global).height - keyboardHeight
-                    // 4.
-                    let focusedTextInputBottom = UIResponder.currentFirstResponder?.globalFrame?.maxY ?? 0
-                    // 5.
-                    self.bottomPadding = max(0, focusedTextInputBottom - keyboardTop - geometry.safeAreaInsets.bottom)
+    @objc func keyBoardWillShow(notification: Notification) {
+        if keyboardIsHidden {
+            keyboardIsHidden = false
+            if let rect = notification.userInfo?["UIKeyboardFrameEndUserInfoKey"] as? CGRect {
+                keyboardRect = rect
+                updateSlide()
             }
-            // 6.
-            .animation(.easeOut(duration: 0.16))
+        }
+    }
+
+    @objc func keyBoardDidHide(notification: Notification) {
+        keyboardIsHidden = true
+        updateSlide()
+    }
+
+    func updateSlide() {
+        if keyboardIsHidden {
+            slide = 0
+        } else {
+            let tfRect = self.rects[self.showField]
+            let diff = keyboardRect.minY - tfRect.maxY
+
+            if diff > 0 {
+                slide += diff
+            } else {
+                slide += min(diff, 0)
+            }
+
         }
     }
 }
 
+struct GeometryGetter: View {
+    @Binding var rect: CGRect
 
-extension View {
-    func keyboardAdaptive() -> some View {
-        ModifiedContent(content: self, modifier: KeyboardAdaptive())
+    var body: some View {
+        GeometryReader { geometry in
+            Group { () -> AnyView in
+                DispatchQueue.main.async {
+                    self.rect = geometry.frame(in: .global)
+                }
+
+                return AnyView(Color.clear)
+            }
+        }
     }
 }

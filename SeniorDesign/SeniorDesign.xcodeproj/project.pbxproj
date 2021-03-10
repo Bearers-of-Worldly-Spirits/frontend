@@ -40,6 +40,7 @@
 		796F2C9125D8A1D3005D70DC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2C9025D8A1D3005D70DC /* LoginView.swift */; };
 		796F2C9625D8A218005D70DC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2C9525D8A218005D70DC /* Extensions.swift */; };
 		796F2C9B25D8A2E3005D70DC /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2C9A25D8A2E3005D70DC /* SignupView.swift */; };
+		799C9FD425F94A9300D4EA45 /* HoverTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799C9FD325F94A9300D4EA45 /* HoverTextfield.swift */; };
 		79A1DB5D25DB7D17000A2B86 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB5C25DB7D17000A2B86 /* AppState.swift */; };
 		79A1DB6925DB8444000A2B86 /* GradientCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */; };
 		79A1DB7825DB881D000A2B86 /* TaxFormCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */; };
@@ -122,6 +123,7 @@
 		796F2C9025D8A1D3005D70DC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		796F2C9525D8A218005D70DC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		796F2C9A25D8A2E3005D70DC /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		799C9FD325F94A9300D4EA45 /* HoverTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverTextfield.swift; sourceTree = "<group>"; };
 		79A1DB5C25DB7D17000A2B86 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCardButton.swift; sourceTree = "<group>"; };
 		79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxFormCarousel.swift; sourceTree = "<group>"; };
@@ -320,7 +322,6 @@
 				796F2C7525D89F53005D70DC /* WelcomeHeader.swift */,
 				796F2C8125D8A060005D70DC /* ButtonFill.swift */,
 				796F2C8625D8A103005D70DC /* ButtonClear.swift */,
-				796F2C8B25D8A183005D70DC /* SimpleTextfield.swift */,
 				794089A325DC575200B0B338 /* LargeGradientCard.swift */,
 				794089A825DC5CDB00B0B338 /* CompletedList.swift */,
 				79E44C0425DC7AAB00DEBE7E /* DismissBar.swift */,
@@ -346,6 +347,8 @@
 				7962DA4825F851AE00F8D77F /* SimpleHeader.swift */,
 				7962DA6225F8590D00F8D77F /* VoteCounter.swift */,
 				7962DA5025F8578D00F8D77F /* DiscussionPost.swift */,
+				796F2C8B25D8A183005D70DC /* SimpleTextfield.swift */,
+				799C9FD325F94A9300D4EA45 /* HoverTextfield.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 				796F2C9625D8A218005D70DC /* Extensions.swift in Sources */,
 				796F2C5B25D89E28005D70DC /* HomeView.swift in Sources */,
 				793A87B425E860D300FBF863 /* InfoPageView.swift in Sources */,
+				799C9FD425F94A9300D4EA45 /* HoverTextfield.swift in Sources */,
 				79BBDD6625DCAEB8003225A2 /* SubmitView.swift in Sources */,
 				796F2C6A25D89E56005D70DC /* Theme.swift in Sources */,
 				79BBDD6B25DCAF4D003225A2 /* LoadingView.swift in Sources */,
