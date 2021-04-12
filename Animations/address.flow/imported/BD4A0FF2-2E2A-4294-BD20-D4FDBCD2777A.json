@@ -1,0 +1,813 @@
+{
+  "defaultConfiguration" : {
+    "2D1C97EF-8ECC-4832-9CAF-93271E865412" : {
+      "properties" : {
+        "bounds.size.height" : 25.93,
+        "bounds.size.width" : 47.23000000000001024,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0.00017209000000000004096,
+                    "y" : 0.000002960000000000000512
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1.0000903099999997952,
+                    "y" : -0.00016434
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 1.0000396399999997952,
+                    "y" : 0.99961138
+                  }
+                },
+                {
+                  "cornerRadius" : 8,
+                  "point" : {
+                    "x" : 0.00012141999999999997952,
+                    "y" : 0.9997786899999997952
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 1,
+          "green" : 0.8110000000000002048,
+          "red" : 0.389
+        },
+        "position.x" : 13.5,
+        "position.y" : 24.23,
+        "transform.rotation.z" : 1.5882496193148399616
+      }
+    },
+    "02D46659-CE44-4923-933C-65B0B7B96A8B" : {
+      "properties" : {
+        "bounds.size.height" : 27,
+        "bounds.size.width" : 11,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.318,
+          "green" : 0.318,
+          "red" : 0.924
+        },
+        "position.x" : 13.5,
+        "position.y" : 5.5,
+        "transform.rotation.z" : -4.712388980384688128
+      }
+    },
+    "3E6F1C07-E9FD-4E8E-8C0C-0DA6979059B6" : {
+      "properties" : {
+        "backgroundColor" : {
+          "alpha" : 1,
+          "blue" : 1,
+          "green" : 1,
+          "red" : 1
+        },
+        "bounds.size.height" : 365,
+        "bounds.size.width" : 623,
+        "position.x" : 311.5,
+        "position.y" : 182.5
+      }
+    },
+    "4D4A9866-DB57-4E5A-B782-4D1909A5109E" : {
+      "properties" : {
+        "bounds.size.height" : 83,
+        "bounds.size.width" : 11,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.318,
+          "green" : 0.318,
+          "red" : 0.924
+        },
+        "position.x" : 21.5,
+        "position.y" : 41.5
+      }
+    },
+    "5F1BDB27-11A1-46B7-8BEC-641FD797A9FB" : {
+      "properties" : {
+        "bounds.size.height" : 49,
+        "bounds.size.width" : 27,
+        "position.x" : 307.6399999999999488,
+        "position.y" : 163.06999999999995904,
+        "transform.rotation.z" : -1.919862177193762304
+      }
+    },
+    "9A20E2BD-D5DB-40D9-B6F0-E6FE05D82E4B" : {
+      "properties" : {
+        "bounds.size.height" : 61,
+        "bounds.size.width" : 139,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 12,
+                  "point" : {
+                    "x" : 0.5,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.624,
+          "green" : 0.922,
+          "red" : 0.008
+        },
+        "position.x" : 69.5,
+        "position.y" : 30.5
+      }
+    },
+    "27E6C30D-CB12-4A14-A3EC-DADCA09B9845" : {
+      "properties" : {
+        "bounds.size.height" : 17.1,
+        "bounds.size.width" : 48.07,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 3,
+                  "point" : {
+                    "x" : 0.4999073799999998976,
+                    "y" : -0.02293396
+                  }
+                },
+                {
+                  "cornerRadius" : 3,
+                  "point" : {
+                    "x" : 1.1894083900000002048,
+                    "y" : 0.9997091
+                  }
+                },
+                {
+                  "cornerRadius" : 3,
+                  "point" : {
+                    "x" : -0.1896608300000000512,
+                    "y" : 1.0000650399999997952
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.84,
+          "green" : 0.682,
+          "red" : 0.3280000000000000512
+        },
+        "lineWidth" : 1,
+        "position.x" : 17.91,
+        "position.y" : 24.58,
+        "strokeColor" : {
+          "alpha" : 1,
+          "blue" : 1,
+          "green" : 1,
+          "red" : 1
+        },
+        "transform.rotation.z" : -1.5533430342749536256
+      }
+    },
+    "299EBF16-7468-4196-A512-366BE391ED83" : {
+      "properties" : {
+        "bounds.size.height" : 83,
+        "bounds.size.width" : 74,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 65,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 65,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.2810000000000000512,
+          "green" : 0.417,
+          "red" : 0
+        },
+        "position.x" : 308,
+        "position.y" : 146.5
+      }
+    },
+    "6985BD92-0743-485D-B3E4-5414194F3EA9" : {
+      "properties" : {
+        "bounds.size.height" : 32,
+        "bounds.size.width" : 74,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.4780000000000001024,
+          "green" : 0.71,
+          "red" : 0
+        },
+        "position.x" : 308,
+        "position.y" : 172
+      }
+    },
+    "B00D657D-A9AD-4D36-8504-86AC0A3ED636" : {
+      "properties" : {
+        "bounds.size.height" : 176,
+        "bounds.size.width" : 139,
+        "position.x" : 307.5,
+        "position.y" : 100
+      }
+    },
+    "B0486893-A0B0-40AC-8128-09199DB6380D" : {
+      "properties" : {
+        "bounds.size.height" : 83,
+        "bounds.size.width" : 27,
+        "position.x" : 224.5,
+        "position.y" : 73.5
+      }
+    },
+    "C890EED6-CAE0-46E2-90C5-032E924683B0" : {
+      "properties" : {
+        "bounds.size.height" : 115,
+        "bounds.size.width" : 139,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.624,
+          "green" : 0.922,
+          "red" : 0.008
+        },
+        "position.x" : 69.5,
+        "position.y" : 118.5
+      }
+    },
+    "E8B34571-F433-40B0-8C3F-63DF5C273C65" : {
+      "properties" : {
+        "bounds.size.height" : 83,
+        "bounds.size.width" : 74,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 65,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 65,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.309,
+          "green" : 0.458,
+          "red" : 0
+        },
+        "operation" : 1,
+        "position.x" : 308,
+        "position.y" : 146.5
+      }
+    },
+    "E770F76F-6FBC-438F-88EE-467B50A74AF1" : {
+      "properties" : {
+        "bounds.size.height" : 53,
+        "bounds.size.width" : 74,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 65,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 65,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 0
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 1,
+                    "y" : 1
+                  }
+                },
+                {
+                  "cornerRadius" : 0,
+                  "point" : {
+                    "x" : 0,
+                    "y" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.4780000000000001024,
+          "green" : 0.71,
+          "red" : 0
+        },
+        "position.x" : 308,
+        "position.y" : 131.5
+      }
+    },
+    "FD942A6B-2CBF-47F9-9B58-E764F3C971F3" : {
+      "properties" : {
+        "bounds.size.height" : 17.1,
+        "bounds.size.width" : 48.07,
+        "combinedPath" : {
+          "normalized" : true,
+          "paths" : [
+            {
+              "closed" : true,
+              "points" : [
+                {
+                  "cornerRadius" : 3,
+                  "point" : {
+                    "x" : 0.4999073799999998976,
+                    "y" : -0.02293396
+                  }
+                },
+                {
+                  "cornerRadius" : 3,
+                  "point" : {
+                    "x" : 1.1894083900000002048,
+                    "y" : 0.9997091
+                  }
+                },
+                {
+                  "cornerRadius" : 3,
+                  "point" : {
+                    "x" : -0.1896608300000000512,
+                    "y" : 1.0000650399999997952
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fillColor" : {
+          "alpha" : 1,
+          "blue" : 0.9530000000000002048,
+          "green" : 0.769,
+          "red" : 0.353
+        },
+        "lineWidth" : 1,
+        "position.x" : 9.09,
+        "position.y" : 24.42,
+        "strokeColor" : {
+          "alpha" : 1,
+          "blue" : 1,
+          "green" : 1,
+          "red" : 1
+        },
+        "transform.rotation.z" : -4.694935687864745984
+      }
+    }
+  },
+  "id" : "BD4A0FF2-2E2A-4294-BD20-D4FDBCD2777A",
+  "rootLayer" : {
+    "adjustContentOnResize" : true,
+    "aspectRatioUnlocked" : true,
+    "id" : "3E6F1C07-E9FD-4E8E-8C0C-0DA6979059B6",
+    "isClippingMask" : false,
+    "locked" : false,
+    "masksToBounds" : false,
+    "name" : "Artboard",
+    "resizingConstraint" : 0,
+    "sublayers" : [
+      {
+        "adjustContentOnResize" : true,
+        "aspectRatioUnlocked" : true,
+        "id" : "B00D657D-A9AD-4D36-8504-86AC0A3ED636",
+        "isClippingMask" : false,
+        "locked" : false,
+        "masksToBounds" : false,
+        "name" : "House",
+        "resizingConstraint" : 0,
+        "sublayers" : [
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "fillType" : "Color",
+            "id" : "C890EED6-CAE0-46E2-90C5-032E924683B0",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Rectangle",
+            "resizingConstraint" : 0,
+            "type" : "shape",
+            "visible" : true
+          },
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "fillType" : "Color",
+            "id" : "9A20E2BD-D5DB-40D9-B6F0-E6FE05D82E4B",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Triangle",
+            "resizingConstraint" : 0,
+            "type" : "shape",
+            "visible" : true
+          }
+        ],
+        "type" : "group",
+        "visible" : true
+      },
+      {
+        "adjustContentOnResize" : true,
+        "aspectRatioUnlocked" : true,
+        "fillType" : "Color",
+        "id" : "299EBF16-7468-4196-A512-366BE391ED83",
+        "isClippingMask" : false,
+        "locked" : false,
+        "masksToBounds" : false,
+        "name" : "Back arch",
+        "resizingConstraint" : 0,
+        "type" : "shape",
+        "visible" : true
+      },
+      {
+        "adjustContentOnResize" : true,
+        "aspectRatioUnlocked" : true,
+        "fillType" : "Color",
+        "id" : "E8B34571-F433-40B0-8C3F-63DF5C273C65",
+        "isClippingMask" : false,
+        "locked" : false,
+        "masksToBounds" : false,
+        "name" : "Front arch",
+        "resizingConstraint" : 0,
+        "type" : "shape",
+        "visible" : true
+      },
+      {
+        "adjustContentOnResize" : true,
+        "aspectRatioUnlocked" : true,
+        "id" : "5F1BDB27-11A1-46B7-8BEC-641FD797A9FB",
+        "isClippingMask" : false,
+        "locked" : false,
+        "masksToBounds" : false,
+        "name" : "Letter",
+        "resizingConstraint" : 0,
+        "sublayers" : [
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "fillType" : "Color",
+            "id" : "2D1C97EF-8ECC-4832-9CAF-93271E865412",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Rectangle",
+            "resizingConstraint" : 0,
+            "type" : "shape",
+            "visible" : true
+          },
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "fillType" : "Color",
+            "id" : "FD942A6B-2CBF-47F9-9B58-E764F3C971F3",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Triangle",
+            "resizingConstraint" : 0,
+            "type" : "shape",
+            "visible" : true
+          },
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "fillType" : "Color",
+            "id" : "27E6C30D-CB12-4A14-A3EC-DADCA09B9845",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Triangle",
+            "resizingConstraint" : 0,
+            "type" : "shape",
+            "visible" : true
+          }
+        ],
+        "type" : "group",
+        "visible" : true
+      },
+      {
+        "adjustContentOnResize" : true,
+        "aspectRatioUnlocked" : true,
+        "fillType" : "Color",
+        "id" : "E770F76F-6FBC-438F-88EE-467B50A74AF1",
+        "isClippingMask" : false,
+        "locked" : false,
+        "masksToBounds" : false,
+        "name" : "Top arch",
+        "resizingConstraint" : 0,
+        "type" : "shape",
+        "visible" : true
+      },
+      {
+        "adjustContentOnResize" : true,
+        "aspectRatioUnlocked" : true,
+        "fillType" : "Color",
+        "id" : "6985BD92-0743-485D-B3E4-5414194F3EA9",
+        "isClippingMask" : false,
+        "locked" : false,
+        "masksToBounds" : false,
+        "name" : "Door",
+        "resizingConstraint" : 0,
+        "type" : "shape",
+        "visible" : true
+      },
+      {
+        "adjustContentOnResize" : true,
+        "aspectRatioUnlocked" : true,
+        "id" : "B0486893-A0B0-40AC-8128-09199DB6380D",
+        "isClippingMask" : false,
+        "locked" : false,
+        "masksToBounds" : false,
+        "name" : "Handle",
+        "resizingConstraint" : 0,
+        "sublayers" : [
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "fillType" : "Color",
+            "id" : "4D4A9866-DB57-4E5A-B782-4D1909A5109E",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Rectangle",
+            "resizingConstraint" : 0,
+            "type" : "shape",
+            "visible" : true
+          },
+          {
+            "adjustContentOnResize" : true,
+            "aspectRatioUnlocked" : true,
+            "fillType" : "Color",
+            "id" : "02D46659-CE44-4923-933C-65B0B7B96A8B",
+            "isClippingMask" : false,
+            "locked" : false,
+            "masksToBounds" : false,
+            "name" : "Rectangle",
+            "resizingConstraint" : 0,
+            "type" : "shape",
+            "visible" : true
+          }
+        ],
+        "type" : "group",
+        "visible" : true
+      }
+    ],
+    "type" : "group",
+    "visible" : true
+  }
+}

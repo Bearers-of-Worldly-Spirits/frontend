@@ -12,6 +12,8 @@
 		7432D57B5719D6136B93676B /* Pods_SeniorDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5525B59CBA8B85504339570 /* Pods_SeniorDesign.framework */; };
 		7908E96325F03068007F11D9 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908E96225F03068007F11D9 /* LoadingScreen.swift */; };
 		7908E98125F0588E007F11D9 /* DynamicTypeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908E98025F0588E007F11D9 /* DynamicTypeModifier.swift */; };
+		790FADE82624ADEB00B4FCB2 /* address.json in Resources */ = {isa = PBXBuildFile; fileRef = 790FADE72624ADEB00B4FCB2 /* address.json */; };
+		790FADF52624B8E000B4FCB2 /* phone.json in Resources */ = {isa = PBXBuildFile; fileRef = 790FADF42624B8E000B4FCB2 /* phone.json */; };
 		7936B34925F1E22500C5BED7 /* DiscussionCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7936B34825F1E22500C5BED7 /* DiscussionCarousel.swift */; };
 		7936B34E25F1E43200C5BED7 /* ImageCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7936B34D25F1E43200C5BED7 /* ImageCardButton.swift */; };
 		793A87A325E85F2D00FBF863 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A87A225E85F2D00FBF863 /* SplashView.swift */; };
@@ -40,6 +42,8 @@
 		796F2C9125D8A1D3005D70DC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2C9025D8A1D3005D70DC /* LoginView.swift */; };
 		796F2C9625D8A218005D70DC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2C9525D8A218005D70DC /* Extensions.swift */; };
 		796F2C9B25D8A2E3005D70DC /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2C9A25D8A2E3005D70DC /* SignupView.swift */; };
+		79830B9A261E280700859EBE /* FlappyTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79830B99261E280700859EBE /* FlappyTax.swift */; };
+		79830B9F261E29F000859EBE /* flappy-bird-assets in Resources */ = {isa = PBXBuildFile; fileRef = 79830B9E261E29F000859EBE /* flappy-bird-assets */; };
 		799C9FD425F94A9300D4EA45 /* HoverTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799C9FD325F94A9300D4EA45 /* HoverTextfield.swift */; };
 		799C9FF625F9580D00D4EA45 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799C9FF525F9580D00D4EA45 /* Comment.swift */; };
 		79A1DB5D25DB7D17000A2B86 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB5C25DB7D17000A2B86 /* AppState.swift */; };
@@ -91,6 +95,8 @@
 		7717917AB48CA3AF2888BA95 /* Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig"; path = "Target Support Files/Pods-SeniorDesign-SeniorDesignUITests/Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7908E96225F03068007F11D9 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 		7908E98025F0588E007F11D9 /* DynamicTypeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeModifier.swift; sourceTree = "<group>"; };
+		790FADE72624ADEB00B4FCB2 /* address.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = address.json; sourceTree = "<group>"; };
+		790FADF42624B8E000B4FCB2 /* phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phone.json; sourceTree = "<group>"; };
 		7936B34825F1E22500C5BED7 /* DiscussionCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionCarousel.swift; sourceTree = "<group>"; };
 		7936B34D25F1E43200C5BED7 /* ImageCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardButton.swift; sourceTree = "<group>"; };
 		793A87A225E85F2D00FBF863 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -125,6 +131,8 @@
 		796F2C9025D8A1D3005D70DC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		796F2C9525D8A218005D70DC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		796F2C9A25D8A2E3005D70DC /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		79830B99261E280700859EBE /* FlappyTax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlappyTax.swift; sourceTree = "<group>"; };
+		79830B9E261E29F000859EBE /* flappy-bird-assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "flappy-bird-assets"; sourceTree = "<group>"; };
 		799C9FD325F94A9300D4EA45 /* HoverTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverTextfield.swift; sourceTree = "<group>"; };
 		799C9FF525F9580D00D4EA45 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		79A1DB5C25DB7D17000A2B86 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -218,12 +226,27 @@
 			path = Modifier;
 			sourceTree = "<group>";
 		};
+		790FADD02624A7EF00B4FCB2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79E44BFF25DC767500DEBE7E /* InfoView.swift */,
+				79E44C0925DC7D9700DEBE7E /* AddressView.swift */,
+				79E44C2025DC862500DEBE7E /* ExtendedInfoView.swift */,
+				79E44C2525DCA8E100DEBE7E /* VisaStatusView.swift */,
+				79E44C2A25DCAB1400DEBE7E /* DaysPresentView.swift */,
+				79BBDD6525DCAEB8003225A2 /* SubmitView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		793A87E725E8702C00FBF863 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				790FADF42624B8E000B4FCB2 /* phone.json */,
 				793A87EB25E8703900FBF863 /* apps.min.json */,
 				793A87EC25E8703900FBF863 /* clock.min.json */,
 				793A87ED25E8703900FBF863 /* form.min.json */,
+				790FADE72624ADEB00B4FCB2 /* address.json */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -265,6 +288,7 @@
 				796F2C6525D89E3B005D70DC /* Views */,
 				796F2C2825D89DF9005D70DC /* Assets.xcassets */,
 				796F2C3225D89DF9005D70DC /* Info.plist */,
+				79830B9E261E29F000859EBE /* flappy-bird-assets */,
 				796F2C2A25D89DF9005D70DC /* Preview Content */,
 			);
 			path = SeniorDesign;
@@ -307,6 +331,7 @@
 				79F1E34825F43B6200FC4B13 /* DiscussionView.swift */,
 				79F1E38925F449F900FC4B13 /* CreatePostView.swift */,
 				79B714F325F8686100C41C78 /* PostView.swift */,
+				79830B99261E280700859EBE /* FlappyTax.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,7 +347,6 @@
 		796F2C7A25D8A003005D70DC /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				79E44BFF25DC767500DEBE7E /* InfoView.swift */,
 				796F2C7525D89F53005D70DC /* WelcomeHeader.swift */,
 				796F2C8125D8A060005D70DC /* ButtonFill.swift */,
 				796F2C8625D8A103005D70DC /* ButtonClear.swift */,
@@ -335,11 +359,7 @@
 				7908E96225F03068007F11D9 /* LoadingScreen.swift */,
 				79BEF57725D8AEAB00A84186 /* SimpleAlert.swift */,
 				793A87B325E860D300FBF863 /* InfoPageView.swift */,
-				79E44C0925DC7D9700DEBE7E /* AddressView.swift */,
-				79E44C2025DC862500DEBE7E /* ExtendedInfoView.swift */,
-				79E44C2525DCA8E100DEBE7E /* VisaStatusView.swift */,
-				79E44C2A25DCAB1400DEBE7E /* DaysPresentView.swift */,
-				79BBDD6525DCAEB8003225A2 /* SubmitView.swift */,
+				790FADD02624A7EF00B4FCB2 /* Views */,
 				79A1DB7725DB881D000A2B86 /* TaxFormCarousel.swift */,
 				7936B34825F1E22500C5BED7 /* DiscussionCarousel.swift */,
 				79A1DB6825DB8444000A2B86 /* GradientCardButton.swift */,
@@ -476,8 +496,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79830B9F261E29F000859EBE /* flappy-bird-assets in Resources */,
 				793A87EF25E8703900FBF863 /* clock.min.json in Resources */,
 				796F2C2C25D89DF9005D70DC /* Preview Assets.xcassets in Resources */,
+				790FADE82624ADEB00B4FCB2 /* address.json in Resources */,
+				790FADF52624B8E000B4FCB2 /* phone.json in Resources */,
 				793A87F025E8703900FBF863 /* form.min.json in Resources */,
 				793A87EE25E8703900FBF863 /* apps.min.json in Resources */,
 				796F2C2925D89DF9005D70DC /* Assets.xcassets in Resources */,
@@ -645,6 +668,7 @@
 				796F2C8225D8A060005D70DC /* ButtonFill.swift in Sources */,
 				79E44C0A25DC7D9700DEBE7E /* AddressView.swift in Sources */,
 				796F2C2525D89DF7005D70DC /* SeniorDesignApp.swift in Sources */,
+				79830B9A261E280700859EBE /* FlappyTax.swift in Sources */,
 				79A1DB5D25DB7D17000A2B86 /* AppState.swift in Sources */,
 				79E44C2125DC862500DEBE7E /* ExtendedInfoView.swift in Sources */,
 				79E44C0525DC7AAB00DEBE7E /* DismissBar.swift in Sources */,
@@ -814,7 +838,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"SeniorDesign/Preview Content\"";
 				DEVELOPMENT_TEAM = P55BHT8RZT;
 				ENABLE_PREVIEWS = YES;
@@ -824,8 +850,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.SeniorDesign;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.melon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -837,7 +864,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"SeniorDesign/Preview Content\"";
 				DEVELOPMENT_TEAM = P55BHT8RZT;
 				ENABLE_PREVIEWS = YES;
@@ -847,8 +876,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.SeniorDesign;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.melon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -905,6 +935,7 @@
 			baseConfigurationReference = 7717917AB48CA3AF2888BA95 /* Pods-SeniorDesign-SeniorDesignUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P55BHT8RZT;
 				INFOPLIST_FILE = SeniorDesignUITests/Info.plist;
@@ -926,6 +957,7 @@
 			baseConfigurationReference = D0B008A73EF5B751F77891DB /* Pods-SeniorDesign-SeniorDesignUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P55BHT8RZT;
 				INFOPLIST_FILE = SeniorDesignUITests/Info.plist;

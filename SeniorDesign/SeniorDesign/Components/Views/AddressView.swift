@@ -32,6 +32,10 @@ struct AddressView: View {
                     setUserValues()
                     prev()
                 })
+                
+                LottieView(name: "address", speed: 0.5)
+                    .frame(maxWidth:.infinity)
+                    .frame(height: 100)
                                                 
                 SimpleTextfield(text: $street, systemImageName: "house.fill", placeholder: "Street", secure: false)
                 SimpleTextfield(text: $apt, systemImageName: "number", placeholder: "Apt Number", secure: false)

@@ -29,6 +29,7 @@ struct Form8843: View {
             switch currentView {
             
                 case .info:
+                    
                     InfoView(formNumber: "8843", description: TaxFormDescriptions.form8843) {
                         withAnimation { currentView = .address }
                     } canceled: {

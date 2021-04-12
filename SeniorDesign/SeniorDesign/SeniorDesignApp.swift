@@ -35,6 +35,8 @@ struct SeniorDesignApp: App {
                             CreatePostView()
                         case .post:
                             PostView()
+                        case .flappyTax:
+                            FlappyTax()
                         case .unknown:
                             EmptyView()
                     }
@@ -56,6 +58,14 @@ struct SeniorDesignApp: App {
             .onAppear {
                 loadParse()
                 checkUserState()                
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
+                guard PFUser.current() != nil else {return}
+                if appState.currentScreen != .flappyTax {
+                    appState.currentScreen = .flappyTax
+                }else{
+                    appState.currentScreen = .home
+                }
             }
         }
     }

@@ -28,6 +28,11 @@ struct ExtendedInfoView: View {
                     setUserValues()
                     prev()
                 })
+                
+                LottieView(name: "phone", speed: 0.3)
+                    .frame(maxWidth: 150)
+                    .frame(height: 90)
+                    .padding(.leading, 80)
                                                 
                 SimpleTextfield(text: $phone, systemImageName: "phone.fill", placeholder: "Phone", secure: false)
                 SimpleTextfield(text: $ssn, systemImageName: "number", placeholder: "SSN", secure: false)

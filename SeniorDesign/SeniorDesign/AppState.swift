@@ -11,7 +11,7 @@ import Combine
 
 
 enum AppView: Identifiable {
-    case unknown, splash, login, signup, home, form8843, discussion, createPost, post
+    case unknown, splash, login, signup, home, form8843, discussion, createPost, post, flappyTax
     var id: Int { hashValue }
 }
 

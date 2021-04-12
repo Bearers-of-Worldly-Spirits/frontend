@@ -34,15 +34,18 @@ struct InfoView: View {
                             .foregroundColor(Color("Primary"))
                             .scaledFont(size: 27, name: Theme.font.medium)
                     }
-                    
                     .padding()
+                    
+                    LottieView(name: "form.min", speed: 0.15)
+                        .frame(maxWidth:.infinity)
+                        .frame(height: 170)
                     
                     Text(description)
                         .foregroundColor(Color(.secondaryLabel))
                         .multilineTextAlignment(.center)                        
                         .scaledFont(size: 15, name: Theme.font.medium)
                         .frame(maxWidth: Theme.maxScreenWidth)
-                    
+                                                                                
                     Spacer()
                     
                     ButtonFill(title: "Continue", action: done)
