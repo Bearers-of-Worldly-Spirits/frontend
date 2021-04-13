@@ -32,6 +32,10 @@ struct DaysPresentView: View {
                     prev()
                 })
                 
+                LottieView(name: "pin", speed: 0.7)
+                    .frame(maxWidth: 150)
+                    .frame(height: 90)
+                
                 Text("Please list the days you were present in the U.S.A during the following years.")
                     .multilineTextAlignment(.center)
                     .scaledFont(size: 16, name: Theme.font.medium)

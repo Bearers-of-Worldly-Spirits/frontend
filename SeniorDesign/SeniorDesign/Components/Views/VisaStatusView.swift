@@ -30,7 +30,11 @@ struct VisaStatusView: View {
                     setUserValues()
                     prev()
                 })
-                                                
+                                       
+                LottieView(name: "cards", speed: 0.3)
+                    .frame(maxWidth: 150)
+                    .frame(height: 90)
+                
                 SimpleTextfield(text: $countryOfCitizenship, systemImageName: "mappin", placeholder: "Country of citizenship", secure: false)
                 SimpleTextfield(text: $passportNumber, systemImageName: "number", placeholder: "Passport #", secure: false)
                 SimpleTextfield(text: $visa, systemImageName: "creditcard.fill", placeholder: "Visa e.g F1, H-1B", secure: false)
