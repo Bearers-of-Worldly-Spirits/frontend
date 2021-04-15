@@ -8,6 +8,7 @@
 import SwiftUI
 import Combine
 import Parse
+import Alamofire
 
 
 struct HomeView: View {
@@ -15,7 +16,7 @@ struct HomeView: View {
     
     @EnvironmentObject var userState:AppState
     @State var fullname:String = "User"
-    
+    @AppStorage("DaysLeft") var daysLeft:String = "33"
     
     var body: some View {
         
@@ -25,7 +26,7 @@ struct HomeView: View {
             Group {
                 WelcomeHeader(name: $fullname)
                 LargeGradientCard(
-                    title: "Welcome back! Your tax forms are due in 129 days.",
+                    title: "Welcome back! Your tax forms are due in \(daysLeft) days.",
                     gradient: Gradient(colors: [Color.purple, Color.pink])
                 )
                 .padding()
@@ -68,7 +69,10 @@ struct HomeView: View {
             }
         }
         
-        .onAppear() { loadUserData() }
+        .onAppear() {
+            loadUserData()
+            calculateDaysLeft()
+        }
         .background(Color("Background").ignoresSafeArea())
     }
     
@@ -89,6 +93,22 @@ struct HomeView: View {
     
     func loadUserData() {                                
         fullname = PFUser.current()?.object(forKey: "name") as? String ?? "User"
+    }
+    
+    func calculateDaysLeft() {
+        AF.request("https://bows-tax-app.herokuapp.com/due", method:.get).responseJSON { (response) in
+            switch response.result {
+            case .success(let data):
+                if let x = data as? [String:Any] {
+                    if let y = x["days"] as? Int {
+                        self.daysLeft = "\(y)"
+                    }
+                }
+                break
+            case .failure(_):
+                break
+            }
+        }
     }
 }
 

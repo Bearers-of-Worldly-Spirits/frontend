@@ -22,9 +22,12 @@ struct DiscussionView: View {
             
             // Scroll view
             ScrollView {
+                
                 SimpleHeader()
                     .environmentObject(appState)
-                Divider()                
+                
+                Divider()
+                
                 ForEach(posts, id: \.self) { post in
                     DiscussionPost(post: post)
                         .onTapGesture {
@@ -32,6 +35,11 @@ struct DiscussionView: View {
                             appState.currentScreen = .post
                         }
                 }
+                
+                // A bit of padding at the end
+                Rectangle()
+                    .fill(Color.clear)
+                    .frame(height: 100)
             }
             
             // Circle button

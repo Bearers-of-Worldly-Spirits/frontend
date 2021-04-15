@@ -17,7 +17,12 @@ struct TaxForm : Identifiable {
 
 
 struct TaxFormDescriptions {
-    static let form8843:String = "File this form if you are an exempt individual for the substantial presence test."
+    static let form8843:String = """
+    This form is a statement filed by non-resident aliens for the government, for specific tax purposes. You must file a Form 8843 if:\n\n \
+    1) you were present in the US in the previous tax year\n\n \
+    2) you are a non-resident alien\n\n \
+    3) and you are in the US under F-1, J-1, F-2 or J-2 status.
+    """
 }
 
 
