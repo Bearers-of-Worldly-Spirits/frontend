@@ -30,4 +30,4 @@ To report a bug on the application:
 2. Remove and replace the details marked in square brackets []
 3. Submit the issue
 
-# Terms and Conditions
+# [Terms and Conditions](https://github.com/Bearers-of-Worldly-Spirits/main_app/blob/main/Terms_and_Conditions.md)
