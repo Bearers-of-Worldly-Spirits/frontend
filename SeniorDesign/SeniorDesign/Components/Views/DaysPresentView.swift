@@ -14,9 +14,9 @@ struct DaysPresentView: View {
     var prev: () -> ()
     var next: () -> ()
     
-    @State private var days2020:String = ""
-    @State private var days2019:String = ""
-    @State private var days2018:String = ""
+    @State private var days2020:String = UserData.shared.days2020
+    @State private var days2019:String = UserData.shared.days2019
+    @State private var days2018:String = UserData.shared.days2018
     @State private var filedBefore:Bool = false
     
     var body: some View {
@@ -60,29 +60,14 @@ struct DaysPresentView: View {
             }
         }
         .background(Color("Background").ignoresSafeArea())
-        .onAppear() {
-            loadUserValues()
-        }
         .onTapGesture { UIApplication.shared.endEditing() }
     }
     
     func setUserValues() {
         guard PFUser.current() != nil else {return}
-        let user = PFUser.current()!
-        user["daysPresent2020"] = days2020
-        user["daysPresent2019"] = days2019
-        user["daysPresent2018"] = days2018
-        user["previouslyFiledTaxForm"] = filedBefore
-        user.saveInBackground()
-    }
-    
-    func loadUserValues() {
-        guard PFUser.current() != nil else {return}
-        let user = PFUser.current()!
-        days2020 = user["daysPresent2020"] as? String ?? ""
-        days2019 = user["daysPresent2019"] as? String ?? ""
-        days2018 = user["daysPresent2018"] as? String ?? ""
-        filedBefore = user["previouslyFiledTaxForm"] as? Bool ?? false
+        UserData.shared.days2020 = days2020
+        UserData.shared.days2019 = days2019
+        UserData.shared.days2018 = days2018
     }
 }
 

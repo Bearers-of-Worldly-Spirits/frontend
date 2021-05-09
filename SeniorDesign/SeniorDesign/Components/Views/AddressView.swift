@@ -14,11 +14,11 @@ struct AddressView: View {
     var prev: () -> ()
     var next: () -> ()
     
-    @State private var street:String = ""
-    @State private var apt:String = ""
-    @State private var city:String = ""
-    @State private var state:String = ""
-    @State private var zipCode:String = ""
+    @State private var street:String    = UserData.shared.street
+    @State private var apt:String       = UserData.shared.apartment
+    @State private var city:String      = UserData.shared.city
+    @State private var state:String     = UserData.shared.state
+    @State private var zipCode:String   = UserData.shared.zipCode
     
     var body: some View {
                 
@@ -55,23 +55,20 @@ struct AddressView: View {
     
     private func loadUserValues() {
         guard PFUser.current() != nil else {return}
-        let user = PFUser.current()!
-        street = user["street"] as? String ?? ""
-        apt = user["apt"] as? String ?? ""
-        city = user["city"] as? String ?? ""
-        state = user["state"] as? String ?? ""
-        zipCode = user["zipCode"] as? String ?? ""
+        street = UserData.shared.street
+        apt = UserData.shared.apartment
+        city = UserData.shared.city
+        state = UserData.shared.state
+        zipCode = UserData.shared.zipCode
     }
     
     private func setUserValues() {
         guard PFUser.current() != nil else {return}
-        let user = PFUser.current()!
-        user["street"] = street
-        user["apt"] = apt
-        user["city"] = city
-        user["state"] = state
-        user["zipCode"] = zipCode
-        user.saveInBackground()        
+        UserData.shared.street = street
+        UserData.shared.apartment = apt
+        UserData.shared.city = city
+        UserData.shared.state = state
+        UserData.shared.zipCode = zipCode
     }
 }
 
@@ -82,6 +79,5 @@ struct AddressView_Previews: PreviewProvider {
         } next: {
             
         }
-
     }
 }

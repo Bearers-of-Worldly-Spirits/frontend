@@ -14,9 +14,9 @@ struct VisaStatusView: View {
     var prev: () -> ()
     var next: () -> ()
     
-    @State private var visa:String = ""
-    @State private var passportNumber:String = ""
-    @State private var countryOfCitizenship:String = ""
+    @State private var visa:String = UserData.shared.visa
+    @State private var passportNumber:String = UserData.shared.passportNumber
+    @State private var countryOfCitizenship:String = UserData.shared.countryOfCitizenship
     
     var body: some View {
                 
@@ -43,27 +43,14 @@ struct VisaStatusView: View {
             }
         }
         .background(Color("Background").ignoresSafeArea())
-        .onAppear() {
-            loadUserValues()
-        }
         .onTapGesture { UIApplication.shared.endEditing() }
     }
     
     func setUserValues() {
-        guard PFUser.current() != nil else {return}
-        let user = PFUser.current()!
-        user["visa"] = visa
-        user["passportNumber"] = passportNumber
-        user["countryOfCitizenship"] = countryOfCitizenship
-        user.saveInBackground()
-    }
-    
-    func loadUserValues() {
-        guard PFUser.current() != nil else {return}
-        let user = PFUser.current()!
-        visa = user["visa"] as? String ?? ""
-        passportNumber = user["passportNumber"] as? String ?? ""
-        countryOfCitizenship = user["countryOfCitizenship"] as? String ?? ""
+        guard PFUser.current() != nil else {return}        
+        UserData.shared.visa = visa
+        UserData.shared.passportNumber = passportNumber
+        UserData.shared.countryOfCitizenship = countryOfCitizenship
     }
 }
 

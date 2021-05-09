@@ -37,6 +37,8 @@ struct SeniorDesignApp: App {
                             PostView()
                         case .flappyTax:
                             FlappyTax()
+                        case .privacyView:
+                            PrivacyView()
                         case .unknown:
                             EmptyView()
                     }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		794089A425DC575200B0B338 /* LargeGradientCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794089A325DC575200B0B338 /* LargeGradientCard.swift */; };
 		794089A925DC5CDB00B0B338 /* CompletedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794089A825DC5CDB00B0B338 /* CompletedList.swift */; };
 		794089AE25DC5DB600B0B338 /* TaxForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794089AD25DC5DB600B0B338 /* TaxForm.swift */; };
+		79595877263A4D5C00BD779A /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 79595876263A4D5C00BD779A /* KeychainAccess */; };
 		7962DA4925F851AE00F8D77F /* SimpleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7962DA4825F851AE00F8D77F /* SimpleHeader.swift */; };
 		7962DA5125F8578D00F8D77F /* DiscussionPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7962DA5025F8578D00F8D77F /* DiscussionPost.swift */; };
 		7962DA6325F8590D00F8D77F /* VoteCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7962DA6225F8590D00F8D77F /* VoteCounter.swift */; };
@@ -44,6 +45,8 @@
 		796F2C9B25D8A2E3005D70DC /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2C9A25D8A2E3005D70DC /* SignupView.swift */; };
 		79830B9A261E280700859EBE /* FlappyTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79830B99261E280700859EBE /* FlappyTax.swift */; };
 		79830B9F261E29F000859EBE /* flappy-bird-assets in Resources */ = {isa = PBXBuildFile; fileRef = 79830B9E261E29F000859EBE /* flappy-bird-assets */; };
+		7986E0C02630AC8900DAC493 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7986E0BF2630AC8900DAC493 /* PrivacyView.swift */; };
+		799A5032263A4445007ED21A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A5031263A4445007ED21A /* UserData.swift */; };
 		799C9FD425F94A9300D4EA45 /* HoverTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799C9FD325F94A9300D4EA45 /* HoverTextfield.swift */; };
 		799C9FF625F9580D00D4EA45 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799C9FF525F9580D00D4EA45 /* Comment.swift */; };
 		79A1DB5D25DB7D17000A2B86 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1DB5C25DB7D17000A2B86 /* AppState.swift */; };
@@ -135,6 +138,8 @@
 		796F2C9A25D8A2E3005D70DC /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		79830B99261E280700859EBE /* FlappyTax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlappyTax.swift; sourceTree = "<group>"; };
 		79830B9E261E29F000859EBE /* flappy-bird-assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "flappy-bird-assets"; sourceTree = "<group>"; };
+		7986E0BF2630AC8900DAC493 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		799A5031263A4445007ED21A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		799C9FD325F94A9300D4EA45 /* HoverTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverTextfield.swift; sourceTree = "<group>"; };
 		799C9FF525F9580D00D4EA45 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		79A1DB5C25DB7D17000A2B86 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -176,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79595877263A4D5C00BD779A /* KeychainAccess in Frameworks */,
 				7432D57B5719D6136B93676B /* Pods_SeniorDesign.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +344,7 @@
 				79F1E38925F449F900FC4B13 /* CreatePostView.swift */,
 				79B714F325F8686100C41C78 /* PostView.swift */,
 				79830B99261E280700859EBE /* FlappyTax.swift */,
+				7986E0BF2630AC8900DAC493 /* PrivacyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -390,6 +397,7 @@
 				794089AD25DC5DB600B0B338 /* TaxForm.swift */,
 				79F1E36225F440D900FC4B13 /* Post.swift */,
 				799C9FF525F9580D00D4EA45 /* Comment.swift */,
+				799A5031263A4445007ED21A /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -412,6 +420,9 @@
 			dependencies = (
 			);
 			name = SeniorDesign;
+			packageProductDependencies = (
+				79595876263A4D5C00BD779A /* KeychainAccess */,
+			);
 			productName = SeniorDesign;
 			productReference = 796F2C2125D89DF7005D70DC /* SeniorDesign.app */;
 			productType = "com.apple.product-type.application";
@@ -486,6 +497,9 @@
 				Base,
 			);
 			mainGroup = 796F2C1825D89DF7005D70DC;
+			packageReferences = (
+				79595875263A4D5C00BD779A /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = 796F2C2225D89DF7005D70DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -665,6 +679,7 @@
 				794089AE25DC5DB600B0B338 /* TaxForm.swift in Sources */,
 				79E44C1225DC805A00DEBE7E /* NextPrevBar.swift in Sources */,
 				793A87A325E85F2D00FBF863 /* SplashView.swift in Sources */,
+				799A5032263A4445007ED21A /* UserData.swift in Sources */,
 				79DEFF8E25F959DD00607D9E /* CommentView.swift in Sources */,
 				7962DA5125F8578D00F8D77F /* DiscussionPost.swift in Sources */,
 				794089A425DC575200B0B338 /* LargeGradientCard.swift in Sources */,
@@ -680,6 +695,7 @@
 				79A1DB5D25DB7D17000A2B86 /* AppState.swift in Sources */,
 				79E44C2125DC862500DEBE7E /* ExtendedInfoView.swift in Sources */,
 				79E44C0525DC7AAB00DEBE7E /* DismissBar.swift in Sources */,
+				7986E0C02630AC8900DAC493 /* PrivacyView.swift in Sources */,
 				7908E96325F03068007F11D9 /* LoadingScreen.swift in Sources */,
 				796F2C7625D89F53005D70DC /* WelcomeHeader.swift in Sources */,
 				79F1E36825F442AE00FC4B13 /* CircleButton.swift in Sources */,
@@ -848,7 +864,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"SeniorDesign/Preview Content\"";
 				DEVELOPMENT_TEAM = P55BHT8RZT;
 				ENABLE_PREVIEWS = YES;
@@ -874,7 +890,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"SeniorDesign/Preview Content\"";
 				DEVELOPMENT_TEAM = P55BHT8RZT;
 				ENABLE_PREVIEWS = YES;
@@ -1022,6 +1038,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		79595875263A4D5C00BD779A /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		79595876263A4D5C00BD779A /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79595875263A4D5C00BD779A /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 796F2C1925D89DF7005D70DC /* Project object */;
 }

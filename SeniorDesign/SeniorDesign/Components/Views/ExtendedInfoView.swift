@@ -55,19 +55,14 @@ struct ExtendedInfoView: View {
     
     func setUserValues() {
         guard PFUser.current() != nil else {return}
-        let user = PFUser.current()!
-        user["phone"] = phone
-        user["ssn"] = ssn
-        user["dob"] = dob
-        user.saveInBackground()
+        phone = UserData.shared.phone
+        ssn = UserData.shared.ssn
     }
     
     func loadUserValues() {
         guard PFUser.current() != nil else {return}
-        let user = PFUser.current()!
-        phone = user["phone"] as? String ?? ""
-        ssn = user["ssn"] as? String ?? ""
-        dob = user["dob"] as? Date ?? Date()
+        UserData.shared.phone = phone
+        UserData.shared.ssn = ssn
     }
 }
 

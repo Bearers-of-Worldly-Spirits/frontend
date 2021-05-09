@@ -17,6 +17,7 @@ struct HomeView: View {
     @EnvironmentObject var userState:AppState
     @State var fullname:String = "User"
     @AppStorage("DaysLeft") var daysLeft:String = "33"
+    @AppStorage("ShownPrivacy") var shownPrivacyAlert:Bool = false
     
     var body: some View {
         
@@ -72,6 +73,10 @@ struct HomeView: View {
         .onAppear() {
             loadUserData()
             calculateDaysLeft()
+            if (!self.shownPrivacyAlert) {
+                self.shownPrivacyAlert = true
+                self.userState.currentScreen = .privacyView
+            }
         }
         .background(Color("Background").ignoresSafeArea())
     }

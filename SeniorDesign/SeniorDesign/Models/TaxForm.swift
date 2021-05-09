@@ -57,20 +57,21 @@ class FormCompiler {
         return Form8843Data(
             name: user.object(forKey: "name") as? String,
             email: user.email,
-            street: user.object(forKey: "Street") as? String,
-            apt: user.object(forKey: "apt") as? String,
-            city: user.object(forKey: "city") as? String,
-            state: user.object(forKey: "state") as? String,
-            zipCode: user.object(forKey: "zipCode") as? String,
-            phone: user.object(forKey: "phone") as? String,
-            ssn: user.object(forKey: "ssn") as? String,
-            dob: user.object(forKey: "dob") as? Date,
-            visa: user.object(forKey: "visa") as? String,
-            passportNumber: user.object(forKey: "passportNumber") as? String,
-            countryOfCitizenship: user.object(forKey: "countryOfCitizenship") as? String,
-            days2020: user.object(forKey: "daysPresent2020") as? String,
-            days2019: user.object(forKey: "daysPresent2019") as? String,
-            days2018: user.object(forKey: "daysPresent2018") as? String,
-            filedBefore: user.object(forKey: "previouslyFiledTaxForm") as? Bool)
+            street: UserData.shared.street,
+            apt: UserData.shared.apartment,
+            city: UserData.shared.city,
+            state: UserData.shared.state,
+            zipCode: UserData.shared.zipCode,
+            phone: UserData.shared.phone,
+            ssn: UserData.shared.ssn,
+            dob: Date(), // TODO: Update this line!
+            visa: UserData.shared.visa,
+            passportNumber: UserData.shared.passportNumber,
+            countryOfCitizenship: UserData.shared.countryOfCitizenship,
+            days2020: UserData.shared.days2020,
+            days2019: UserData.shared.days2019,
+            days2018: UserData.shared.days2018,
+            filedBefore: false // TODO: Update !this
+        )
     }
 }
