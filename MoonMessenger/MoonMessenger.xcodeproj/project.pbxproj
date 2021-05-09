@@ -16,6 +16,7 @@
 		793551DE26485971001D03A7 /* Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 793551DD26485971001D03A7 /* Preview */; };
 		793551E126485CA5001D03A7 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793551E026485CA5001D03A7 /* Style.swift */; };
 		793551E426485D98001D03A7 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793551E326485D98001D03A7 /* IntroViewController.swift */; };
+		793551E7264861CB001D03A7 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 793551E6264861CB001D03A7 /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		792BC6C8264856B60016E411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		793551E026485CA5001D03A7 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		793551E326485D98001D03A7 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		793551E6264861CB001D03A7 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		8DC0316EF88765DAAC3CAE22 /* Pods-MoonMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonMessenger.release.xcconfig"; path = "Target Support Files/Pods-MoonMessenger/Pods-MoonMessenger.release.xcconfig"; sourceTree = "<group>"; };
 		B8562D25EE9919033B17DE4C /* Pods-MoonMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonMessenger.debug.xcconfig"; path = "Target Support Files/Pods-MoonMessenger/Pods-MoonMessenger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 		793551E226485CA8001D03A7 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				793551E6264861CB001D03A7 /* Pacifico-Regular.ttf */,
 				793551E026485CA5001D03A7 /* Style.swift */,
 			);
 			path = Global;
@@ -177,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793551E7264861CB001D03A7 /* Pacifico-Regular.ttf in Resources */,
 				792BC6C7264856B60016E411 /* LaunchScreen.storyboard in Resources */,
 				792BC6C4264856B60016E411 /* Assets.xcassets in Resources */,
 			);

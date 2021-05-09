@@ -18,6 +18,8 @@ class IntroViewController: UIViewController {
     
     var moonImageView = UIImageView(image: UIImage(named: "Moon") ?? UIImage())
     var backgroundImage = UIImageView(image: UIImage(named: "NightSky") ?? UIImage())
+    var titleLabel:UILabel = UILabel.title()
+    var bodyLabel:UILabel = UILabel.body()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,14 @@ class IntroViewController: UIViewController {
         moonImageView.hero.id = "moon"
         moonImageView.hero.modifiers = [.duration(2.0)]
         view.addSubview(moonImageView)
+        
+        titleLabel.text = "Moon."
+        titleLabel.alpha = 0
+        view.addSubview(titleLabel)
+        
+        bodyLabel.text = "Beautiful, secure, messaging."
+        bodyLabel.alpha = 0
+        view.addSubview(bodyLabel)
          
         backgroundImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
@@ -42,6 +52,29 @@ class IntroViewController: UIViewController {
             make.width.height.equalTo(90)
             make.centerX.equalToSuperview()
             make.top.equalToSuperview().offset(120)
+        }
+                    
+        bodyLabel.snp.makeConstraints { make in
+            make.width.equalToSuperview().inset(20)
+            make.height.lessThanOrEqualToSuperview()
+            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview().inset(150)
+        }
+        
+        titleLabel.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.width.equalToSuperview()
+            make.height.lessThanOrEqualToSuperview()
+            make.bottom.equalTo(self.bodyLabel.snp.top)
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 1.0) {
+            self.titleLabel.alpha = 1
+            self.bodyLabel.alpha = 0.5
         }
     }
 }
