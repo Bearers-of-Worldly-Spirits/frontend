@@ -3,16 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		598432D0A2865E9422FF66B3 /* Pods_MoonMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19348C0D8A1CE794EE3D0685 /* Pods_MoonMessenger.framework */; };
 		792BC6BB264856B50016E411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BC6BA264856B50016E411 /* AppDelegate.swift */; };
 		792BC6BD264856B50016E411 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BC6BC264856B50016E411 /* SceneDelegate.swift */; };
-		792BC6BF264856B50016E411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BC6BE264856B50016E411 /* ViewController.swift */; };
+		792BC6BF264856B50016E411 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BC6BE264856B50016E411 /* SplashViewController.swift */; };
 		792BC6C4264856B60016E411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792BC6C3264856B60016E411 /* Assets.xcassets */; };
 		792BC6C7264856B60016E411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792BC6C5264856B60016E411 /* LaunchScreen.storyboard */; };
+		793551DE26485971001D03A7 /* Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 793551DD26485971001D03A7 /* Preview */; };
+		793551E126485CA5001D03A7 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793551E026485CA5001D03A7 /* Style.swift */; };
+		793551E426485D98001D03A7 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793551E326485D98001D03A7 /* IntroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,12 @@
 		792BC6B7264856B50016E411 /* MoonMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		792BC6BA264856B50016E411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		792BC6BC264856B50016E411 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		792BC6BE264856B50016E411 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		792BC6BE264856B50016E411 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		792BC6C3264856B60016E411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		792BC6C6264856B60016E411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		792BC6C8264856B60016E411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		793551E026485CA5001D03A7 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		793551E326485D98001D03A7 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		8DC0316EF88765DAAC3CAE22 /* Pods-MoonMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonMessenger.release.xcconfig"; path = "Target Support Files/Pods-MoonMessenger/Pods-MoonMessenger.release.xcconfig"; sourceTree = "<group>"; };
 		B8562D25EE9919033B17DE4C /* Pods-MoonMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonMessenger.debug.xcconfig"; path = "Target Support Files/Pods-MoonMessenger/Pods-MoonMessenger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				598432D0A2865E9422FF66B3 /* Pods_MoonMessenger.framework in Frameworks */,
+				793551DE26485971001D03A7 /* Preview in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +69,30 @@
 			children = (
 				792BC6BA264856B50016E411 /* AppDelegate.swift */,
 				792BC6BC264856B50016E411 /* SceneDelegate.swift */,
-				792BC6BE264856B50016E411 /* ViewController.swift */,
+				793551E226485CA8001D03A7 /* Global */,
+				793551DF26485C7B001D03A7 /* View Controllers */,
 				792BC6C3264856B60016E411 /* Assets.xcassets */,
 				792BC6C5264856B60016E411 /* LaunchScreen.storyboard */,
 				792BC6C8264856B60016E411 /* Info.plist */,
 			);
 			path = MoonMessenger;
+			sourceTree = "<group>";
+		};
+		793551DF26485C7B001D03A7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				792BC6BE264856B50016E411 /* SplashViewController.swift */,
+				793551E326485D98001D03A7 /* IntroViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		793551E226485CA8001D03A7 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				793551E026485CA5001D03A7 /* Style.swift */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 		7ACBB3ED9036106568462164 /* Pods */ = {
@@ -106,6 +130,9 @@
 			dependencies = (
 			);
 			name = MoonMessenger;
+			packageProductDependencies = (
+				793551DD26485971001D03A7 /* Preview */,
+			);
 			productName = MoonMessenger;
 			productReference = 792BC6B7264856B50016E411 /* MoonMessenger.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +160,9 @@
 				Base,
 			);
 			mainGroup = 792BC6AE264856B50016E411;
+			packageReferences = (
+				793551DC26485971001D03A7 /* XCRemoteSwiftPackageReference "Preview" */,
+			);
 			productRefGroup = 792BC6B8264856B50016E411 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,9 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				792BC6BF264856B50016E411 /* ViewController.swift in Sources */,
+				793551E426485D98001D03A7 /* IntroViewController.swift in Sources */,
+				792BC6BF264856B50016E411 /* SplashViewController.swift in Sources */,
 				792BC6BB264856B50016E411 /* AppDelegate.swift in Sources */,
 				792BC6BD264856B50016E411 /* SceneDelegate.swift in Sources */,
+				793551E126485CA5001D03A7 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +431,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		793551DC26485971001D03A7 /* XCRemoteSwiftPackageReference "Preview" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joshuajhomann/Preview";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		793551DD26485971001D03A7 /* Preview */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 793551DC26485971001D03A7 /* XCRemoteSwiftPackageReference "Preview" */;
+			productName = Preview;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 792BC6AF264856B50016E411 /* Project object */;
 }
