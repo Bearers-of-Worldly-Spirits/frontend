@@ -2,6 +2,7 @@ PODS:
   - Bolts/Tasks (1.9.1)
   - Closures (0.7)
   - Hero (1.5.0)
+  - lottie-ios (3.1.9)
   - Parse (1.19.1):
     - Parse/Core (= 1.19.1)
   - Parse/Core (1.19.1):
@@ -11,6 +12,7 @@ PODS:
 DEPENDENCIES:
   - Closures
   - Hero
+  - lottie-ios
   - Parse
   - SnapKit
 
@@ -19,6 +21,7 @@ SPEC REPOS:
     - Bolts
     - Closures
     - Hero
+    - lottie-ios
     - Parse
     - SnapKit
 
@@ -26,9 +29,10 @@ SPEC CHECKSUMS:
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
   Closures: a83b9892a5b1c4125a9dfcd53e2754db5d7f6d22
   Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
   Parse: e40fdb9c7d665823b7fe9865949cac9a53eb2ce7
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: a85c7378e02bd522ba1a503f2db3e06d5415236e
+PODFILE CHECKSUM: fcd828297ecbf361ef5a046dacc1d44ad7bf8f75
 
 COCOAPODS: 1.10.1

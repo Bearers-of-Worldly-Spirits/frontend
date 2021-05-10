@@ -10,5 +10,6 @@ target 'MoonMessenger' do
   pod 'Closures'
   pod 'Hero'
   pod 'Parse'
+  pod 'lottie-ios'
 
 end

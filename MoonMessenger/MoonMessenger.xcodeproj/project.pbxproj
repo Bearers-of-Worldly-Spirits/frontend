@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		598432D0A2865E9422FF66B3 /* Pods_MoonMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19348C0D8A1CE794EE3D0685 /* Pods_MoonMessenger.framework */; };
+		790B580E264992F200605696 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B580D264992F200605696 /* TextButton.swift */; };
+		792862E72649842E00BD5172 /* ShinyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792862E62649842E00BD5172 /* ShinyButton.swift */; };
 		792BC6BB264856B50016E411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BC6BA264856B50016E411 /* AppDelegate.swift */; };
 		792BC6BD264856B50016E411 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BC6BC264856B50016E411 /* SceneDelegate.swift */; };
 		792BC6BF264856B50016E411 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BC6BE264856B50016E411 /* SplashViewController.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		19348C0D8A1CE794EE3D0685 /* Pods_MoonMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		790B580D264992F200605696 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		792862E62649842E00BD5172 /* ShinyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShinyButton.swift; sourceTree = "<group>"; };
 		792BC6B7264856B50016E411 /* MoonMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		792BC6BA264856B50016E411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		792BC6BC264856B50016E411 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		792862E82649843500BD5172 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				792862E62649842E00BD5172 /* ShinyButton.swift */,
+				790B580D264992F200605696 /* TextButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		792BC6AE264856B50016E411 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +86,7 @@
 				792BC6BC264856B50016E411 /* SceneDelegate.swift */,
 				793551E226485CA8001D03A7 /* Global */,
 				793551DF26485C7B001D03A7 /* View Controllers */,
+				792862E82649843500BD5172 /* Components */,
 				792BC6C3264856B60016E411 /* Assets.xcassets */,
 				792BC6C5264856B60016E411 /* LaunchScreen.storyboard */,
 				792BC6C8264856B60016E411 /* Info.plist */,
@@ -237,7 +251,9 @@
 			files = (
 				793551E426485D98001D03A7 /* IntroViewController.swift in Sources */,
 				792BC6BF264856B50016E411 /* SplashViewController.swift in Sources */,
+				790B580E264992F200605696 /* TextButton.swift in Sources */,
 				792BC6BB264856B50016E411 /* AppDelegate.swift in Sources */,
+				792862E72649842E00BD5172 /* ShinyButton.swift in Sources */,
 				792BC6BD264856B50016E411 /* SceneDelegate.swift in Sources */,
 				793551E126485CA5001D03A7 /* Style.swift in Sources */,
 			);
@@ -382,6 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P55BHT8RZT;
 				INFOPLIST_FILE = MoonMessenger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,6 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P55BHT8RZT;
 				INFOPLIST_FILE = MoonMessenger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

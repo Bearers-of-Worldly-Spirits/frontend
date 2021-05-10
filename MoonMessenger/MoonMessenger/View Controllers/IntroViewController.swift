@@ -20,6 +20,8 @@ class IntroViewController: UIViewController {
     var backgroundImage = UIImageView(image: UIImage(named: "NightSky") ?? UIImage())
     var titleLabel:UILabel = UILabel.title()
     var bodyLabel:UILabel = UILabel.body()
+    var signup:ShinyButton!
+    var login:TextButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +36,7 @@ class IntroViewController: UIViewController {
         
         moonImageView.hero.id = "moon"
         moonImageView.hero.modifiers = [.duration(2.0)]
+        moonImageView.transform = CGAffineTransform.init(rotationAngle: -1.35)
         view.addSubview(moonImageView)
         
         titleLabel.text = "Moon."
@@ -43,6 +46,18 @@ class IntroViewController: UIViewController {
         bodyLabel.text = "Beautiful, secure, messaging."
         bodyLabel.alpha = 0
         view.addSubview(bodyLabel)
+        
+        signup = ShinyButton("Signup") {
+            self.signupUser()
+        }
+        signup.alpha = 0
+        view.addSubview(signup)
+        
+        login = TextButton("Have an account?") {
+            self.loginUser()
+        }
+        login.alpha = 0
+        view.addSubview(login)
          
         backgroundImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
@@ -54,19 +69,36 @@ class IntroViewController: UIViewController {
             make.top.equalToSuperview().offset(120)
         }
                     
-        bodyLabel.snp.makeConstraints { make in
-            make.width.equalToSuperview().inset(20)
-            make.height.lessThanOrEqualToSuperview()
-            make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().inset(150)
-        }
-        
         titleLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.width.equalToSuperview()
             make.height.lessThanOrEqualToSuperview()
             make.bottom.equalTo(self.bodyLabel.snp.top)
         }
+        
+        bodyLabel.snp.makeConstraints { make in
+            make.width.equalToSuperview().inset(20)
+            make.height.lessThanOrEqualToSuperview()
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(self.signup.snp.top).offset(-50)
+        }
+        
+        signup.snp.makeConstraints { make in
+            make.width.equalTo(170)
+            make.height.equalTo(46)
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(self.login.snp.top).offset(-5)
+        }
+        
+        login.snp.makeConstraints { make in
+            make.width.equalToSuperview()
+            make.height.lessThanOrEqualToSuperview()
+            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview().inset(80)
+        }
+        
+        signup.transform = CGAffineTransform(translationX: 0, y: 20)
+        login.transform = CGAffineTransform(translationX: 0, y: 20)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -76,6 +108,23 @@ class IntroViewController: UIViewController {
             self.titleLabel.alpha = 1
             self.bodyLabel.alpha = 0.5
         }
+        
+        UIView.animateKeyframes(withDuration: 1.0, delay: 0.5, options: []) {
+            self.signup.alpha = 1
+            self.signup.transform = .identity
+            self.login.alpha = 0.5
+            self.login.transform = .identity
+        } completion: { done in
+            
+        }
+    }
+    
+    func signupUser() {
+        
+    }
+    
+    func loginUser() {
+        
     }
 }
 
