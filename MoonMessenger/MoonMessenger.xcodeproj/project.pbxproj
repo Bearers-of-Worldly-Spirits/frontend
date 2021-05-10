@@ -11,6 +11,7 @@
 		790B580E264992F200605696 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B580D264992F200605696 /* TextButton.swift */; };
 		790B5810264996B300605696 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B580F264996B300605696 /* SignupViewController.swift */; };
 		790B581226499B7C00605696 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B581126499B7C00605696 /* TextField.swift */; };
+		790B58142649A3FF00605696 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B58132649A3FF00605696 /* LoginViewController.swift */; };
 		792862E72649842E00BD5172 /* ShinyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792862E62649842E00BD5172 /* ShinyButton.swift */; };
 		792BC6BB264856B50016E411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BC6BA264856B50016E411 /* AppDelegate.swift */; };
 		792BC6BD264856B50016E411 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BC6BC264856B50016E411 /* SceneDelegate.swift */; };
@@ -28,6 +29,7 @@
 		790B580D264992F200605696 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		790B580F264996B300605696 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		790B581126499B7C00605696 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		790B58132649A3FF00605696 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		792862E62649842E00BD5172 /* ShinyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShinyButton.swift; sourceTree = "<group>"; };
 		792BC6B7264856B50016E411 /* MoonMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		792BC6BA264856B50016E411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				792BC6BE264856B50016E411 /* SplashViewController.swift */,
 				793551E326485D98001D03A7 /* IntroViewController.swift */,
 				790B580F264996B300605696 /* SignupViewController.swift */,
+				790B58132649A3FF00605696 /* LoginViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				792862E72649842E00BD5172 /* ShinyButton.swift in Sources */,
 				790B581226499B7C00605696 /* TextField.swift in Sources */,
 				792BC6BD264856B50016E411 /* SceneDelegate.swift in Sources */,
+				790B58142649A3FF00605696 /* LoginViewController.swift in Sources */,
 				793551E126485CA5001D03A7 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

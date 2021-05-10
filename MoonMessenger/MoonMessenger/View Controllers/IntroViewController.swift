@@ -124,8 +124,24 @@ class IntroViewController: UIViewController {
     }
     
     func signupUser() {
-        
-        
+        fadeOut()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            let vc = SignupViewController()
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        }        
+    }
+    
+    func loginUser() {
+        fadeOut()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            let vc = LoginViewController()
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
+    
+    func fadeOut() {
         UIView.animate(withDuration: 0.9) {
             self.moonImageView.transform = .identity
             self.moonImageView.alpha = 0
@@ -142,16 +158,6 @@ class IntroViewController: UIViewController {
             self.backgroundImage.transform = CGAffineTransform(translationX: 0, y: -100)
             self.backgroundImage.alpha = 0
         }, completion: nil)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            let vc = SignupViewController()
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true, completion: nil)
-        }        
-    }
-    
-    func loginUser() {
-        
     }
 }
 

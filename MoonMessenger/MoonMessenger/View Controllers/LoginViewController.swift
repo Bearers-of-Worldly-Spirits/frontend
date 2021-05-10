@@ -1,5 +1,5 @@
 //
-//  SignupViewController.swift
+//  LoginViewController.swift
 //  MoonMessenger
 //
 //  Created by Josh Arnold on 5/10/21.
@@ -12,7 +12,7 @@ import Preview
 import Closures
 
 
-class SignupViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
@@ -21,9 +21,8 @@ class SignupViewController: UIViewController {
     var titleLabel:UILabel = UILabel.title()
     var signup:ShinyButton!
     var login:TextButton!
-    var moonBackground:UIImageView = UIImageView(image: UIImage(named: "SignupMoon")!)
-    
-    var name:TextField = TextField(imageName: "UserIcon", placeholder: "Name")
+    var moonBackground:UIImageView = UIImageView(image: UIImage(named: "LoginMoon")!)
+        
     var email:TextField = TextField(imageName: "AtIcon", placeholder: "Email")
     var password:TextField = TextField(imageName: "LockIcon", placeholder: "Password")
     
@@ -41,29 +40,24 @@ class SignupViewController: UIViewController {
         moonBackground.transform = CGAffineTransform(translationX: 0, y: -100)
         view.addSubview(moonBackground)
         
-        titleLabel.text = "Signup."
+        titleLabel.text = "Login."
         titleLabel.alpha = 0
         titleLabel.transform = CGAffineTransform(translationX: 0, y: 20)
         view.addSubview(titleLabel)
         
-        signup = ShinyButton("Signup") {
-            self.signupUser()
+        signup = ShinyButton("Login") {
+            self.loginUser()
         }
         signup.hero.id = "signup"
         signup.hero.modifiers = [.duration(0.5)]
         view.addSubview(signup)
         
         login = TextButton("Have an account?") {
-            self.loginUser()
+            self.goToSignup()
         }
         login.hero.id = "login"
         login.hero.modifiers = [.duration(0.3)]
         view.addSubview(login)
-                
-        name.transform = CGAffineTransform(translationX: -20, y: 0)
-        name.alpha = 0
-        name.name()
-        view.addSubview(name)
         
         email.transform = CGAffineTransform(translationX: -20, y: 0)
         email.alpha = 0
@@ -79,7 +73,7 @@ class SignupViewController: UIViewController {
                         
         moonBackground.snp.makeConstraints { make in
             make.top.left.right.equalToSuperview()
-            make.height.equalTo(225)
+            make.height.equalTo(80)
         }
         
         titleLabel.snp.makeConstraints { make in
@@ -88,15 +82,8 @@ class SignupViewController: UIViewController {
             make.height.lessThanOrEqualToSuperview()
         }
         
-        name.snp.makeConstraints { make in
-            make.top.equalTo(self.titleLabel.snp.bottom).offset(100)
-            make.width.equalTo(225)
-            make.centerX.equalToSuperview()
-            make.height.equalTo(40)
-        }
-        
         email.snp.makeConstraints { make in
-            make.top.equalTo(self.name.snp.bottom).offset(15)
+            make.top.equalTo(self.titleLabel.snp.bottom).offset(100)
             make.width.equalTo(225)
             make.centerX.equalToSuperview()
             make.height.equalTo(40)
@@ -108,7 +95,7 @@ class SignupViewController: UIViewController {
             make.centerX.equalToSuperview()
             make.height.equalTo(40)
         }
-        
+
         signup.snp.makeConstraints { make in
             make.width.equalTo(170)
             make.height.equalTo(46)
@@ -129,18 +116,16 @@ class SignupViewController: UIViewController {
         super.viewDidAppear(animated)
         
         UIView.animate(
-            withDuration: 0.9,
+            withDuration: 0.8,
                     delay: 0,
-            usingSpringWithDamping: 0.6,
-            initialSpringVelocity: 0.7,
+            usingSpringWithDamping: 0.8,
+            initialSpringVelocity: 0.5,
                     options: [],
                     animations: {
                         self.titleLabel.alpha = 1
                         self.titleLabel.transform = .identity
                         self.moonBackground.alpha = 1
                         self.moonBackground.transform = .identity
-                        self.name.alpha = 1
-                        self.name.transform = .identity
                         self.email.alpha = 1
                         self.email.transform = .identity
                         self.password.alpha = 1
@@ -150,14 +135,14 @@ class SignupViewController: UIViewController {
                 )
     }
     
-    func signupUser() {
+    func loginUser() {
 //        fadeOut()
     }
     
-    func loginUser() {
+    func goToSignup() {
         fadeOut()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            let vc = LoginViewController()
+            let vc = SignupViewController()
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true, completion: nil)
         }
@@ -173,10 +158,8 @@ class SignupViewController: UIViewController {
                     animations: {
                         self.moonBackground.alpha = 0
                         self.moonBackground.transform = .init(translationX: 0, y: -100)
-                        self.name.transform = .init(translationX: 10, y: 0)
                         self.email.transform = .init(translationX: 15, y: 0)
                         self.password.transform = .init(translationX: 20, y: 0)
-                        self.name.alpha = 0
                         self.email.alpha = 0
                         self.password.alpha = 0
                     },
@@ -193,11 +176,10 @@ class SignupViewController: UIViewController {
 
 
 @available(iOS 13.0, *)
-struct SignupContentView_Previews : PreviewProvider {
+struct LoginContentView_Previews : PreviewProvider {
     static var previews : some View {
         Group {
-            Preview.make(SignupViewController())
+            Preview.make(LoginViewController())
         }
     }
 }
-
