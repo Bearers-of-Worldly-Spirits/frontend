@@ -31,7 +31,7 @@ class SignupViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .background
-        hero.isEnabled = true        
+        hero.isEnabled = true
         view.addTapGesture { tap in
             self.view.endEditing(true)
         }
@@ -152,6 +152,30 @@ class SignupViewController: UIViewController {
     
     func signupUser() {
         
+        UIView.animate(
+            withDuration: 0.7,
+            delay: 0.25,
+            usingSpringWithDamping: 0.6,
+            initialSpringVelocity: 0.7,
+                    options: [],
+                    animations: {
+                        self.moonBackground.alpha = 0
+                        self.moonBackground.transform = .init(translationX: 0, y: -100)
+                        self.name.transform = .init(translationX: 10, y: 0)
+                        self.email.transform = .init(translationX: 15, y: 0)
+                        self.password.transform = .init(translationX: 20, y: 0)
+                        self.name.alpha = 0
+                        self.email.alpha = 0
+                        self.password.alpha = 0
+                    },
+                    completion: nil
+                )
+        
+        UIView.animate(withDuration: 0.3) {
+            self.titleLabel.alpha = 0
+            self.signup.alpha = 0
+            self.login.alpha = 0
+        }
     }
     
     func loginUser() {
