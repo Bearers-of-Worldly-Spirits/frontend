@@ -5,6 +5,7 @@
 //  Created by Josh Arnold on 5/9/21.
 //
 
+import Foundation
 import UIKit
 import SwiftUI
 import Preview
@@ -41,6 +42,7 @@ class IntroViewController: UIViewController {
         
         titleLabel.text = "Moon."
         titleLabel.alpha = 0
+        titleLabel.hero.id = "title"
         view.addSubview(titleLabel)
         
         bodyLabel.text = "Beautiful, secure, messaging."
@@ -50,12 +52,14 @@ class IntroViewController: UIViewController {
         signup = ShinyButton("Signup") {
             self.signupUser()
         }
+        signup.hero.id = "signup"
         signup.alpha = 0
         view.addSubview(signup)
         
         login = TextButton("Have an account?") {
             self.loginUser()
         }
+        login.hero.id = "login"
         login.alpha = 0
         view.addSubview(login)
          
@@ -121,6 +125,29 @@ class IntroViewController: UIViewController {
     
     func signupUser() {
         
+        
+        UIView.animate(withDuration: 0.9) {
+            self.moonImageView.transform = .identity
+            self.moonImageView.alpha = 0
+        }
+        
+        UIView.animateKeyframes(withDuration: 0.5, delay: 0.5, options: [], animations: {
+            self.bodyLabel.alpha = 0
+            self.bodyLabel.transform = CGAffineTransform(translationX: 0, y: -20)
+            self.titleLabel.alpha = 0
+            self.titleLabel.transform = CGAffineTransform(translationX: 0, y: -20)
+        }, completion: nil)
+        
+        UIView.animateKeyframes(withDuration: 1, delay: 0.25, options: [], animations: {
+            self.backgroundImage.transform = CGAffineTransform(translationX: 0, y: -100)
+            self.backgroundImage.alpha = 0
+        }, completion: nil)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            let vc = SignupViewController()
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        }        
     }
     
     func loginUser() {
