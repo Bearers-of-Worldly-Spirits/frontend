@@ -36,6 +36,10 @@ extension UIFont {
     static var caption:UIFont {
         return UIFontMetrics(forTextStyle: .body).scaledFont(for: UIFont(name: "Pacifico-Regular", size: 14) ?? UIFont.systemFont(ofSize: UIFont.labelFontSize))
     }
+    
+    static var bodyReadable:UIFont {        
+        return UIFontMetrics(forTextStyle: .body).scaledFont(for: UIFont(name: "HelveticaNeue-Medium", size: 15) ?? UIFont.systemFont(ofSize: UIFont.labelFontSize))
+    }
 }
 
 

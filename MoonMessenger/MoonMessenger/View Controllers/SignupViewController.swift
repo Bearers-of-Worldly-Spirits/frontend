@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 import Preview
+import Closures
 
 
 class SignupViewController: UIViewController {
@@ -22,11 +23,18 @@ class SignupViewController: UIViewController {
     var login:TextButton!
     var moonBackground:UIImageView = UIImageView(image: UIImage(named: "SignupMoon")!)
     
+    var name:TextField = TextField(imageName: "UserIcon", placeholder: "Name")
+    var email:TextField = TextField(imageName: "AtIcon", placeholder: "Email")
+    var password:TextField = TextField(imageName: "LockIcon", placeholder: "Password")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .background
-        hero.isEnabled = true
+        hero.isEnabled = true        
+        view.addTapGesture { tap in
+            self.view.endEditing(true)
+        }
         
         moonBackground.contentMode = .scaleAspectFill
         moonBackground.alpha = 0
@@ -52,6 +60,23 @@ class SignupViewController: UIViewController {
         login.hero.modifiers = [.duration(0.3)]
         view.addSubview(login)
                 
+        name.transform = CGAffineTransform(translationX: -20, y: 0)
+        name.alpha = 0
+        name.name()
+        view.addSubview(name)
+        
+        email.transform = CGAffineTransform(translationX: -20, y: 0)
+        email.alpha = 0
+        email.email()
+        view.addSubview(email)
+        
+        password.transform = CGAffineTransform(translationX: -20, y: 0)
+        password.alpha = 0
+        password.secure()
+        view.addSubview(password)
+        
+        // Snap
+                        
         moonBackground.snp.makeConstraints { make in
             make.top.left.right.equalToSuperview()
             make.height.equalTo(225)
@@ -63,17 +88,39 @@ class SignupViewController: UIViewController {
             make.height.lessThanOrEqualToSuperview()
         }
         
+        name.snp.makeConstraints { make in
+            make.top.equalTo(self.titleLabel.snp.bottom).offset(100)
+            make.width.equalTo(225)
+            make.centerX.equalToSuperview()
+            make.height.equalTo(40)
+        }
+        
+        email.snp.makeConstraints { make in
+            make.top.equalTo(self.name.snp.bottom).offset(15)
+            make.width.equalTo(225)
+            make.centerX.equalToSuperview()
+            make.height.equalTo(40)
+        }
+        
+        password.snp.makeConstraints { make in
+            make.top.equalTo(self.email.snp.bottom).offset(15)
+            make.width.equalTo(225)
+            make.centerX.equalToSuperview()
+            make.height.equalTo(40)
+        }
+        
         signup.snp.makeConstraints { make in
             make.width.equalTo(170)
             make.height.equalTo(46)
-            make.center.equalToSuperview()
+            make.centerX.equalToSuperview()
+            make.top.equalTo(self.password.snp.bottom).offset(50)
         }
         
         login.snp.makeConstraints { make in
             make.width.equalToSuperview()
             make.height.lessThanOrEqualToSuperview()
             make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().inset(20)
+            make.bottom.equalToSuperview().inset(30)
         }
     
     }
@@ -92,6 +139,12 @@ class SignupViewController: UIViewController {
                         self.titleLabel.transform = .identity
                         self.moonBackground.alpha = 1
                         self.moonBackground.transform = .identity
+                        self.name.alpha = 1
+                        self.name.transform = .identity
+                        self.email.alpha = 1
+                        self.email.transform = .identity
+                        self.password.alpha = 1
+                        self.password.transform = .identity
                     },
                     completion: nil
                 )
